@@ -122,7 +122,7 @@
       .article:hover {
         background-color: #f0f0f0;
       }
-
+      
       .children {
         margin-left: 20px;
         display: none;
@@ -197,6 +197,12 @@
           margin: 0;
       }
 
+      /* Estilo da etiqueta centralizada no modal */
+      .modal-label-container {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
       @media (max-width: 768px) {
         .button {
           font-size: 0.9rem;
@@ -226,7 +232,7 @@
         </h1>
         <h1 class="main-title">
           <span class="emoji">✨</span>
-        <span class="emoji">🚀</span>
+          <span class="emoji">🚀</span>
         </h1>
         
         <p class="subtitle">Estude por tópicos e revise como flashcards!</p>
@@ -276,14 +282,37 @@
           }
         });
 
-        function criarLabel(tipo) {
+        function criarLabel(tipo, textoPersonalizado = null) {
           const span = document.createElement('span');
           span.className = 'label ' + tipo;
-          span.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
+          span.textContent = textoPersonalizado || tipo.charAt(0).toUpperCase() + tipo.slice(1);
           return span;
         }
 
-        function criarNode(node) {
+        function processText(text) {
+          if (!text) return '';
+          return text.replace(/\\n/g, '<br>').replace(/\\r/g, '');
+        }
+
+        function findPrincipio(estrutura, artigoNode) {
+            function search(nodes) {
+                for (const node of nodes) {
+                    if (node.tipo === 'principio' && node.filhos && node.filhos.length) {
+                        if (node.filhos.includes(artigoNode)) {
+                            return node.nome;
+                        }
+                    }
+                    if (node.filhos) {
+                        const found = search(node.filhos);
+                        if (found) return found;
+                    }
+                }
+                return null;
+            }
+            return search(estrutura);
+        }
+
+        function criarNode(node, parentNode = null) {
           const div = document.createElement('div');
           div.className = 'node';
 
@@ -299,12 +328,18 @@
             div.appendChild(artigoDiv);
 
             artigoDiv.addEventListener('click', () => {
-              let conteudoFormatado = `<p><strong>${node.nome}</strong></p>`;
-              if (node.conteudo) {
-                const textoComQuebras = node.conteudo.replace(/\\n/g, '<br>').replace(/\\r/g, '');
-                conteudoFormatado += `<p>${textoComQuebras}</p>`;
+              const nomePrincipio = findPrincipio(estrutura, node);
+              let conteudoModal = '';
+
+              if (nomePrincipio) {
+                conteudoModal += '<div class="modal-label-container">' + criarLabel('principio', nomePrincipio).outerHTML + '</div>';
               }
-              openModal(conteudoFormatado);
+              
+              conteudoModal += `<p>${processText(node.nome)}</p>`;
+              if (node.conteudo) {
+                conteudoModal += `<p>${processText(node.conteudo)}</p>`;
+              }
+              openModal(conteudoModal);
             });
             
           } else {
@@ -334,7 +369,8 @@
               const childrenDiv = document.createElement('div');
               childrenDiv.className = 'children';
               node.filhos.forEach((filho) => {
-                childrenDiv.appendChild(criarNode(filho));
+                const childNode = criarNode(filho, node);
+                childrenDiv.appendChild(childNode);
               });
               div.appendChild(childrenDiv);
 
