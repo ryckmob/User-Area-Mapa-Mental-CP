@@ -19,6 +19,30 @@
         margin: auto;
       }
 
+      /* Título e Subtítulo */
+      .header-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h1.main-title {
+        color: #6c5ce7;
+        font-size: 2rem;
+        margin-bottom: 5px;
+      }
+
+      h1.main-title .emoji {
+        font-size: 1.8rem;
+        margin: 0 5px;
+      }
+
+      .subtitle {
+        color: #555;
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin-top: 0;
+      }
+
       .node {
         margin: 6px 0;
         display: flex;
@@ -166,11 +190,11 @@
         line-height: 1.6;
         font-size: 0.9rem;
         font-weight: normal;
-        white-space: pre-wrap; /* Adicionado para respeitar quebras de linha */
+        white-space: pre-wrap;
       }
-
+      
       .modal-body p {
-        margin: 0; /* Remove margens extras de parágrafos */
+          margin: 0;
       }
 
       @media (max-width: 768px) {
@@ -195,12 +219,27 @@
     </style>
   </head>
   <body>
-    <div class="container" id="mapaMental"></div>
+    <div class="container">
+      <div class="header-container">
+        <h1 class="main-title">
+          Mapa Mental Direito Penal Completo
+        </h1>
+        <h1 class="main-title">
+          <span class="emoji">✨</span>
+        <span class="emoji">🚀</span>
+        </h1>
+        
+        <p class="subtitle">Estude por tópicos e revise como flashcards!</p>
+      </div>
+      
+      <div id="mapaMental"></div>
+    </div>
 
     <div id="articleModal" class="modal-overlay">
       <div class="modal-content">
         <span class="close-button">&times;</span>
-        <div class="modal-body"></div>
+        <div class="modal-body">
+          </div>
       </div>
     </div>
 
@@ -252,25 +291,22 @@
             const artigoDiv = document.createElement('div');
             artigoDiv.className = 'article';
             artigoDiv.appendChild(criarLabel('artigo'));
-
+            
             const texto = document.createElement('span');
             texto.textContent = node.nome;
             artigoDiv.appendChild(texto);
-
+            
             div.appendChild(artigoDiv);
 
             artigoDiv.addEventListener('click', () => {
-              // Pega o conteúdo completo do artigo, incluindo o `nome` e o `conteudo`
-              // e substitui quebras de linha por <br>
-              let conteudoFormatado = `<p>${node.nome}</p>`;
+              let conteudoFormatado = `<p><strong>${node.nome}</strong></p>`;
               if (node.conteudo) {
-                const textoComQuebras = node.conteudo
-                  .replace(/\\n/g, '<br>')
-                  .replace(/\\r/g, '');
+                const textoComQuebras = node.conteudo.replace(/\\n/g, '<br>').replace(/\\r/g, '');
                 conteudoFormatado += `<p>${textoComQuebras}</p>`;
               }
               openModal(conteudoFormatado);
             });
+            
           } else {
             const button = document.createElement('button');
             button.className = 'button';
