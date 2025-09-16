@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa Mental Código Penal</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f9f9f9;
+        color: #333;
+      }
+
+      .container {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+
+      .node {
+        margin: 6px 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Etiquetas */
+      .label {
+        display: inline-block;
+        padding: 2px 8px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        border-radius: 12px;
+        color: #fff;
+        min-width: 50px;
+        text-align: center;
+      }
+
+      /* Cores das etiquetas */
+      .label.titulo {
+        background-color: #6c5ce7;
+      }
+      .label.principio {
+        background-color: #00b894;
+      }
+      .label.artigo {
+        background-color: #fd79a8;
+      }
+      .label.sessao {
+        background-color: #e17055;
+      }
+
+      /* Botões */
+      .button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 1rem;
+        background-color: #e0e0e0;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        cursor: pointer;
+        text-align: left;
+        justify-content: space-between;
+        transition: background 0.2s;
+      }
+
+      .button:hover {
+        background-color: #d5d5d5;
+      }
+
+      .button-content {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        gap: 10px;
+      }
+
+      /* Artigos */
+      .article {
+        padding: 7px 10px;
+        border-left: 2px solid #bbb;
+        margin: 3px 0 3px 20px;
+        font-size: 0.93rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background-color: transparent;
+        color: #333;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+
+      .article:hover {
+        background-color: #f0f0f0;
+      }
+
+      .children {
+        margin-left: 20px;
+        display: none;
+      }
+
+      .toggle-icon {
+        font-weight: bold;
+        color: #666;
+      }
+
+      /* Estilo do Modal */
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        width: 70%;
+        max-width: 700px;
+        max-height: 80vh;
+        overflow-y: auto;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        transform: scale(0.9);
+        opacity: 0;
+      }
+
+      .modal-content.active {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      .close-button {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 1010;
+        transition: color 0.2s;
+      }
+
+      .close-button:hover,
+      .close-button:focus {
+        color: #333;
+      }
+
+      .modal-body {
+        padding-top: 20px;
+        color: #555;
+        line-height: 1.6;
+        font-size: 0.9rem;
+        font-weight: normal;
+        white-space: pre-wrap; /* Adicionado para respeitar quebras de linha */
+      }
+
+      .modal-body p {
+        margin: 0; /* Remove margens extras de parágrafos */
+      }
+
+      @media (max-width: 768px) {
+        .button {
+          font-size: 0.9rem;
+          padding: 8px 12px;
+        }
+        .article {
+          font-size: 0.88rem;
+          padding: 6px 8px;
+        }
+        .label {
+          font-size: 0.7rem;
+          padding: 1px 6px;
+          min-width: 40px;
+        }
+        .modal-content {
+          width: 90%;
+          margin: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="mapaMental"></div>
+
+    <div id="articleModal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+
+    <script>
+      async function initMapa() {
+        const response = await fetch('estrutura.json');
+        const estrutura = await response.json();
+
+        const modal = document.getElementById('articleModal');
+        const modalBody = modal.querySelector('.modal-body');
+        const closeModalButton = modal.querySelector('.close-button');
+
+        function openModal(content) {
+          modalBody.innerHTML = content;
+          modal.style.display = 'flex';
+          setTimeout(() => {
+            modal.querySelector('.modal-content').classList.add('active');
+          }, 10);
+        }
+
+        function closeModal() {
+          modal.querySelector('.modal-content').classList.remove('active');
+          setTimeout(() => {
+            modal.style.display = 'none';
+            modalBody.innerHTML = '';
+          }, 300);
+        }
+
+        closeModalButton.addEventListener('click', closeModal);
+
+        window.addEventListener('click', (event) => {
+          if (event.target === modal) {
+            closeModal();
+          }
+        });
+
+        function criarLabel(tipo) {
+          const span = document.createElement('span');
+          span.className = 'label ' + tipo;
+          span.textContent = tipo.charAt(0).toUpperCase() + tipo.slice(1);
+          return span;
+        }
+
+        function criarNode(node) {
+          const div = document.createElement('div');
+          div.className = 'node';
+
+          if (node.tipo === 'artigo') {
+            const artigoDiv = document.createElement('div');
+            artigoDiv.className = 'article';
+            artigoDiv.appendChild(criarLabel('artigo'));
+
+            const texto = document.createElement('span');
+            texto.textContent = node.nome;
+            artigoDiv.appendChild(texto);
+
+            div.appendChild(artigoDiv);
+
+            artigoDiv.addEventListener('click', () => {
+              // Pega o conteúdo completo do artigo, incluindo o `nome` e o `conteudo`
+              // e substitui quebras de linha por <br>
+              let conteudoFormatado = `<p>${node.nome}</p>`;
+              if (node.conteudo) {
+                const textoComQuebras = node.conteudo
+                  .replace(/\\n/g, '<br>')
+                  .replace(/\\r/g, '');
+                conteudoFormatado += `<p>${textoComQuebras}</p>`;
+              }
+              openModal(conteudoFormatado);
+            });
+          } else {
+            const button = document.createElement('button');
+            button.className = 'button';
+            const buttonContent = document.createElement('div');
+            buttonContent.className = 'button-content';
+
+            const label = criarLabel(node.tipo);
+            const texto = document.createElement('span');
+            texto.textContent = node.nome;
+
+            buttonContent.appendChild(label);
+            buttonContent.appendChild(texto);
+            button.appendChild(buttonContent);
+
+            if (node.filhos && node.filhos.length) {
+              const icon = document.createElement('span');
+              icon.className = 'toggle-icon';
+              icon.textContent = '+';
+              button.appendChild(icon);
+            }
+
+            div.appendChild(button);
+
+            if (node.filhos && node.filhos.length) {
+              const childrenDiv = document.createElement('div');
+              childrenDiv.className = 'children';
+              node.filhos.forEach((filho) => {
+                childrenDiv.appendChild(criarNode(filho));
+              });
+              div.appendChild(childrenDiv);
+
+              button.addEventListener('click', () => {
+                const isVisible = childrenDiv.style.display === 'block';
+                childrenDiv.style.display = isVisible ? 'none' : 'block';
+                const icon = button.querySelector('.toggle-icon');
+                if (icon) icon.textContent = isVisible ? '+' : '-';
+              });
+            }
+          }
+          return div;
+        }
+
+        const mapaContainer = document.getElementById('mapaMental');
+        estrutura.forEach((node) => mapaContainer.appendChild(criarNode(node)));
+      }
+
+      initMapa();
+    </script>
+  </body>
+</html>

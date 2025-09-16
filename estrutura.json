@@ -1,0 +1,197 @@
+[
+  {
+    "tipo": "titulo",
+    "nome": "PARTE GERAL",
+    "filhos": [
+      {
+        "tipo": "titulo",
+        "nome": "DA APLICAÇÃO DA LEI PENAL",
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Anterioridade da Lei",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 1º - Não há crime sem lei anterior que o defina. Não há pena sem prévia cominação legal",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Lei penal no tempo",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 2º - Ninguém pode ser punido por fato que lei posterior deixa de considerar crime, cessando em virtude dela a execução e os efeitos penais da sentença condenatória.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Lei excepcional ou temporária",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 3º - A lei excepcional ou temporária, embora decorrido o período de sua duração ou cessadas as circunstâncias que a determinaram, aplica-se ao fato praticado durante sua vigência.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Tempo do crime",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 4º - Considera-se praticado o crime no momento da ação ou omissão, ainda que outro seja o momento do resultado.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Territorialidade",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 5º - Aplica-se a lei brasileira, sem prejuízo de convenções, tratados e regras de direito internacional, ao crime cometido no território nacional.   \n § 1º - Para os efeitos penais, consideram-se como extensão do território nacional as embarcações e aeronaves brasileiras, de natureza pública ou a serviço do governo brasileiro onde quer que se encontrem, bem como as aeronaves e as embarcações brasileiras, mercantes ou de propriedade privada, que se achem, respectivamente, no espaço aéreo correspondente ou em alto-mar.    \n § 2º - É também aplicável a lei brasileira aos crimes praticados a bordo de aeronaves ou embarcações estrangeiras de propriedade privada, achando-se aquelas em pouso no território nacional ou em vôo no espaço aéreo correspondente, e estas em porto ou mar territorial do Brasil.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Lugar do crime",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 6º - Considera-se praticado o crime no lugar em que ocorreu a ação ou omissão, no todo ou em parte, bem como onde se produziu ou deveria produzir-se o resultado.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Extraterritorialidade",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 7º - Ficam sujeitos à lei brasileira, embora cometidos no estrangeiro: \r\n\r\n        I - os crimes: \r\n\r\n        a) contra a vida ou a liberdade do Presidente da República; \r\n\r\n        b) contra o patrimônio ou a fé pública da União, do Distrito Federal, de Estado, de Território, de Município, de empresa pública, sociedade de economia mista, autarquia ou fundação instituída pelo Poder Público; \r\n\r\n        c) contra a administração pública, por quem está a seu serviço; \r\n\r\n        d) de genocídio, quando o agente for brasileiro ou domiciliado no Brasil; \r\n\r\n        II - os crimes:  \r\n\r\n        a) que, por tratado ou convenção, o Brasil se obrigou a reprimir; \r\n\r\n        b) praticados por brasileiro; \r\n\r\n        c) praticados em aeronaves ou embarcações brasileiras, mercantes ou de propriedade privada, quando em território estrangeiro e aí não sejam julgados. \r\n\r\n        § 1º - Nos casos do inciso I, o agente é punido segundo a lei brasileira, ainda que absolvido ou condenado no estrangeiro.\r\n\r\n        § 2º - Nos casos do inciso II, a aplicação da lei brasileira depende do concurso das seguintes condições: \r\n\r\n        a) entrar o agente no território nacional; \r\n\r\n        b) ser o fato punível também no país em que foi praticado; \r\n\r\n        c) estar o crime incluído entre aqueles pelos quais a lei brasileira autoriza a extradição; \r\n\r\n        d) não ter sido o agente absolvido no estrangeiro ou não ter aí cumprido a pena; \r\n\r\n        e) não ter sido o agente perdoado no estrangeiro ou, por outro motivo, não estar extinta a punibilidade, segundo a lei mais favorável. \r\n\r\n        § 3º - A lei brasileira aplica-se também ao crime cometido por estrangeiro contra brasileiro fora do Brasil, se, reunidas as condições previstas no parágrafo anterior: \r\n\r\n        a) não foi pedida ou foi negada a extradição; \r\n\r\n        b) houve requisição do Ministro da Justiça.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Pena cumprida no estrangeiro",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 8º - A pena cumprida no estrangeiro atenua a pena imposta no Brasil pelo mesmo crime, quando diversas, ou nela é computada, quando idênticas.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Eficácia de sentença estrangeira",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 9º - A sentença estrangeira, quando a aplicação da lei brasileira produz na espécie as mesmas conseqüências, pode ser homologada no Brasil para: \r\n\r\n        I - obrigar o condenado à reparação do dano, a restituições e a outros efeitos civis;   \r\n\r\n        II - sujeitá-lo a medida de segurança.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Parágrafo único",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "A homologação depende: \r\n\r\n        a) para os efeitos previstos no inciso I, de pedido da parte interessada; \r\n\r\n        b) para os outros efeitos, da existência de tratado de extradição com o país de cuja autoridade judiciária emanou a sentença, ou, na falta de tratado, de requisição do Ministro da Justiça.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Contagem de prazo",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 10 - O dia do começo inclui-se no cômputo do prazo. Contam-se os dias, os meses e os anos pelo calendário comum.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Frações não computáveis da pena",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 11 - Desprezam-se, nas penas privativas de liberdade e nas restritivas de direitos, as frações de dia, e, na pena de multa, as frações de cruzeiro.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Legislação especial",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 12 - As regras gerais deste Código aplicam-se aos fatos incriminados por lei especial, se esta não dispuser de modo diverso.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DO CRIME",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DA IMPUTABILIDADE PENAL",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DO CONCURSO DE PESSOAS",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DAS PENAS",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DAS MEDIDAS DE SEGURANÇA",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DA AÇÃO PENAL",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DA EXTINÇÃO DA PUNIBILIDADE",
+        "filhos": []
+      }
+    ]
+  },
+  {
+    "tipo": "titulo",
+    "nome": "PARTE ESPECIAL",
+    "filhos": []
+  }
+]
