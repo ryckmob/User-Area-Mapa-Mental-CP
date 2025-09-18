@@ -1,19 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Other page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
-    </nav>
-    <main>
-      <h1>My other page</h1>
-    </main>
-  </body>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcards Jurídicos</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; font-family: 'Segoe UI', sans-serif; }
+  html, body { height: 100%; background: #f0f2f5; overflow: hidden; display: flex; flex-direction: column; }
+  nav { background: #1c1f26; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+  nav h1 { font-size: 1.5em; }
+  nav button { background: #4CAF50; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; }
+  .main-container { flex: 1; display: flex; justify-content: center; align-items: center; width: 100%; padding: 20px; flex-direction: column; overflow: hidden; }
+  .level-container, .sublevel-container { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+  .level-container button { background: #fff; border: 2px solid #1c1f26; border-radius: 12px; padding: 15px 20px; cursor: pointer; font-size: 1em; transition: 0.3s; }
+  .level-container button:hover { background: #e6e6e6; }
+
+  /* Segundo nível */
+  .sublevel-box { background: #fff; border-radius: 12px; padding: 20px; width: 100%; max-width: 600px; max-height: 60vh; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+  .sublevel-box label { text-align: left; cursor: pointer; display: flex; align-items: center; gap: 10px; font-size: 1em; }
+  .sublevel-box input { cursor: pointer; }
+
+  .flashcard-container { width: 90%; max-width: 600px; height: 70vh; perspective: 1500px; margin-top: 20px; }
+  .flashcard { width: 100%; height: 100%; background: white; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.2); display: flex; flex-direction: column; justify-content: center; align-items: center; transform-style: preserve-3d; transition: transform 0.8s; cursor: pointer; position: relative; }
+  .flashcard.flipped { transform: rotateY(180deg); }
+  .card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; text-align: center; }
+  .card-front p { font-size: 1.5em; }
+  .card-back { transform: rotateY(180deg); }
+  .card-back pre { font-size: 1em; white-space: pre-wrap; word-wrap: break-word; text-align: left; width: 100%; }
+  .controls { margin-top: 20px; display: flex; gap: 10px; justify-content: center; }
+  .controls button { padding: 10px 20px; border: none; border-radius: 8px; background: #1c1f26; color: white; cursor: pointer; transition: 0.3s; }
+  .controls button:hover { background: #4CAF50; }
+</style>
+</head>
+<body>
+
+<nav>
+  <h1>Flashcards Jurídicos</h1>
+  <button id="btn-back" style="display:none;">Voltar</button>
+</nav>
+
+<div class="main-container" id="main-container">
+  <div class="level-container" id="level-container"></div>
+  <div class="sublevel-container" id="sublevel-container" style="display:none;"></div>
+  <div class="flashcard-container" id="flashcard-container" style="display:none;"></div>
+  <div class="controls" id="controls" style="display:none;">
+    <button id="prev-card">Anterior</button>
+    <button id="next-card">Próximo</button>
+  </div>
+</div>
+
+<script>
+let data = [];
+let currentCards = [];
+let currentIndex = 0;
+
+// Carrega o JSON da estrutura dos flashcards
+async function loadJSON() {
+  try {
+    // Certifique-se de que o arquivo 'estrutura.json' está no mesmo diretório
+    const res = await fetch('./estrutura.json');
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    data = await res.json();
+    showLevel1();
+  } catch (error) {
+    console.error("Erro ao carregar o arquivo JSON:", error);
+    document.getElementById('main-container').innerHTML = '<p style="color: red; text-align: center;">Não foi possível carregar os dados dos flashcards. Verifique o console para mais detalhes.</p>';
+  }
+}
+
+// Mostra o primeiro nível de seleção (ex: "PARTE GERAL")
+function showLevel1() {
+  document.getElementById('level-container').style.display = 'flex';
+  document.getElementById('sublevel-container').style.display = 'none';
+  document.getElementById('flashcard-container').style.display = 'none';
+  document.getElementById('controls').style.display = 'none';
+  document.getElementById('btn-back').style.display = 'none';
+  
+  const container = document.getElementById('level-container');
+  container.innerHTML = '';
+  data.forEach((item, index) => {
+    const btn = document.createElement('button');
+    btn.textContent = item.nome;
+    btn.onclick = () => showLevel2(index);
+    container.appendChild(btn);
+  });
+}
+
+// Mostra o segundo nível de seleção (ex: "DA APLICAÇÃO DA LEI PENAL")
+function showLevel2(level1Index) {
+  const level1 = data[level1Index];
+  document.getElementById('level-container').style.display = 'none';
+  const container = document.getElementById('sublevel-container');
+  container.innerHTML = '';
+  container.style.display = 'flex';
+
+  const box = document.createElement('div');
+  box.className = 'sublevel-box';
+  
+  level1.filhos.forEach((item, index) => {
+    const label = document.createElement('label');
+    label.innerHTML = `<input type="checkbox" value="${index}"> ${item.nome}`;
+    box.appendChild(label);
+  });
+  
+  const startBtn = document.createElement('button');
+  startBtn.textContent = 'Iniciar';
+  startBtn.style.marginTop = '10px';
+  startBtn.onclick = () => startFlashcards(level1);
+  
+  container.appendChild(box);
+  container.appendChild(startBtn);
+  
+  document.getElementById('btn-back').style.display = 'inline-block';
+  document.getElementById('btn-back').onclick = showLevel1;
+}
+
+// Prepara e inicia a exibição dos flashcards selecionados
+function startFlashcards(level1) {
+  const checkboxes = document.querySelectorAll('#sublevel-container input:checked');
+  if(checkboxes.length === 0) { 
+    // Substituído o alert por uma mensagem mais amigável que não bloqueia a UI
+    const startBtn = document.querySelector('#sublevel-container button');
+    if (!document.getElementById('selection-error')) {
+      const errorMsg = document.createElement('p');
+      errorMsg.id = 'selection-error';
+      errorMsg.textContent = 'Selecione pelo menos um título para começar.';
+      errorMsg.style.color = 'red';
+      errorMsg.style.marginTop = '10px';
+      startBtn.insertAdjacentElement('afterend', errorMsg);
+    }
+    return;
+  }
+  
+  currentCards = [];
+  checkboxes.forEach(cb => {
+    const principios = level1.filhos[cb.value].filhos;
+    principios.forEach(principio => {
+      if(principio.filhos && principio.filhos.length > 0) {
+        currentCards.push({
+          principio: principio.nome,
+          artigo: getArtigos(principio.filhos)
+        });
+      }
+    });
+  });
+
+  currentIndex = 0;
+  document.getElementById('sublevel-container').style.display = 'none';
+  showFlashcard();
+  document.getElementById('flashcard-container').style.display = 'block';
+  document.getElementById('controls').style.display = 'flex';
+  document.getElementById('btn-back').style.display = 'inline-block';
+  document.getElementById('btn-back').onclick = () => showLevel2(data.findIndex(item => item.nome === level1.nome));
+}
+
+// Concatena os artigos de um princípio
+function getArtigos(filhos) {
+  return filhos.map(a => a.nome).join('\n\n');
+}
+
+// Mostra o flashcard atual
+function showFlashcard() {
+  const container = document.getElementById('flashcard-container');
+  container.innerHTML = '';
+  
+  if (currentCards.length === 0) return;
+  
+  const cardData = currentCards[currentIndex];
+  
+  const card = document.createElement('div');
+  card.className = 'flashcard';
+  // CORREÇÃO: A frente do card agora tem apenas o "principio". O verso tem o "artigo".
+  card.innerHTML = `
+    <div class="card-front">
+      <p>${cardData.principio}</p>
+    </div>
+    <div class="card-back">
+      <pre>${cardData.artigo}</pre>
+    </div>
+  `;
+  
+  card.onclick = () => card.classList.toggle('flipped');
+  container.appendChild(card);
+}
+
+document.getElementById('prev-card').onclick = () => {
+  if(currentIndex > 0) { 
+    currentIndex--; 
+    showFlashcard(); 
+  }
+};
+
+document.getElementById('next-card').onclick = () => {
+  if(currentIndex < currentCards.length - 1) { 
+    currentIndex++; 
+    showFlashcard(); 
+  }
+};
+
+// Inicia a aplicação
+loadJSON();
+</script>
+
+</body>
 </html>

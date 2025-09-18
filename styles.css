@@ -1,46 +1,218 @@
-* {
-  box-sizing: border-box;
-}
 
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
 }
 
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
+/* Título e Subtítulo */
+.header-container {
   text-align: center;
-  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+h1.main-title {
+  color: #6c5ce7;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+h1.main-title .emoji {
+  font-size: 1.8rem;
+  margin: 0 5px;
+}
+
+.subtitle {
   color: #555;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 0;
 }
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+.node {
+  margin: 6px 0;
+  display: flex;
+  flex-direction: column;
 }
 
-main {
-  padding: 1rem;
-}
-
-h1 {
+/* Etiquetas */
+.label {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75rem;
   font-weight: bold;
-  font-size: 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Cores das etiquetas */
+.label.titulo {
+  background-color: #6c5ce7;
+}
+.label.principio {
+  background-color: #00b894;
+}
+.label.artigo {
+  background-color: #fd79a8;
+}
+.label.sessao {
+  background-color: #e17055;
+}
+
+/* Botões */
+.button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #e0e0e0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  justify-content: space-between;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background-color: #d5d5d5;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+}
+
+/* Artigos */
+.article {
+  padding: 7px 10px;
+  border-left: 2px solid #bbb;
+  margin: 3px 0 3px 20px;
+  font-size: 0.93rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.article:hover {
+  background-color: #f0f0f0;
+}
+
+.children {
+  margin-left: 20px;
+  display: none;
+}
+
+.toggle-icon {
+  font-weight: bold;
+  color: #666;
+}
+
+/* Estilo do Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.modal-content.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.close-button {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 1010;
+  transition: color 0.2s;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #333;
+}
+
+.modal-body {
+  padding-top: 20px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  font-weight: normal;
+  white-space: pre-wrap;
+}
+
+.modal-body p {
+    margin: 0;
+}
+
+/* Estilo da etiqueta centralizada no modal */
+.modal-label-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+  .article {
+    font-size: 0.88rem;
+    padding: 6px 8px;
+  }
+  .label {
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    min-width: 40px;
+  }
+  .modal-content {
+    width: 90%;
+    margin: 20px;
+  }
 }

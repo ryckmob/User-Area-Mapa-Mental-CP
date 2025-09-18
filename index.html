@@ -4,229 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mapa Mental Código Penal</title>
-    <style>
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f9f9f9;
-        color: #333;
-      }
-
-      .container {
-        padding: 20px;
-        max-width: 900px;
-        margin: auto;
-      }
-
-      /* Título e Subtítulo */
-      .header-container {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      h1.main-title {
-        color: #6c5ce7;
-        font-size: 2rem;
-        margin-bottom: 5px;
-      }
-
-      h1.main-title .emoji {
-        font-size: 1.8rem;
-        margin: 0 5px;
-      }
-
-      .subtitle {
-        color: #555;
-        font-size: 1.1rem;
-        font-weight: 300;
-        margin-top: 0;
-      }
-
-      .node {
-        margin: 6px 0;
-        display: flex;
-        flex-direction: column;
-      }
-
-      /* Etiquetas */
-      .label {
-        display: inline-block;
-        padding: 2px 8px;
-        font-size: 0.75rem;
-        font-weight: bold;
-        border-radius: 12px;
-        color: #fff;
-        min-width: 50px;
-        text-align: center;
-      }
-
-      /* Cores das etiquetas */
-      .label.titulo {
-        background-color: #6c5ce7;
-      }
-      .label.principio {
-        background-color: #00b894;
-      }
-      .label.artigo {
-        background-color: #fd79a8;
-      }
-      .label.sessao {
-        background-color: #e17055;
-      }
-
-      /* Botões */
-      .button {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding: 10px 15px;
-        font-size: 1rem;
-        background-color: #e0e0e0;
-        color: #333;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        cursor: pointer;
-        text-align: left;
-        justify-content: space-between;
-        transition: background 0.2s;
-      }
-
-      .button:hover {
-        background-color: #d5d5d5;
-      }
-
-      .button-content {
-        display: flex;
-        align-items: center;
-        flex: 1;
-        gap: 10px;
-      }
-
-      /* Artigos */
-      .article {
-        padding: 7px 10px;
-        border-left: 2px solid #bbb;
-        margin: 3px 0 3px 20px;
-        font-size: 0.93rem;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        background-color: transparent;
-        color: #333;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-      }
-
-      .article:hover {
-        background-color: #f0f0f0;
-      }
-      
-      .children {
-        margin-left: 20px;
-        display: none;
-      }
-
-      .toggle-icon {
-        font-weight: bold;
-        color: #666;
-      }
-
-      /* Estilo do Modal */
-      .modal-overlay {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        justify-content: center;
-        align-items: center;
-      }
-
-      .modal-content {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        position: relative;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        width: 70%;
-        max-width: 700px;
-        max-height: 80vh;
-        overflow-y: auto;
-        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-        transform: scale(0.9);
-        opacity: 0;
-      }
-
-      .modal-content.active {
-        transform: scale(1);
-        opacity: 1;
-      }
-
-      .close-button {
-        color: #aaa;
-        font-size: 28px;
-        font-weight: bold;
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        cursor: pointer;
-        z-index: 1010;
-        transition: color 0.2s;
-      }
-
-      .close-button:hover,
-      .close-button:focus {
-        color: #333;
-      }
-
-      .modal-body {
-        padding-top: 20px;
-        color: #555;
-        line-height: 1.6;
-        font-size: 0.9rem;
-        font-weight: normal;
-        white-space: pre-wrap;
-      }
-      
-      .modal-body p {
-          margin: 0;
-      }
-
-      /* Estilo da etiqueta centralizada no modal */
-      .modal-label-container {
-        text-align: center;
-        margin-bottom: 10px;
-      }
-
-      @media (max-width: 768px) {
-        .button {
-          font-size: 0.9rem;
-          padding: 8px 12px;
-        }
-        .article {
-          font-size: 0.88rem;
-          padding: 6px 8px;
-        }
-        .label {
-          font-size: 0.7rem;
-          padding: 1px 6px;
-          min-width: 40px;
-        }
-        .modal-content {
-          width: 90%;
-          margin: 20px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <div class="container">
       <div class="header-container">
+        <style>
+          /* Estilo do botão em si */
+          .card-button {
+              display: inline-flex;
+              align-items: center;
+              padding: 12px 24px;
+              font-size: 16px;
+              font-weight: bold;
+              color: #fff;
+              background-color: #4CAF50;
+              border: none;
+              border-radius: 8px;
+              text-decoration: none;
+              cursor: pointer;
+              transition: background-color 0.3s, transform 0.2s;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+      
+          /* Efeito de hover */
+          .card-button:hover {
+              background-color: #45a049;
+              transform: translateY(-2px);
+          }
+      
+          /* Estilo para o ícone SVG */
+          .card-button .icon-card {
+              margin-right: 10px;
+              width: 24px;
+              height: 24px;
+              fill: #fff;
+          }
+      </style>
+      
+      <!-- Link que funciona como o botão, redirecionando para page2.html -->
+      <a href="/page2.html" class="card-button">
+          <!-- Ícone SVG de um cartão de visita ou documento -->
+          <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+              <path d="M17 6H7v2h10V6zM17 9H7v2h10V9zM17 12H7v2h10v-2zM17 15H7v2h10v-2z"/>
+          </svg>
+          <span>Ir para a Página 2</span>
+      </a>
+      
         <h1 class="main-title">
           Mapa Mental Direito Penal Completo
         </h1>
@@ -235,6 +60,7 @@
           <span class="emoji">🚀</span>
         </h1>
         
+
         <p class="subtitle">Estude por tópicos e revise como flashcards!</p>
       </div>
       
@@ -249,154 +75,9 @@
       </div>
     </div>
 
-    <script>
-      async function initMapa() {
-        const response = await fetch('estrutura.json');
-        const estrutura = await response.json();
-    
-        const modal = document.getElementById('articleModal');
-        const modalBody = modal.querySelector('.modal-body');
-        const closeModalButton = modal.querySelector('.close-button');
-    
-        function openModal(content) {
-          modalBody.innerHTML = content;
-          modal.style.display = 'flex';
-          setTimeout(() => {
-            modal.querySelector('.modal-content').classList.add('active');
-          }, 10);
-        }
-    
-        function closeModal() {
-          modal.querySelector('.modal-content').classList.remove('active');
-          setTimeout(() => {
-            modal.style.display = 'none';
-            modalBody.innerHTML = '';
-          }, 300);
-        }
-    
-        closeModalButton.addEventListener('click', closeModal);
-    
-        window.addEventListener('click', (event) => {
-          if (event.target === modal) {
-            closeModal();
-          }
-        });
-    
-        function criarLabel(tipo, textoPersonalizado = null) {
-          const span = document.createElement('span');
-          span.className = 'label ' + tipo;
-          span.textContent =
-            textoPersonalizado || tipo.charAt(0).toUpperCase() + tipo.slice(1);
-          return span;
-        }
-    
-        function processText(text) {
-          if (!text) return '';
-          // troca qualquer combinação de \n ou \r por <br>
-          return text.replace(/(\r\n|\n|\r)+/g, '<br>').trim();
-        }
-    
-        function findPrincipio(estrutura, artigoNode) {
-          function search(nodes) {
-            for (const node of nodes) {
-              if (node.tipo === 'principio' && node.filhos && node.filhos.length) {
-                if (node.filhos.includes(artigoNode)) {
-                  return node.nome;
-                }
-              }
-              if (node.filhos) {
-                const found = search(node.filhos);
-                if (found) return found;
-              }
-            }
-            return null;
-          }
-          return search(estrutura);
-        }
-    
-        function criarNode(node, parentNode = null) {
-          const div = document.createElement('div');
-          div.className = 'node';
-    
-          if (node.tipo === 'artigo') {
-            const artigoDiv = document.createElement('div');
-            artigoDiv.className = 'article';
-            artigoDiv.appendChild(criarLabel('artigo'));
-    
-            const texto = document.createElement('span');
-            // <<< CORRIGIDO AQUI >>>
-            texto.innerHTML = processText(node.nome);
-            artigoDiv.appendChild(texto);
-    
-            div.appendChild(artigoDiv);
-    
-            artigoDiv.addEventListener('click', () => {
-              const nomePrincipio = findPrincipio(estrutura, node);
-              let conteudoModal = '';
-    
-              if (nomePrincipio) {
-                conteudoModal +=
-                  '<div class="modal-label-container">' +
-                  criarLabel('principio', nomePrincipio).outerHTML +
-                  '</div>';
-              }
-    
-              conteudoModal += `<p>${processText(node.nome)}</p>`;
-              if (node.conteudo) {
-                conteudoModal += `<p>${processText(node.conteudo)}</p>`;
-              }
-              openModal(conteudoModal);
-            });
-          } else {
-            const button = document.createElement('button');
-            button.className = 'button';
-            const buttonContent = document.createElement('div');
-            buttonContent.className = 'button-content';
-    
-            const label = criarLabel(node.tipo);
-            const texto = document.createElement('span');
-            // <<< CORRIGIDO AQUI TAMBÉM >>>
-            texto.innerHTML = processText(node.nome);
-    
-            buttonContent.appendChild(label);
-            buttonContent.appendChild(texto);
-            button.appendChild(buttonContent);
-    
-            if (node.filhos && node.filhos.length) {
-              const icon = document.createElement('span');
-              icon.className = 'toggle-icon';
-              icon.textContent = '+';
-              button.appendChild(icon);
-            }
-    
-            div.appendChild(button);
-    
-            if (node.filhos && node.filhos.length) {
-              const childrenDiv = document.createElement('div');
-              childrenDiv.className = 'children';
-              node.filhos.forEach((filho) => {
-                const childNode = criarNode(filho, node);
-                childrenDiv.appendChild(childNode);
-              });
-              div.appendChild(childrenDiv);
-    
-              button.addEventListener('click', () => {
-                const isVisible = childrenDiv.style.display === 'block';
-                childrenDiv.style.display = isVisible ? 'none' : 'block';
-                const icon = button.querySelector('.toggle-icon');
-                if (icon) icon.textContent = isVisible ? '+' : '-';
-              });
-            }
-          }
-          return div;
-        }
-    
-        const mapaContainer = document.getElementById('mapaMental');
-        estrutura.forEach((node) => mapaContainer.appendChild(criarNode(node)));
-      }
-    
-      initMapa();
-    </script>
+    <script src="script.js"></script>
+
     
   </body>
 </html>
+
