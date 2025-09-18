@@ -155,7 +155,250 @@
       {
         "tipo": "titulo",
         "nome": "DO CRIME",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Relação de causalidade",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 13 - O resultado, de que depende a existência do crime, somente é imputável a quem lhe deu causa. Considera-se causa a ação ou omissão sem a qual o resultado não teria ocorrido.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Superveniência de causa independente",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 13,   § 1º - A superveniência de causa relativamente independente exclui a imputação quando, por si só, produziu o resultado; os fatos anteriores, entretanto, imputam-se a quem os praticou. ",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Relevância da omissão",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 13,  § 2º - A omissão é penalmente relevante quando o omitente devia e podia agir para evitar o resultado. O dever de agir incumbe a quem:\\n\\n\n\n        a) tenha por lei obrigação de cuidado, proteção ou vigilância; \\n\n\n        b) de outra forma, assumiu a responsabilidade de impedir o resultado;\\n\n\n        c) com seu comportamento anterior, criou o risco da ocorrência do resultado.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Crime consumado",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 14 - Diz-se o crime: \n\n        I - consumado, quando nele se reúnem todos os elementos de sua definição legal; ",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Tentativa",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 14 - Diz-se o crime:\n\n        II - tentado, quando, iniciada a execução, não se consuma por circunstâncias alheias à vontade do agente. ",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Pena de tentativa",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 14, Parágrafo único - Salvo disposição em contrário, pune-se a tentativa com a pena correspondente ao crime consumado, diminuída de um a dois terços.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Desistência voluntária e arrependimento eficaz",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 15 - O agente que, voluntariamente, desiste de prosseguir na execução ou impede que o resultado se produza, só responde pelos atos já praticados.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Arrependimento posterior",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 16 - Nos crimes cometidos sem violência ou grave ameaça à pessoa, reparado o dano ou restituída a coisa, até o recebimento da denúncia ou da queixa, por ato voluntário do agente, a pena será reduzida de um a dois terços.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Crime impossível",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": " Art. 17 - Não se pune a tentativa quando, por ineficácia absoluta do meio ou por absoluta impropriedade do objeto, é impossível consumar-se o crime.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Crime doloso",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 18 - Diz-se o crime:\n\n        I - doloso, quando o agente quis o resultado ou assumiu o risco de produzi-lo;",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Crime culposo",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 18 - Diz-se o crime: \n\n        II - culposo, quando o agente deu causa ao resultado por imprudência, negligência ou imperícia.\n\n        Parágrafo único - Salvo os casos expressos em lei, ninguém pode ser punido por fato previsto como crime, senão quando o pratica dolosamente.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Agravação pelo resultado",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 19 - Pelo resultado que agrava especialmente a pena, só responde o agente que o houver causado ao menos culposamente.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Erro sobre elementos do tipo",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 20 - O erro sobre elemento constitutivo do tipo legal de crime exclui o dolo, mas permite a punição por crime culposo, se previsto em lei.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Descriminantes putativas",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 20,   § 1º - É isento de pena quem, por erro plenamente justificado pelas circunstâncias, supõe situação de fato que, se existisse, tornaria a ação legítima. Não há isenção de pena quando o erro deriva de culpa e o fato é punível como crime culposo.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Erro determinado por terceiro",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 20,    § 2º - Responde pelo crime o terceiro que determina o erro.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "  Erro sobre a pessoa",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Aet. 20,   § 3º - O erro quanto à pessoa contra a qual o crime é praticado não isenta de pena. Não se consideram, neste caso, as condições ou qualidades da vítima, senão as da pessoa contra quem o agente queria praticar o crime. ",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Erro sobre a ilicitude do fato",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 21 - O desconhecimento da lei é inescusável. O erro sobre a ilicitude do fato, se inevitável, isenta de pena; se evitável, poderá diminuí-la de um sexto a um terço. \n\n        Parágrafo único - Considera-se evitável o erro se o agente atua ou se omite sem a consciência da ilicitude do fato, quando lhe era possível, nas circunstâncias, ter ou atingir essa consciência. ",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Coação irresistível e obediência hierárquica",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 22 - Se o fato é cometido sob coação irresistível ou em estrita obediência a ordem, não manifestamente ilegal, de superior hierárquico, só é punível o autor da coação ou da ordem.  ",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Exclusão de ilicitude",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 23 - Não há crime quando o agente pratica o fato:\n\n        I - em estado de necessidade;\n\n        II - em legítima defesa;\n\n        III - em estrito cumprimento de dever legal ou no exercício regular de direito.   ",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Excesso punível",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Parágrafo único - O agente, em qualquer das hipóteses deste artigo, responderá pelo excesso doloso ou culposo.  ",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Estado de necessidade",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 24 - Considera-se em estado de necessidade quem pratica o fato para salvar de perigo atual, que não provocou por sua vontade, nem podia de outro modo evitar, direito próprio ou alheio, cujo sacrifício, nas circunstâncias, não era razoável exigir-se.\n\n        § 1º - Não pode alegar estado de necessidade quem tinha o dever legal de enfrentar o perigo. \n\n        § 2º - Embora seja razoável exigir-se o sacrifício do direito ameaçado, a pena poderá ser reduzida de um a dois terços.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Legítima defesa",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 25 - Entende-se em legítima defesa quem, usando moderadamente dos meios necessários, repele injusta agressão, atual ou iminente, a direito seu ou de outrem. \n\n        Parágrafo único. Observados os requisitos previstos no caput deste artigo, considera-se também em legítima defesa o agente de segurança pública que repele agressão ou risco de agressão a vítima mantida refém durante a prática de crimes.      ",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
