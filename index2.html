@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa Mental Código Penal</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <style>
+          /* Estilo do botão em si */
+          .card-button {
+              display: inline-flex;
+              align-items: center;
+              padding: 12px 24px;
+              font-size: 16px;
+              font-weight: bold;
+              color: #fff;
+              background-color: #4CAF50;
+              border: none;
+              border-radius: 8px;
+              text-decoration: none;
+              cursor: pointer;
+              transition: background-color 0.3s, transform 0.2s;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+      
+          /* Efeito de hover */
+          .card-button:hover {
+              background-color: #45a049;
+              transform: translateY(-2px);
+          }
+      
+          /* Estilo para o ícone SVG */
+          .card-button .icon-card {
+              margin-right: 10px;
+              width: 24px;
+              height: 24px;
+              fill: #fff;
+          }
+      </style>
+      
+      <!-- Link que funciona como o botão, redirecionando para page2.html -->
+      <a href="/page2.html" class="card-button">
+          <!-- Ícone SVG de um cartão de visita ou documento -->
+          <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+              <path d="M17 6H7v2h10V6zM17 9H7v2h10V9zM17 12H7v2h10v-2zM17 15H7v2h10v-2z"/>
+          </svg>
+          <span>Ir para a Página 2</span>
+      </a>
+      
+        <h1 class="main-title">
+          Mapa Mental Direito Penal Completo
+        </h1>
+        <h1 class="main-title">
+          <span class="emoji">✨</span>
+          <span class="emoji">🚀</span>
+        </h1>
+        
+
+        <p class="subtitle">Estude por tópicos e revise como flashcards!</p>
+      </div>
+      
+      <div id="mapaMental"></div>
+    </div>
+
+    <div id="articleModal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-body">
+          </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+  </body>
+</html>
+
