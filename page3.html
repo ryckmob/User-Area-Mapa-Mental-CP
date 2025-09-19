@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plataforma Suprema de Revisão Penal</title>
+    <link rel="stylesheet" href="/styles.css">
+
+    <style>
+      /* Reset básico */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Roboto, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+      }
+
+      .header-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .main-title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #ffd700, #ffa500);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 10px 0;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #fff;
+        margin-top: 12px;
+      }
+
+      /* Botão premium */
+      .card-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 14px 28px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(135deg, #4caf50, #2e7d32);
+        border: none;
+        border-radius: 12px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        margin-bottom: 20px;
+      }
+
+      .card-button:hover {
+        background: linear-gradient(135deg, #43a047, #1b5e20);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+      }
+
+      .icon-card {
+        margin-right: 12px;
+        width: 24px;
+        height: 24px;
+        fill: #fff;
+      }
+
+      /* Artigos no mapa mental */
+      #mapaMental .article {
+            background: rgba(30, 30, 30, 0.95); /* mesmo fundo do modal */
+            color: #fff; /* texto branco */
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+      /* Modal premium (glass effect) */
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(6px);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .modal-content {
+        background: rgba(30, 30, 30, 0.95); /* fundo consistente com os artigos */
+        color: #fff; /* texto branco */
+        border-radius: 16px;
+        padding: 25px;
+        max-width: 700px;
+        width: 90%;
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+        animation: fadeIn 0.3s ease;
+        }
+
+       #articleModal > div > div > p {
+        color: white;
+       }
+
+      .close-button {
+        font-size: 26px;
+        cursor: pointer;
+        float: right;
+        color: #bbb;
+        transition: 0.2s;
+      }
+
+      .close-button:hover {
+        color: #fff;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.9); }
+        to { opacity: 1; transform: scale(1); }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header-container">
+
+        <!-- Botão -->
+        <a href="/page2.html" class="card-button">
+          <svg class="icon-card" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+              <path d="M17 6H7v2h10V6zM17 9H7v2h10V9zM17 12H7v2h10v-2zM17 15H7v2h10v-2z"/>
+          </svg>
+          <span>Ir para a Página 2</span>
+        </a>
+
+        <!-- Título -->
+        <h1 class="main-title">Plataforma Suprema de Revisão Penal</h1>
+        <p class="subtitle">
+          É uma experiência de estudo onde cada clique transforma um tópico complexo em uma revisão clara e objetiva.  
+          Como degustar o Direito Penal em camadas.
+        </p>
+      </div>
+
+      <!-- Aqui entra o conteúdo dinâmico -->
+      <div id="mapaMental"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="articleModal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
