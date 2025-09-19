@@ -166,13 +166,23 @@
 
       /* Nome do app embaixo, cor gold premium */
       #splashScreen h4 {
-        font-size: 1rem;
-        font-weight: 800;
-        color: #ffd700; /* dourado */
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin: 0;
+      font-size: 1rem;
+      font-weight: 800;
+      color: #ffd700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0 auto; /* centraliza */
+      width: 300px; 
+      word-wrap: break-word;
+      text-align: center;
+    }
+
+    /* Para telas pequenas */
+    @media (max-width: 500px) {
+      #splashScreen h4 {
+        width: 100%; /* ocupa toda a largura */
       }
+    }
 
     </style>
   </head>
