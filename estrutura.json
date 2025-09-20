@@ -195,7 +195,7 @@
             "filhos": [
               {
                 "tipo": "artigo",
-                "nome": "Art. 14 - Diz-se o crime: \n\n        I - consumado, quando nele se reúnem todos os elementos de sua definição legal; ",
+                "nome": "Art. 14 - Diz-se o crime:\r\n\r\n        I - consumado, quando nele se reúnem todos os elementos de sua definição legal; ",
                 "filhos": []
               }
             ]
@@ -206,7 +206,7 @@
             "filhos": [
               {
                 "tipo": "artigo",
-                "nome": "Art. 14 - Diz-se o crime:\n\n        II - tentado, quando, iniciada a execução, não se consuma por circunstâncias alheias à vontade do agente. ",
+                "nome": "Art. 14 - Diz-se o crime: \r\n\r\n II - tentado, quando, iniciada a execução, não se consuma por circunstâncias alheias à vontade do agente.",
                 "filhos": []
               }
             ]
@@ -403,17 +403,284 @@
       {
         "tipo": "titulo",
         "nome": "DA IMPUTABILIDADE PENAL",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Inimputáveis",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 26 - É isento de pena o agente que, por doença mental ou desenvolvimento mental incompleto ou retardado, era, ao tempo da ação ou da omissão, inteiramente incapaz de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Redução de pena",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Parágrafo único - A pena pode ser reduzida de um a dois terços, se o agente, em virtude de perturbação de saúde mental ou por desenvolvimento mental incompleto ou retardado não era inteiramente capaz de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Menores de dezoito anos",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 27 - Os menores de 18 (dezoito) anos são penalmente inimputáveis, ficando sujeitos às normas estabelecidas na legislação especial.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Emoção e paixão",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 28 - Não excluem a imputabilidade penal:     \r\n\r\n        I - a emoção ou a paixão;",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Embriaguez",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 28 - Não excluem a imputabilidade penal:\r\n\r\n\tII - a embriaguez, voluntária ou culposa, pelo álcool ou substância de efeitos análogos. \r\n\r\n        § 1º - É isento de pena o agente que, por embriaguez completa, proveniente de caso fortuito ou força maior, era, ao tempo da ação ou da omissão, inteiramente incapaz de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento. \r\n\r\n        § 2º - A pena pode ser reduzida de um a dois terços, se o agente, por embriaguez, proveniente de caso fortuito ou força maior, não possuía, ao tempo da ação ou da omissão, a plena capacidade de entender o caráter ilícito do fato ou de determinar-se de acordo com esse entendimento.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
         "nome": "DO CONCURSO DE PESSOAS",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Concurso de Pessoas Art. 29",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 29 - Quem, de qualquer modo, concorre para o crime incide nas penas a este cominadas, na medida de sua culpabilidade.\r\n\r\n        § 1º - Se a participação for de menor importância, a pena pode ser diminuída de um sexto a um terço. \r\n\r\n        § 2º - Se algum dos concorrentes quis participar de crime menos grave, ser-lhe-á aplicada a pena deste; essa pena será aumentada até metade, na hipótese de ter sido previsível o resultado mais grave.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Circunstâncias incomunicáveis",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 30 - Não se comunicam as circunstâncias e as condições de caráter pessoal, salvo quando elementares do crime.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Casos de impunibilidade",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 31 - O ajuste, a determinação ou instigação e o auxílio, salvo disposição expressa em contrário, não são puníveis, se o crime não chega, pelo menos, a ser tentado.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
         "nome": "DAS PENAS",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Das espécies de pena – Art. 32",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 32 - As penas são:\r\n\r\n        I - privativas de liberdade;\r\n\r\n        II - restritivas de direitos;\r\n\r\n        III - de multa",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Reclusão e Detenção – Art. 33",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 33 - A pena de reclusão deve ser cumprida em regime fechado, semi-aberto ou aberto. A de detenção, em regime semi-aberto, ou aberto, salvo necessidade de transferência a regime fechado. \r\n\r\n        § 1º - Considera-se:\r\n\r\n        a) regime fechado a execução da pena em estabelecimento de segurança máxima ou média;\r\n\r\n        b) regime semi-aberto a execução da pena em colônia agrícola, industrial ou estabelecimento similar;\r\n\r\n        c) regime aberto a execução da pena em casa de albergado ou estabelecimento adequado.\r\n\r\n        § 2º - As penas privativas de liberdade deverão ser executadas em forma progressiva, segundo o mérito do condenado, observados os seguintes critérios e ressalvadas as hipóteses de transferência a regime mais rigoroso:\r\n\r\n        a) o condenado a pena superior a 8 (oito) anos deverá começar a cumpri-la em regime fechado;\r\n\r\n        b) o condenado não reincidente, cuja pena seja superior a 4 (quatro) anos e não exceda a 8 (oito), poderá, desde o princípio, cumpri-la em regime semi-aberto;\r\n\r\n        c) o condenado não reincidente, cuja pena seja igual ou inferior a 4 (quatro) anos, poderá, desde o início, cumpri-la em regime aberto.\r\n\r\n        § 3º - A determinação do regime inicial de cumprimento da pena far-se-á com observância dos critérios previstos no art. 59 deste Código.\r\n\r\n        § 4o O condenado por crime contra a administração pública terá a progressão de regime do cumprimento da pena condicionada à reparação do dano que causou, ou à devolução do produto do ilícito praticado, com os acréscimos legais.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Regras do regime fechado – Art. 34",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 34 - O condenado será submetido, no início do cumprimento da pena, a exame criminológico de classificação para individualização da execução. \r\n\r\n        § 1º - O condenado fica sujeito a trabalho no período diurno e a isolamento durante o repouso noturno. \r\n\r\n        § 2º - O trabalho será em comum dentro do estabelecimento, na conformidade das aptidões ou ocupações anteriores do condenado, desde que compatíveis com a execução da pena.\r\n\r\n        § 3º - O trabalho externo é admissível, no regime fechado, em serviços ou obras públicas.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Regras do regime semiaberto – Art. 35",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Referência:\r\n\"O condenado será submetido, no início do cumprimento da pena, a exame criminológico de classificação para individualização da execução.\"\r\n\r\n\r\nArt. 35 - Aplica-se a norma do art. 34 deste Código, caput, ao condenado que inicie o cumprimento da pena em regime semi-aberto. \r\n\r\n        § 1º - O condenado fica sujeito a trabalho em comum durante o período diurno, em colônia agrícola, industrial ou estabelecimento similar. \r\n\r\n        § 2º - O trabalho externo é admissível, bem como a freqüência a cursos supletivos profissionalizantes, de instrução de segundo grau ou superior.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Regras do regime aberto – Art. 36",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 36 - O regime aberto baseia-se na autodisciplina e senso de responsabilidade do condenado. \r\n\r\n        § 1º - O condenado deverá, fora do estabelecimento e sem vigilância, trabalhar, freqüentar curso ou exercer outra atividade autorizada, permanecendo recolhido durante o período noturno e nos dias de folga. \r\n\r\n        § 2º - O condenado será transferido do regime aberto, se praticar fato definido como crime doloso, se frustrar os fins da execução ou se, podendo, não pagar a multa cumulativamente aplicada.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Regime especial – Art. 37",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 37 - As mulheres cumprem pena em estabelecimento próprio, observando-se os deveres e direitos inerentes à sua condição pessoal, bem como, no que couber, o disposto neste Capítulo.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Direitos do preso – Art. 38",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 38 - O preso conserva todos os direitos não atingidos pela perda da liberdade, impondo-se a todas as autoridades o respeito à sua integridade física e moral.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Trabalho do preso – Art. 39",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 39 - O trabalho do preso será sempre remunerado, sendo-lhe garantidos os benefícios da Previdência Social.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Legislação especial – Art. 40",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 40 - A legislação especial regulará a matéria prevista nos arts. 38 e 39 deste Código, bem como especificará os deveres e direitos do preso, os critérios para revogação e transferência dos regimes e estabelecerá as infrações disciplinares e correspondentes sanções.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Superveniência de doença mental – Art. 41",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 41 - O condenado a quem sobrevém doença mental deve ser recolhido a hospital de custódia e tratamento psiquiátrico ou, à falta, a outro estabelecimento adequado.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas privativas de liberdade: Detração – Art. 42",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 42 - Computam-se, na pena privativa de liberdade e na medida de segurança, o tempo de prisão provisória, no Brasil ou no estrangeiro, o de prisão administrativa e o de internação em qualquer dos estabelecimentos referidos no artigo anterior.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas restritivas de direitos – Art. 43",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 43. As penas restritivas de direitos são: \r\n\r\n        I - prestação pecuniária; \r\n\r\n        II - perda de bens e valores; \r\n\r\n        III - limitação de fim de semana. \r\n\r\n        IV - prestação de serviço à comunidade ou a entidades públicas; \r\n\r\n        V - interdição temporária de direitos; \r\n\r\n        VI - limitação de fim de semana. \r\n\r\n        Art. 44. As penas restritivas de direitos são autônomas e substituem as privativas de liberdade, quando: \r\n\r\n        I – aplicada pena privativa de liberdade não superior a quatro anos e o crime não for cometido com violência ou grave ameaça à pessoa ou, qualquer que seja a pena aplicada, se o crime for culposo;\r\n\r\n        II – o réu não for reincidente em crime doloso; \r\n\r\n        III – a culpabilidade, os antecedentes, a conduta social e a personalidade do condenado, bem como os motivos e as circunstâncias indicarem que essa substituição seja suficiente. \r\n\r\n        § 2o Na condenação igual ou inferior a um ano, a substituição pode ser feita por multa ou por uma pena restritiva de direitos; se superior a um ano, a pena privativa de liberdade pode ser substituída por uma pena restritiva de direitos e multa ou por duas restritivas de direitos.  \r\n\r\n        § 3o Se o condenado for reincidente, o juiz poderá aplicar a substituição, desde que, em face de condenação anterior, a medida seja socialmente recomendável e a reincidência não se tenha operado em virtude da prática do mesmo crime. \r\n\r\n        § 4o A pena restritiva de direitos converte-se em privativa de liberdade quando ocorrer o descumprimento injustificado da restrição imposta. No cálculo da pena privativa de liberdade a executar será deduzido o tempo cumprido da pena restritiva de direitos, respeitado o saldo mínimo de trinta dias de detenção ou reclusão. \r\n\r\n        § 5o Sobrevindo condenação a pena privativa de liberdade, por outro crime, o juiz da execução penal decidirá sobre a conversão, podendo deixar de aplicá-la se for possível ao condenado cumprir a pena substitutiva anterior.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas restritivas de direitos: Conversão das penas restritivas de direitos – Art. 45",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 45. Na aplicação da substituição prevista no artigo anterior, proceder-se-á na forma deste e dos arts. 46, 47 e 48.\r\n\r\n        § 1o A prestação pecuniária consiste no pagamento em dinheiro à vítima, a seus dependentes ou a entidade pública ou privada com destinação social, de importância fixada pelo juiz, não inferior a 1 (um) salário mínimo nem superior a 360 (trezentos e sessenta) salários mínimos. O valor pago será deduzido do montante de eventual condenação em ação de reparação civil, se coincidentes os beneficiários. \r\n\r\n        § 2o No caso do parágrafo anterior, se houver aceitação do beneficiário, a prestação pecuniária pode consistir em prestação de outra natureza. \r\n\r\n        § 3o A perda de bens e valores pertencentes aos condenados dar-se-á, ressalvada a legislação especial, em favor do Fundo Penitenciário Nacional, e seu valor terá como teto – o que for maior – o montante do prejuízo causado ou do provento obtido pelo agente ou por terceiro, em conseqüência da prática do crime.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas restritivas de direitos: Prestação de serviços à comunidade ou a entidades públicas – Art. 46",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 46. A prestação de serviços à comunidade ou a entidades públicas é aplicável às condenações superiores a seis meses de privação da liberdade. \r\n\r\n        § 1o A prestação de serviços à comunidade ou a entidades públicas consiste na atribuição de tarefas gratuitas ao condenado.\r\n\r\n        § 2o A prestação de serviço à comunidade dar-se-á em entidades assistenciais, hospitais, escolas, orfanatos e outros estabelecimentos congêneres, em programas comunitários ou estatais.\r\n\r\n        § 3o As tarefas a que se refere o § 1o serão atribuídas conforme as aptidões do condenado, devendo ser cumpridas à razão de uma hora de tarefa por dia de condenação, fixadas de modo a não prejudicar a jornada normal de trabalho.\r\n\r\n        § 4o Se a pena substituída for superior a um ano, é facultado ao condenado cumprir a pena substitutiva em menor tempo (art. 55), nunca inferior à metade da pena privativa de liberdade fixada.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas restritivas de direitos: Interdição temporária de direitos – Art. 47",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 47 - As penas de interdição temporária de direitos são:\r\n\r\n        I - proibição do exercício de cargo, função ou atividade pública, bem como de mandato eletivo; \r\n\r\n        II - proibição do exercício de profissão, atividade ou ofício que dependam de habilitação especial, de licença ou autorização do poder público;\r\n\r\n        III - suspensão de autorização ou de habilitação para dirigir veículo.\r\n\r\n        IV – proibição de freqüentar determinados lugares. \r\n\r\n        V - proibição de inscrever-se em concurso, avaliação ou exame públicos.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Das penas restritivas de direitos: Limitação de fim de semana – Art. 48",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 48 - A limitação de fim de semana consiste na obrigação de permanecer, aos sábados e domingos, por 5 (cinco) horas diárias, em casa de albergado ou outro estabelecimento adequado.  \r\n\r\n Parágrafo único - Durante a permanência poderão ser ministrados ao condenado cursos e palestras ou atribuídas atividades educativas.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
