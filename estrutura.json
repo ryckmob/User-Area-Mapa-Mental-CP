@@ -685,17 +685,295 @@
       {
         "tipo": "titulo",
         "nome": "DAS MEDIDAS DE SEGURANÇA",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Espécies de medidas de segurança",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 96. As medidas de segurança são:  \r\n     I - Internação em hospital de custódia e tratamento psiquiátrico ou, à falta, em outro \r\nestabelecimento adequado;  \r\n     II - sujeição a tratamento ambulatorial.  \r\n     Parágrafo único - Extinta a punibilidade, não se impõe medida de segurança nem subsiste a \r\nque tenha sido imposta.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Imposição da medida de segurança para inimputável",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 97 - Se o agente for inimputável, o juiz determinará sua internação (art. 26). Se, todavia, \r\no fato previsto como crime for punível com detenção, poderá o juiz submetê-lo a tratamento \r\nambulatorial.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Prazo",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "§ 1º - A internação, ou tratamento ambulatorial, será por tempo indeterminado, perdurando \r\nenquanto não for averiguada, mediante perícia médica, a cessação de periculosidade. O prazo \r\nmínimo deverá ser de 1 (um) a 3 (três) anos.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Perícia médica",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "§ 2º - A perícia médica realizar-se-á ao termo do prazo mínimo fixado e deverá ser repetida de \r\nano em ano, ou a qualquer tempo, se o determinar o juiz da execução.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Desinternação ou liberação condicional",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "§ 3º - A desinternação, ou a liberação, será sempre condicional devendo ser restabelecida a \r\nsituação anterior se o agente, antes do decurso de 1 (um) ano, pratica fato indicativo de persistência \r\nde sua periculosidade.  \r\n     § 4º - Em qualquer fase do tratamento ambulatorial, poderá o juiz determinar a internação do \r\nagente, se essa providência for necessária para fins curativos.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Substituição da pena por medida de segurança para o semi-imputável",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 98 - Na hipótese do parágrafo único do art. 26 deste Código e necessitando o condenado \r\nde especial tratamento curativo, a pena privativa de liberdade pode ser substituída pela internação, \r\nou tratamento ambulatorial, pelo prazo mínimo de 1 (um) a 3 (três) anos, nos termos do artigo \r\nanterior e respectivos §§ 1º a 4º.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Direitos do internado",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 99 - O internado será recolhido a estabelecimento dotado de características hospitalares \r\ne será submetido a tratamento.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
         "nome": "DA AÇÃO PENAL",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Ação pública e de iniciativa privada",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 100 - A ação penal é pública, salvo quando a lei expressamente a declara privativa do \r\nofendido.  \r\n     § 1º - A ação pública é promovida pelo Ministério Público, dependendo, quando a lei o exige, \r\nde representação do ofendido ou de requisição do Ministro da Justiça.  \r\n     § 2º - A ação de iniciativa privada é promovida mediante queixa do ofendido ou de quem \r\ntenha qualidade para representá-lo.  \r\n     § 3º - A ação de iniciativa privada pode intentar-se nos crimes de ação pública, se o \r\nMinistério Público não oferece denúncia no prazo legal.  \r\n     § 4º - No caso de morte do ofendido ou de ter sido declarado ausente por decisão judicial, o \r\ndireito de oferecer queixa ou de prosseguir na ação passa ao cônjuge, ascendente, descendente ou \r\nirmão.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "A ação penal no crime complexo",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 101 - Quando a lei considera como elemento ou circunstâncias do tipo legal fatos que, \r\npor si mesmos, constituem crimes, cabe ação pública em relação àquele, desde que, em relação a \r\nqualquer destes, se deva proceder por iniciativa do Ministério Público.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Irretratabilidade da representação",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 102 - A representação será irretratável depois de oferecida a denúncia.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Decadência do direito de queixa ou de representação",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 103 - Salvo disposição expressa em contrário, o ofendido decai do direito de queixa ou \r\nde representação se não o exerce dentro do prazo de 6 (seis) meses, contado do dia em que veio a \r\nsaber quem é o autor do crime, ou, no caso do § 3º do art. 100 deste Código, do dia em que se \r\nesgota o prazo para oferecimento da denúncia.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Renúncia expressa ou tácita do direito de queixa",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 104 - O direito de queixa não pode ser exercido quando renunciado expressa ou \r\ntacitamente.    \r\n     Parágrafo único - Importa renúncia tácita ao direito de queixa a prática de ato incompatível \r\ncom a vontade de exercê-lo; não a implica, todavia, o fato de receber o ofendido a indenização do \r\ndano causado pelo crime.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Perdão do ofendido",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 105 - O perdão do ofendido, nos crimes em que somente se procede mediante queixa, \r\nobsta ao prosseguimento da ação.  \r\n     Art. 106 - O perdão, no processo ou fora dele, expresso ou tácito:  \r\n     I - se concedido a qualquer dos querelados, a todos aproveita;  \r\n     II - se concedido por um dos ofendidos, não prejudica o direito dos outros;  \r\n     III - se o querelado o recusa, não produz efeito.  \r\n     § 1º - Perdão tácito é o que resulta da prática de ato incompatível com a vontade de \r\nprosseguir na ação.   \r\n     § 2º - Não é admissível o perdão depois que passa em julgado a sentença condenatória.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
         "nome": "DA EXTINÇÃO DA PUNIBILIDADE",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Extinção da punibilidade",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 107 - Extingue-se a punibilidade:  \r\n     I - pela morte do agente; \r\n     II - pela anistia, graça ou indulto; \r\n     III - pela retroatividade de lei que não mais considera o fato como criminoso; \r\n     IV - pela prescrição, decadência ou perempção; \r\n     V - pela renúncia do direito de queixa ou pelo perdão aceito, nos crimes de ação privada; \r\n     VI - pela retratação do agente, nos casos em que a lei a admite; \r\n     IX - pelo perdão judicial, nos casos previstos em lei. \r\n     Art. 108 - A extinção da punibilidade de crime que é pressuposto, elemento constitutivo ou \r\ncircunstância agravante de outro não se estende a este. Nos crimes conexos, a extinção da \r\npunibilidade de um deles não impede, quanto aos outros, a agravação da pena resultante da \r\nconexão.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Prescrição antes de transitar em julgado a sentença",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 109.  A prescrição, antes de transitar em julgado a sentença final, salvo o disposto no § 1o \r\ndo art. 110 deste Código, regula-se pelo máximo da pena privativa de liberdade cominada ao crime, \r\nverificando-se:         \r\n     I - em vinte anos, se o máximo da pena é superior a doze; \r\n     II - em dezesseis anos, se o máximo da pena é superior a oito anos e não excede a doze; \r\n     III - em doze anos, se o máximo da pena é superior a quatro anos e não excede a oito; \r\n     IV - em oito anos, se o máximo da pena é superior a dois anos e não excede a quatro; \r\n     V - em quatro anos, se o máximo da pena é igual a um ano ou, sendo superior, não excede a \r\ndois; \r\n        VI - em 3 (três) anos, se o máximo da pena é inferior a 1 (um) ano.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Prescrição das penas restritivas de direito",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Parágrafo único - Aplicam-se às penas restritivas de direito os mesmos prazos previstos para as \r\nprivativas de liberdade.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Prescrição depois de transitar em julgado sentença final condenatória",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 110 - A prescrição depois de transitar em julgado a sentença condenatória regula-se pela \r\npena aplicada e verifica-se nos prazos fixados no artigo anterior, os quais se aumentam de um terço, \r\nse o condenado é reincidente.          \r\n        § 1o  A prescrição, depois da sentença condenatória com trânsito em julgado para a acusação \r\nou depois de improvido seu recurso, regula-se pela pena aplicada, não podendo, em nenhuma \r\nhipótese, ter por termo inicial data anterior à da denúncia ou queixa.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Termo inicial da prescrição antes de transitar em julgado a sentença final",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 111 - A prescrição, antes de transitar em julgado a sentença final, começa a correr:  \r\n     I - do dia em que o crime se consumou;  \r\n     II - no caso de tentativa, do dia em que cessou a atividade criminosa;  \r\n     III - nos crimes permanentes, do dia em que cessou a permanência;  \r\n     IV - nos de bigamia e nos de falsificação ou alteração de assentamento do registro civil, da \r\ndata em que o fato se tornou conhecido.  \r\n        V - nos crimes contra a dignidade sexual ou que envolvam violência contra a criança e o \r\nadolescente, previstos neste Código ou em legislação especial, da data em que a vítima completar \r\n18 (dezoito) anos, salvo se a esse tempo já houver sido proposta a ação penal.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Termo inicial da prescrição após a sentença condenatória irrecorrível",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 112 - No caso do art. 110 deste Código, a prescrição começa a correr:  \r\n     I - do dia em que transita em julgado a sentença condenatória, para a acusação, ou a que \r\nrevoga a suspensão condicional da pena ou o livramento condicional;  \r\n     II - do dia em que se interrompe a execução, salvo quando o tempo da interrupção deva \r\ncomputar-se na pena.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Prescrição no caso de evasão do condenado ou de revogação do livramento \r\ncondicional",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 113 - No caso de evadir-se o condenado ou de revogar-se o livramento condicional, a \r\nprescrição é regulada pelo tempo que resta da pena.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Prescrição da multa",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 114 - A prescrição da pena de multa ocorrerá: \r\n     I - em 2 (dois) anos, quando a multa for a única cominada ou aplicada; \r\n     II - no mesmo prazo estabelecido para prescrição da pena privativa de liberdade, quando a \r\nmulta for alternativa ou cumulativamente cominada ou cumulativamente aplicada.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Redução dos prazos de prescrição",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 115. São reduzidos de metade os prazos de prescrição quando o criminoso era, ao tempo \r\ndo crime, menor de 21 (vinte e um) anos ou, na data da sentença, maior de 70 (setenta) anos, salvo \r\nse o crime envolver violência sexual contra a mulher.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Causas impeditivas da prescrição",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 116 - Antes de passar em julgado a sentença final, a prescrição não corre: \r\n      I - enquanto não resolvida, em outro processo, questão de que dependa o reconhecimento \r\nda existência do crime; \r\nII - enquanto o agente cumpre pena no exterior;              \r\nIII - na pendência de embargos de declaração ou de recursos aos Tribunais Superiores, \r\nquando inadmissíveis; e             \r\nIV - enquanto não cumprido ou não rescindido o acordo de não persecução penal.             \r\n     Parágrafo único - Depois de passada em julgado a sentença condenatória, a prescrição não \r\ncorre durante o tempo em que o condenado está preso por outro motivo.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Causas interruptivas da prescrição",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 117 - O curso da prescrição interrompe-se: \r\n     I - pelo recebimento da denúncia ou da queixa; \r\n     II - pela pronúncia;  \r\n     III - pela decisão confirmatória da pronúncia;  \r\n        IV - pela publicação da sentença ou acórdão condenatórios recorríveis; \r\n        V - pelo início ou continuação do cumprimento da pena; \r\n     VI - pela reincidência. \r\n        § 1º - Excetuados os casos dos incisos V e VI deste artigo, a interrupção da prescrição produz \r\nefeitos relativamente a todos os autores do crime. Nos crimes conexos, que sejam objeto do mesmo \r\nprocesso, estende-se aos demais a interrupção relativa a qualquer deles.   \r\n     § 2º - Interrompida a prescrição, salvo a hipótese do inciso V deste artigo, todo o prazo \r\ncomeça a correr, novamente, do dia da interrupção.  \r\n     Art. 118 - As penas mais leves prescrevem com as mais graves.  \r\n       Art. 119 - No caso de concurso de crimes, a extinção da punibilidade incidirá sobre a pena de \r\ncada um, isoladamente.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Perdão judicial",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 120 - A sentença que conceder perdão judicial não será considerada para efeitos de \r\nreincidência.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
