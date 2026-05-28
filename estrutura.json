@@ -980,6 +980,118 @@
   {
     "tipo": "titulo",
     "nome": "PARTE ESPECIAL",
-    "filhos": []
+    "filhos": [
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A PESSOA",
+        "filhos": [
+          {
+            "tipo": "capitulo",
+            "nome": "DOS CRIMES CONTRA A VIDA",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Homicídio simples",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 121. Matar alguem: \r\n     Pena - reclusão, de seis a vinte anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Caso de diminuição de pena",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 121. § 1º Se o agente comete o crime impelido por motivo de relevante valor social ou moral, ou \r\nsob o domínio de violenta emoção, logo em seguida a injusta provocação da vítima, o juiz pode \r\nreduzir a pena de um sexto a um terço.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Homicídio qualificado",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 121.   § 2° Se o homicídio é cometido: \r\n     I - mediante paga ou promessa de recompensa, ou por outro motivo torpe; \r\n     II - por motivo futil; \r\n     III - com emprego de veneno, fogo, explosivo, asfixia, tortura ou outro meio insidioso ou cruel, \r\nou de que possa resultar perigo comum; \r\nIV - à traição, de emboscada, ou mediante dissimulação ou outro recurso que dificulte ou \r\ntorne impossivel a defesa do ofendido; \r\nV - para assegurar a execução, a ocultação, a impunidade ou vantagem de outro crime: \r\nPena - reclusão, de doze a trinta anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Feminicídio",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 121. VII – contra:    \r\na) autoridade ou agente descrito nos e , integrantes do sistema prisional e da Força Nacional \r\nde Segurança Pública, no exercício da função ou em decorrência dela, ou contra seu cônjuge, \r\ncompanheiro ou parente consanguíneo até o terceiro grau, em razão dessa condição;     \r\nb) membro do Poder Judiciário, do Ministério Público, da Defensoria Pública ou da Advocacia \r\nPública, de que tratam os e , ou oficial de justiça, no exercício da função ou em decorrência dela, ou \r\ncontra seu cônjuge, companheiro ou parente, inclusive por afinidade, até o terceiro grau, em razão \r\ndessa condição;     \r\nVIII - com emprego de arma de fogo de uso restrito ou proibido:                \r\nHomicídio contra menor de 14 (quatorze) anos             \r\nIX - contra menor de 14 (quatorze) anos:            \r\nX - nas dependências de instituição de ensino:     \r\nPena - reclusão, de doze a trinta anos. \r\n§ 2o-A  \r\n§ 2º-B. A pena do homicídio contra menor de 14 (quatorze) anos é aumentada de:           \r\nI - 1/3 (um terço) até a metade se a vítima é pessoa com deficiência ou com doença que \r\nimplique o aumento de sua vulnerabilidade;            \r\nII - 2/3 (dois terços) se o autor é ascendente, padrasto ou madrasta, tio, irmão, cônjuge, \r\ncompanheiro, tutor, curador, preceptor ou empregador da vítima ou por qualquer outro título tiver \r\nautoridade sobre ela.          \r\nIII - 2/3 (dois terços) se o crime for praticado em instituição de educação básica pública ou \r\nprivada.   \r\n§ 2º-C. A pena do homicídio cometido nas dependências de instituição de ensino é aumentada \r\nde:      \r\nI - 1/3 (um terço) até a metade se a vítima é pessoa com deficiência ou com doença que \r\nacarrete condição limitante ou de vulnerabilidade física ou mental;     \r\nII - 2/3 (dois terços) se o autor é ascendente, padrasto ou madrasta, tio, irmão, cônjuge, \r\ncompanheiro, tutor, curador, preceptor ou empregador da vítima ou por qualquer outro título tem \r\nautoridade sobre ela ou, ainda, se é professor ou funcionário da instituição de ensino.    \r\n§ 2º-D. Se o homicídio doloso é cometido por integrante de organização criminosa \r\nultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das \r\ncondutas previstas no art. 2º da lei que institui o marco legal do combate ao crime organizado no \r\nBrasil.   \r\nPena - reclusão, de 20 (vinte) a 40 (quarenta anos).",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA O PATRIMÔNIO",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A PROPRIEDADE IMATERIAL",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A ORGANIZAÇÃO DO TRABALHO",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA O SENTIMENTO \r\nRELIGIOSO E CONTRA O RESPEITO AOS MORTOS",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A DIGNIDADE SEXUAL",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A FAMÍLIA",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A INCOLUMIDADE PÚBLICA",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A PAZ PÚBLICA",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A FÉ PÚBLICA",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA A ADMINISTRAÇÃO PÚBLICA",
+        "filhos": []
+      },
+      {
+        "tipo": "titulo",
+        "nome": "DOS CRIMES CONTRA O ESTADO DEMOCRÁTICO DE DIREITO",
+        "filhos": []
+      }
+    ]
   }
 ]
