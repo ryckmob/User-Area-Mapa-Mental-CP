@@ -3,49 +3,390 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flashcards Jurídicos</title>
+<title>Flashcards Jurídicos — Premium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-  * { box-sizing: border-box; margin:0; padding:0; font-family: 'Segoe UI', sans-serif; }
-  html, body { height: 100%; background: #f0f2f5; overflow: hidden; display: flex; flex-direction: column; }
-  nav { background: #1c1f26; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
-  nav h1 { font-size: 1.5em; }
-  nav button { background: #4CAF50; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; }
-  .main-container { flex: 1; display: flex; justify-content: center; align-items: center; width: 100%; padding: 20px; flex-direction: column; overflow: hidden; }
-  .level-container, .sublevel-container { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
-  .level-container button { background: #fff; border: 2px solid #1c1f26; border-radius: 12px; padding: 15px 20px; cursor: pointer; font-size: 1em; transition: 0.3s; }
-  .level-container button:hover { background: #e6e6e6; }
+  :root {
+    --bg-primary: #f8fafc;
+    --navy-dark: #0f172a;
+    --navy-medium: #1e293b;
+    --gold: #c5a880;
+    --gold-hover: #b39369;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --card-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-  /* Segundo nível */
-  .sublevel-box { background: #fff; border-radius: 12px; padding: 20px; width: 100%; max-width: 600px; max-height: 60vh; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
-  .sublevel-box label { text-align: left; cursor: pointer; display: flex; align-items: center; gap: 10px; font-size: 1em; }
-  .sublevel-box input { cursor: pointer; }
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+  
+  body { 
+    height: 100vh; 
+    background-color: var(--bg-primary); 
+    color: var(--text-main);
+    display: flex; 
+    flex-direction: column; 
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
 
-  .flashcard-container { width: 90%; max-width: 600px; height: 70vh; perspective: 1500px; margin-top: 20px; }
-  .flashcard { width: 100%; height: 100%; background: white; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.2); display: flex; flex-direction: column; justify-content: center; align-items: center; transform-style: preserve-3d; transition: transform 0.8s; cursor: pointer; position: relative; }
+  /* Navbar Elegante */
+  nav { 
+    background: var(--navy-dark); 
+    color: white; 
+    padding: 18px 24px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    z-index: 10;
+  }
+  
+  nav h1 { 
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Botões Premium Genéricos */
+  .btn-premium {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-premium:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy-dark);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 12px rgba(197, 168, 128, 0.2);
+  }
+
+  .btn-gold:hover {
+    background: var(--gold-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(197, 168, 128, 0.3);
+  }
+
+  /* Container Principal Flexível */
+  .main-container { 
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 24px; 
+    flex-direction: column; 
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Tela de Níveis (Grid Organizado e Responsivo) */
+  .level-container { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; 
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+  }
+
+  .level-container button { 
+    background: white; 
+    border: 1px solid #e2e8f0; 
+    border-radius: 16px; 
+    padding: 24px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    font-weight: 600;
+    color: var(--navy-medium);
+    transition: var(--transition-smooth); 
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .level-container button:hover { 
+    border-color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow);
+  }
+
+  /* Tela de Subníveis / Checkboxes Luxo */
+  .sublevel-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 650px;
+    gap: 20px;
+  }
+
+  .sublevel-box { 
+    background: white; 
+    border-radius: 20px; 
+    padding: 24px; 
+    border: 1px solid #e2e8f0;
+    max-height: 55vh; 
+    overflow-y: auto; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 14px; 
+    box-shadow: var(--card-shadow);
+  }
+
+  .sublevel-box label { 
+    text-align: left; 
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    font-size: 0.95rem; 
+    font-weight: 500;
+    color: var(--navy-medium);
+    padding: 12px 16px;
+    border-radius: 10px;
+    transition: var(--transition-smooth);
+    background: #f8fafc;
+  }
+
+  .sublevel-box label:hover {
+    background: #f1f5f9;
+  }
+
+  .sublevel-box input[type="checkbox"] { 
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #cbd5e1;
+    border-radius: 6px;
+    outline: none;
+    transition: var(--transition-smooth);
+    position: relative;
+    cursor: pointer;
+    background: white;
+  }
+
+  .sublevel-box input[type="checkbox"]:checked {
+    background: var(--navy-dark);
+    border-color: var(--navy-dark);
+  }
+
+  .sublevel-box input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Container do Flashcard e Efeito 3D */
+  .flashcard-container { 
+    width: 100%; 
+    max-width: 580px; 
+    height: 58vh; 
+    perspective: 2000px; 
+    margin-top: 10px;
+  }
+
+  .flashcard { 
+    width: 100%; 
+    height: 100%; 
+    background: transparent; 
+    border-radius: 24px; 
+    transform-style: preserve-3d; 
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); 
+    cursor: pointer; 
+    position: relative; 
+  }
+
   .flashcard.flipped { transform: rotateY(180deg); }
-  .card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; overflow-y: auto; text-align: center; }
-  .card-front p { font-size: 1.5em; }
-  .card-back { transform: rotateY(180deg); }
-  .card-back pre { font-size: 1em; white-space: pre-wrap; word-wrap: break-word; text-align: left; width: 100%; }
-  .controls { margin-top: 20px; display: flex; gap: 10px; justify-content: center; }
-  .controls button { padding: 10px 20px; border: none; border-radius: 8px; background: #1c1f26; color: white; cursor: pointer; transition: 0.3s; }
-  .controls button:hover { background: #4CAF50; }
+
+  .card-front, .card-back { 
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    backface-visibility: hidden; 
+    border-radius: 24px; 
+    display: flex; 
+    flex-direction: column; 
+    padding: 36px; 
+    overflow-y: auto; 
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(255,255,255,0.7);
+  }
+
+  /* Frente: Minimalista e Focada */
+  .card-front { 
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+  }
+
+  .card-front::before {
+    content: "CONCEITO / PRINCÍPIO";
+    position: absolute;
+    top: 24px;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--gold);
+  }
+
+  .card-front p { 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color: var(--navy-dark);
+    line-height: 1.4;
+  }
+
+  /* Verso: Leitura Jurídica Fluida */
+  .card-back { 
+    background: #ffffff;
+    transform: rotateY(180deg); 
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .card-back::before {
+    content: "FUNDAMENTAÇÃO JURÍDICA";
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .card-back pre { 
+    font-size: 1rem; 
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--navy-medium);
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    text-align: left; 
+    width: 100%;
+  }
+
+  /* Controles Inferiores */
+  .controls { 
+    margin-top: 24px; 
+    display: flex; 
+    gap: 16px; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+  }
+
+  .controls button { 
+    padding: 12px 24px; 
+    border: 1px solid #e2e8f0; 
+    border-radius: 12px; 
+    background: white; 
+    color: var(--navy-medium); 
+    cursor: pointer; 
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth); 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  }
+
+  .controls button:hover { 
+    background: var(--navy-dark); 
+    color: white;
+    border-color: var(--navy-dark);
+  }
+  
+  #card-counter {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+    padding: 0 10px;
+  }
+
+  /* Customização de Scrollbar para ficar Premium */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+  /* Ajustes Responsivos para Telas Pequenas (Mobile) */
+  @media(max-width: 600px) {
+    .main-container { padding: 16px; }
+    .flashcard-container { height: 62vh; }
+    .card-front p { font-size: 1.25rem; }
+    .card-back pre { font-size: 0.95rem; }
+    .controls button { padding: 10px 16px; font-size: 0.85rem; }
+    nav h1 { font-size: 1.1rem; }
+  }
 </style>
 </head>
 <body>
 
 <nav>
   <h1>Flashcards Jurídicos</h1>
-  <button id="btn-back" style="display:none;">Voltar</button>
+  <button id="btn-back" class="btn-premium" style="display:none;">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+    Voltar
+  </button>
 </nav>
 
 <div class="main-container" id="main-container">
   <div class="level-container" id="level-container"></div>
-  <div class="sublevel-container" id="sublevel-container" style="display:none;"></div>
+  
+  <div class="sublevel-wrapper" id="sublevel-wrapper" style="display:none;">
+    <div class="sublevel-box" id="sublevel-container"></div>
+    <button id="btn-start" class="btn-gold" style="width: 100%;">Iniciar Estudo</button>
+  </div>
+
   <div class="flashcard-container" id="flashcard-container" style="display:none;"></div>
+  
   <div class="controls" id="controls" style="display:none;">
-    <button id="prev-card">Anterior</button>
-    <button id="next-card">Próximo</button>
+    <button id="prev-card">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      Anterior
+    </button>
+    <span id="card-counter">0 / 0</span>
+    <button id="next-card">
+      Próximo
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
   </div>
 </div>
 
@@ -54,24 +395,26 @@ let data = [];
 let currentCards = [];
 let currentIndex = 0;
 
-// Carrega o JSON da estrutura dos flashcards
 async function loadJSON() {
   try {
-    // Certifique-se de que o arquivo 'estrutura.json' está no mesmo diretório
     const res = await fetch('./estrutura.json');
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     data = await res.json();
     showLevel1();
   } catch (error) {
     console.error("Erro ao carregar o arquivo JSON:", error);
-    document.getElementById('main-container').innerHTML = '<p style="color: red; text-align: center;">Não foi possível carregar os dados dos flashcards. Verifique o console para mais detalhes.</p>';
+    document.getElementById('main-container').innerHTML = `
+      <div style="text-align: center; max-width: 400px; padding: 20px;">
+        <p style="color: #ef4444; font-weight: 600; margin-bottom: 8px;">Erro de Conexão</p>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Não foi possível carregar os dados dos flashcards. Certifique-se de que o arquivo 'estrutura.json' está na mesma pasta.</p>
+      </div>
+    `;
   }
 }
 
-// Mostra o primeiro nível de seleção (ex: "PARTE GERAL")
 function showLevel1() {
-  document.getElementById('level-container').style.display = 'flex';
-  document.getElementById('sublevel-container').style.display = 'none';
+  document.getElementById('level-container').style.display = 'grid';
+  document.getElementById('sublevel-wrapper').style.display = 'none';
   document.getElementById('flashcard-container').style.display = 'none';
   document.getElementById('controls').style.display = 'none';
   document.getElementById('btn-back').style.display = 'none';
@@ -80,54 +423,52 @@ function showLevel1() {
   container.innerHTML = '';
   data.forEach((item, index) => {
     const btn = document.createElement('button');
-    btn.textContent = item.nome;
+    btn.innerHTML = `
+      <span>${item.nome}</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.5" style="margin-left:10px;"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    `;
     btn.onclick = () => showLevel2(index);
     container.appendChild(btn);
   });
 }
 
-// Mostra o segundo nível de seleção (ex: "DA APLICAÇÃO DA LEI PENAL")
 function showLevel2(level1Index) {
   const level1 = data[level1Index];
   document.getElementById('level-container').style.display = 'none';
+  
   const container = document.getElementById('sublevel-container');
   container.innerHTML = '';
-  container.style.display = 'flex';
+  document.getElementById('sublevel-wrapper').style.display = 'flex';
 
-  const box = document.createElement('div');
-  box.className = 'sublevel-box';
-  
   level1.filhos.forEach((item, index) => {
     const label = document.createElement('label');
-    label.innerHTML = `<input type="checkbox" value="${index}"> ${item.nome}`;
-    box.appendChild(label);
+    label.innerHTML = `<input type="checkbox" value="${index}"> <span>${item.nome}</span>`;
+    container.appendChild(label);
   });
   
-  const startBtn = document.createElement('button');
-  startBtn.textContent = 'Iniciar';
-  startBtn.style.marginTop = '10px';
+  const startBtn = document.getElementById('btn-start');
   startBtn.onclick = () => startFlashcards(level1);
   
-  container.appendChild(box);
-  container.appendChild(startBtn);
-  
-  document.getElementById('btn-back').style.display = 'inline-block';
+  // Remove erro anterior se existir
+  const oldError = document.getElementById('selection-error');
+  if(oldError) oldError.remove();
+
+  document.getElementById('btn-back').style.display = 'inline-flex';
   document.getElementById('btn-back').onclick = showLevel1;
 }
 
-// Prepara e inicia a exibição dos flashcards selecionados
 function startFlashcards(level1) {
   const checkboxes = document.querySelectorAll('#sublevel-container input:checked');
   if(checkboxes.length === 0) { 
-    // Substituído o alert por uma mensagem mais amigável que não bloqueia a UI
-    const startBtn = document.querySelector('#sublevel-container button');
     if (!document.getElementById('selection-error')) {
       const errorMsg = document.createElement('p');
       errorMsg.id = 'selection-error';
-      errorMsg.textContent = 'Selecione pelo menos um título para começar.';
-      errorMsg.style.color = 'red';
-      errorMsg.style.marginTop = '10px';
-      startBtn.insertAdjacentElement('afterend', errorMsg);
+      errorMsg.textContent = 'Por favor, selecione pelo menos um tópico para iniciar.';
+      errorMsg.style.color = '#ef4444';
+      errorMsg.style.fontSize = '0.85rem';
+      errorMsg.style.fontWeight = '500';
+      errorMsg.style.textAlign = 'center';
+      document.getElementById('sublevel-wrapper').appendChild(errorMsg);
     }
     return;
   }
@@ -146,20 +487,27 @@ function startFlashcards(level1) {
   });
 
   currentIndex = 0;
-  document.getElementById('sublevel-container').style.display = 'none';
+  document.getElementById('sublevel-wrapper').style.display = 'none';
   showFlashcard();
   document.getElementById('flashcard-container').style.display = 'block';
   document.getElementById('controls').style.display = 'flex';
-  document.getElementById('btn-back').style.display = 'inline-block';
+  document.getElementById('btn-back').style.display = 'inline-flex';
   document.getElementById('btn-back').onclick = () => showLevel2(data.findIndex(item => item.nome === level1.nome));
 }
 
-// Concatena os artigos de um princípio
 function getArtigos(filhos) {
   return filhos.map(a => a.nome).join('\n\n');
 }
 
-// Mostra o flashcard atual
+function updateCounter() {
+  const counter = document.getElementById('card-counter');
+  if(currentCards.length > 0) {
+    counter.textContent = `${currentIndex + 1} de ${currentCards.length}`;
+  } else {
+    counter.textContent = '0 de 0';
+  }
+}
+
 function showFlashcard() {
   const container = document.getElementById('flashcard-container');
   container.innerHTML = '';
@@ -167,10 +515,8 @@ function showFlashcard() {
   if (currentCards.length === 0) return;
   
   const cardData = currentCards[currentIndex];
-  
   const card = document.createElement('div');
   card.className = 'flashcard';
-  // CORREÇÃO: A frente do card agora tem apenas o "principio". O verso tem o "artigo".
   card.innerHTML = `
     <div class="card-front">
       <p>${cardData.principio}</p>
@@ -182,6 +528,7 @@ function showFlashcard() {
   
   card.onclick = () => card.classList.toggle('flipped');
   container.appendChild(card);
+  updateCounter();
 }
 
 document.getElementById('prev-card').onclick = () => {
@@ -198,7 +545,6 @@ document.getElementById('next-card').onclick = () => {
   }
 };
 
-// Inicia a aplicação
 loadJSON();
 </script>
 
