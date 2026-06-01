@@ -355,6 +355,74 @@
     .controls button { padding: 10px 16px; font-size: 0.85rem; }
     nav h1 { font-size: 1.1rem; }
   }
+
+  /* Container dos controles */
+.controls { 
+  margin-top: 24px; 
+  display: flex; 
+  gap: 16px; 
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+}
+
+/* Botões Anterior e Próximo */
+.controls button { 
+  padding: 12px 24px; 
+  border: 1px solid #e2e8f0; 
+  border-radius: 12px; 
+  background: white; 
+  color: #1e293b; /* --navy-medium */
+  cursor: pointer; 
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.controls button:hover { 
+  background: #0f172a; /* --navy-dark */
+  color: white;
+  border-color: #0f172a;
+}
+
+/* O SEGREDO: Contador com tamanho e estrutura fixa */
+#card-counter {
+  font-size: 0.9rem;
+  color: #64748b; /* --text-muted */
+  font-weight: 600;
+  
+  /* Define uma largura fixa para o container do texto não empurrar os botões */
+  width: 90px; 
+  
+  /* Garante que o texto fique sempre perfeitamente centralizado no meio desses 90px */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  /* Impede quebras de linha em telas muito pequenas */
+  white-space: nowrap; 
+  flex-shrink: 0; 
+}
+
+/* Ajuste fino para Mobile (telas menores que 600px) */
+@media(max-width: 600px) {
+  .controls {
+    gap: 8px; /* Diminui o espaçamento lateral no celular */
+  }
+  .controls button { 
+    padding: 10px 16px; 
+    font-size: 0.85rem; 
+  }
+  #card-counter {
+    font-size: 0.85rem;
+    width: 80px; /* Um tiquinho menor no mobile para dar mais área aos botões */
+  }
+}
 </style>
 </head>
 <body>
