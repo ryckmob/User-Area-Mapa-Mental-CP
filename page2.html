@@ -435,6 +435,8 @@ function showLevel1() {
 function showLevel2(level1Index) {
   const level1 = data[level1Index];
   document.getElementById('level-container').style.display = 'none';
+  document.getElementById('flashcard-container').style.display = 'none';
+  document.getElementById('controls').style.display = 'none';
   
   const container = document.getElementById('sublevel-container');
   container.innerHTML = '';
@@ -449,7 +451,6 @@ function showLevel2(level1Index) {
   const startBtn = document.getElementById('btn-start');
   startBtn.onclick = () => startFlashcards(level1);
   
-  // Remove erro anterior se existir
   const oldError = document.getElementById('selection-error');
   if(oldError) oldError.remove();
 
@@ -492,7 +493,11 @@ function startFlashcards(level1) {
   document.getElementById('flashcard-container').style.display = 'block';
   document.getElementById('controls').style.display = 'flex';
   document.getElementById('btn-back').style.display = 'inline-flex';
-  document.getElementById('btn-back').onclick = () => showLevel2(data.findIndex(item => item.nome === level1.nome));
+  
+  // CORREÇÃO: Garante que ao voltar da tela dos Flashcards, os componentes visuais antigos sejam totalmente limpos e ocultados
+  document.getElementById('btn-back').onclick = () => {
+    showLevel2(data.findIndex(item => item.nome === level1.nome));
+  };
 }
 
 function getArtigos(filhos) {
