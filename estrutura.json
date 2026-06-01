@@ -1024,12 +1024,654 @@
               },
               {
                 "tipo": "principio",
-                "nome": "Feminicídio",
+                "nome": "Feminicídio - Art. 121 VII",
                 "filhos": [
                   {
                     "tipo": "artigo",
                     "nome": "Art. 121. VII – contra:    \r\na) autoridade ou agente descrito nos e , integrantes do sistema prisional e da Força Nacional \r\nde Segurança Pública, no exercício da função ou em decorrência dela, ou contra seu cônjuge, \r\ncompanheiro ou parente consanguíneo até o terceiro grau, em razão dessa condição;     \r\nb) membro do Poder Judiciário, do Ministério Público, da Defensoria Pública ou da Advocacia \r\nPública, de que tratam os e , ou oficial de justiça, no exercício da função ou em decorrência dela, ou \r\ncontra seu cônjuge, companheiro ou parente, inclusive por afinidade, até o terceiro grau, em razão \r\ndessa condição;     \r\nVIII - com emprego de arma de fogo de uso restrito ou proibido:                \r\nHomicídio contra menor de 14 (quatorze) anos             \r\nIX - contra menor de 14 (quatorze) anos:            \r\nX - nas dependências de instituição de ensino:     \r\nPena - reclusão, de doze a trinta anos. \r\n§ 2o-A  \r\n§ 2º-B. A pena do homicídio contra menor de 14 (quatorze) anos é aumentada de:           \r\nI - 1/3 (um terço) até a metade se a vítima é pessoa com deficiência ou com doença que \r\nimplique o aumento de sua vulnerabilidade;            \r\nII - 2/3 (dois terços) se o autor é ascendente, padrasto ou madrasta, tio, irmão, cônjuge, \r\ncompanheiro, tutor, curador, preceptor ou empregador da vítima ou por qualquer outro título tiver \r\nautoridade sobre ela.          \r\nIII - 2/3 (dois terços) se o crime for praticado em instituição de educação básica pública ou \r\nprivada.   \r\n§ 2º-C. A pena do homicídio cometido nas dependências de instituição de ensino é aumentada \r\nde:      \r\nI - 1/3 (um terço) até a metade se a vítima é pessoa com deficiência ou com doença que \r\nacarrete condição limitante ou de vulnerabilidade física ou mental;     \r\nII - 2/3 (dois terços) se o autor é ascendente, padrasto ou madrasta, tio, irmão, cônjuge, \r\ncompanheiro, tutor, curador, preceptor ou empregador da vítima ou por qualquer outro título tem \r\nautoridade sobre ela ou, ainda, se é professor ou funcionário da instituição de ensino.    \r\n§ 2º-D. Se o homicídio doloso é cometido por integrante de organização criminosa \r\nultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das \r\ncondutas previstas no art. 2º da lei que institui o marco legal do combate ao crime organizado no \r\nBrasil.   \r\nPena - reclusão, de 20 (vinte) a 40 (quarenta anos).",
                     "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Homicídio culposo",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "§ 3º Se o homicídio é culposo: \r\nPena - detenção, de um a três anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Aumento de pena - Homicídio culposo",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "§ 4o No homicídio culposo, a pena é aumentada de 1/3 (um terço), se o crime resulta de \r\ninobservância de regra técnica de profissão, arte ou ofício, ou se o agente deixa de prestar imediato \r\nsocorro à vítima, não procura diminuir as conseqüências do seu ato, ou foge para evitar prisão em \r\nflagrante. Sendo doloso o homicídio, a pena é aumentada de 1/3 (um terço) se o crime é praticado \r\ncontra pessoa menor de 14 (quatorze) ou maior de 60 (sessenta) anos. \r\n§ 5º - Na hipótese de homicídio culposo, o juiz poderá deixar de aplicar a pena, se as \r\nconseqüências da infração atingirem o próprio agente de forma tão grave que a sanção penal se \r\ntorne desnecessária. \r\n§ 6o  A pena é aumentada de 1/3 (um terço) até a metade se o crime for praticado por milícia \r\nprivada, sob o pretexto de prestação de serviço de segurança, ou por grupo de extermínio.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Feminicídio Art. 121-A",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 121-A. Matar mulher por razões da condição do sexo feminino:      \r\nPena – reclusão, de 20 (vinte) a 40 (quarenta) anos.     \r\n§ 1º Considera-se que há razões da condição do sexo feminino quando o crime envolve:     \r\nI – violência doméstica e familiar;     \r\nII – menosprezo ou discriminação à condição de mulher.     \r\n§ 2º A pena do feminicídio é aumentada de 1/3 (um terço) até a metade se o crime é praticado:     \r\nI – durante a gestação, nos 3 (três) meses posteriores ao parto ou se a vítima é a mãe ou a \r\nresponsável por criança, adolescente ou pessoa com deficiência de qualquer idade;     \r\nII – contra pessoa menor de 14 (catorze) anos, maior de 60 (sessenta) anos, com deficiência ou \r\nportadora de doenças degenerativas que acarretem condição limitante ou de vulnerabilidade física ou \r\nmental;     \r\nIII – na presença física ou virtual de descendente ou de ascendente da vítima;     \r\nIV – em descumprimento das medidas protetivas de urgência previstas nos , e (Lei Maria da Penha);     \r\nV – nas circunstâncias previstas nos incisos III, IV e VIII do § 2º do  art. 121 deste Código.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Feminicídio Art. 121-A: Coautoria",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "§ 3º Comunicam-se ao coautor ou partícipe as circunstâncias pessoais elementares do crime \r\nprevistas no § 1º deste artigo.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Vicaricídio - Art. 121-B",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 121-B. Matar descendente, ascendente, dependente, enteado ou pessoa sob guarda ou \r\nresponsabilidade direta da mulher, com o fim específico de causar-lhe sofrimento, punição ou \r\ncontrole, no contexto de violência doméstica e familiar.   \r\nPena – reclusão, de 20 (vinte) a 40 (quarenta) anos.   \r\nParágrafo único. A pena do vicaricídio é aumentada de 1/3 (um terço) até a metade se o crime for \r\npraticado:   \r\nI – na presença da mulher a quem se pretende causar sofrimento, punição ou controle;   \r\nII – contra criança ou adolescente ou pessoa idosa ou com deficiência;    \r\nIII – em descumprimento de medida protetiva de urgência.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Induzimento, instigação ou auxílio a suicídio ou a automutilação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 122. Induzir ou instigar alguém a suicidar-se ou a praticar automutilação ou prestar-lhe auxílio \r\nmaterial para que o faça:   \r\nPena - reclusão, de 6 (seis) meses a 2 (dois) anos.   \r\n§ 1º Se da automutilação ou da tentativa de suicídio resulta lesão corporal de natureza grave ou \r\ngravíssima, nos termos dos §§ 1º e 2º do art. 129 deste Código:   \r\nPena - reclusão, de 1 (um) a 3 (três) anos.   \r\n§ 2º Se o suicídio se consuma ou se da automutilação resulta morte:    \r\nPena - reclusão, de 2 (dois) a 6 (seis) anos.   \r\n§ 3º A pena é duplicada:   \r\nI - se o crime é praticado por motivo egoístico, torpe ou fútil;   \r\nII - se a vítima é menor ou tem diminuída, por qualquer causa, a capacidade de resistência.   \r\n§ 4º A pena é aumentada até o dobro se a conduta é realizada por meio da rede de computadores, \r\nde rede social ou transmitida em tempo real.   \r\n§ 5º Aplica-se a pena em dobro se o autor é líder, coordenador ou administrador de grupo, de \r\ncomunidade ou de rede virtual, ou por estes é responsável.   \r\n§ 6º Se o crime de que trata o § 1º deste artigo resulta em lesão corporal de natureza gravíssima e é \r\ncometido contra menor de 14 (quatorze) anos ou contra quem, por enfermidade ou deficiência \r\nmental, não tem o necessário discernimento para a prática do ato, ou que, por qualquer outra causa, \r\nnão pode oferecer resistência, responde o agente pelo crime descrito no § 2º do art. 129 deste \r\nCódigo.   \r\n§ 7º Se o crime de que trata o § 2º deste artigo é cometido contra menor de 14 (quatorze) anos ou \r\ncontra quem não tem o necessário discernimento para a prática do ato, ou que, por qualquer outra \r\ncausa, não pode oferecer resistência, responde o agente pelo crime de homicídio, nos termos do art. \r\n121 deste Código.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Infanticídio",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 123 - Matar, sob a influência do estado puerperal, o próprio filho, durante o parto ou logo \r\napós: \r\n     Pena - detenção, de dois a seis anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Aborto provocado pela gestante ou com seu consentimento",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 124 - Provocar aborto em si mesma ou consentir que outrem lho provoque:  \r\n     Pena - detenção, de um a três anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Aborto provocado por terceiro",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 125 - Provocar aborto, sem o consentimento da gestante: \r\n     Pena - reclusão, de três a dez anos. \r\n     Art. 126 - Provocar aborto com o consentimento da gestante:    \r\n     Pena - reclusão, de um a quatro anos. \r\n     Parágrafo único. Aplica-se a pena do artigo anterior, se a gestante não é maior de quatorze \r\nanos, ou é alienada ou debil mental, ou se o consentimento é obtido mediante fraude, grave ameaça \r\nou violência",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Forma qualificada",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 127 - As penas cominadas nos dois artigos anteriores são aumentadas de um terço, se, \r\nem conseqüência do aborto ou dos meios empregados para provocá-lo, a gestante sofre lesão \r\ncorporal de natureza grave; e são duplicadas, se, por qualquer dessas   causas, lhe sobrevém a \r\nmorte.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Art. 128 - Não se pune o aborto praticado por médico:",
+                "filhos": [
+                  {
+                    "tipo": "principio",
+                    "nome": "Aborto necessário",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "I - se não há outro meio de salvar a vida da gestante;",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "principio",
+                    "nome": "Aborto no caso de gravidez resultante de estupro",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "II - se a gravidez resulta de estupro e o aborto é precedido de consentimento da gestante ou, \r\nquando incapaz, de seu representante legal.",
+                        "filhos": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DAS LESÕES CORPORAIS",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Lesão corporal",
+                "filhos": []
+              },
+              {
+                "tipo": "principio",
+                "nome": "Lesão corporal de natureza grave",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 129. - § 1º Se resulta: \r\n     I - Incapacidade para as ocupações habituais, por mais de trinta dias; \r\n     II - perigo de vida; \r\n     III - debilidade permanente de membro, sentido ou função; \r\n     IV - aceleração de parto: \r\n     Pena - reclusão, de um a cinco anos. \r\n     § 2° Se resulta: \r\n     I - Incapacidade permanente para o trabalho; \r\n     II - enfermidade incuravel; \r\n     III perda ou inutilização do membro, sentido ou função; \r\n     IV - deformidade permanente; \r\n     V - aborto: \r\n     Pena - reclusão, de dois a oito anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Lesão corporal seguida de morte",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 129. § 3° Se resulta morte e as circunstâncias evidenciam que o agente não quís o resultado, nem \r\nassumiu o risco de produzí-lo: \r\n     Pena - reclusão, de quatro a doze anos. \r\n§ 3º-A. No crime previsto no § 3º deste artigo, se cometido no contexto da atuação ou para a \r\nconsecução das condutas previstas no art. 2º da lei que institui o marco legal do combate ao crime \r\norganizado no Brasil:     \r\nPena - reclusão, de 20 (vinte) a 40 (quarenta) anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Diminuição de pena",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 129. § 4° Se o agente comete o crime impelido por motivo de relevante valor social ou moral ou \r\nsob o domínio de violenta emoção, logo em seguida a injusta provocação da vítima, o juiz pode \r\nreduzir a pena de um sexto a um terço.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Substituição da pena",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 129. § 5° O juiz, não sendo graves as lesões, pode ainda substituir a pena de detenção pela de \r\nmulta, de duzentos mil réis a dois contos de réis: \r\n     I - se ocorre qualquer das hipóteses do parágrafo anterior; \r\n     II - se as lesões são recíprocas.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Lesão corporal culposa",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 129. § 6° Se a lesão é culposa: \r\n     Pena - detenção, de dois meses a um ano.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Aumento de pena",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 129. § 7o  Aumenta-se a pena de 1/3 (um terço) se ocorrer qualquer das hipóteses dos §§ 4o e 6o do \r\nart. 121 deste Código.        \r\n     § 8º - Aplica-se à lesão culposa o disposto no § 5º do art. 121. \r\n     § 8º-A. Com exceção do disposto no § 3º-A deste artigo, aumenta-se a pena em 2/3 (dois \r\nterços) se a lesão é praticada por integrante de organização criminosa ultraviolenta, grupo paramilitar \r\nou milícia privada, no contexto da atuação ou para a consecução das condutas previstas no art. 2º da \r\nlei que institui o marco legal do combate ao crime organizado no Brasil.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Violência Doméstica",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 129. § 9o  Se a lesão for praticada contra ascendente, descendente, irmão, cônjuge ou \r\ncompanheiro, ou com quem conviva ou tenha convivido, ou, ainda, prevalecendo-se o agente das \r\nrelações domésticas, de coabitação ou de hospitalidade: \r\n       Pena – reclusão, de 2 (dois) a 5 (cinco) anos.      \r\n     § 10. Nos casos previstos nos §§ 1o a 3o deste artigo, se as circunstâncias são as indicadas \r\nno § 9o deste artigo, aumenta-se a pena em 1/3 (um terço). \r\n     § 11.  Na hipótese do § 9o deste artigo, a pena será aumentada de um terço se o crime for \r\ncometido contra pessoa portadora de deficiência. \r\n§ 12. Aumenta-se a pena de:       \r\nI - 1/3 (um terço) a 2/3 (dois terços) se a lesão dolosa for praticada:     \r\na) contra autoridade ou agente descrito nos e ou integrantes do sistema prisional ou da Força \r\nNacional de Segurança Pública, no exercício da função ou em decorrência dela, ou contra seu \r\ncônjuge, companheiro ou parente consanguíneo até terceiro grau, em razão dessa ...dvocacia Pública, de que tratam os e ou oficial de justiça, no exercício da função ou em decorrência \r\ndela, ou contra seu cônjuge, companheiro ou parente, inclusive por afinidade, até o terceiro grau, em \r\nrazão dessa condição; ou       \r\nc) nas dependências de instituição de ensino;      \r\nII - 2/3 (dois terços) ao dobro se a lesão dolosa for praticada nas dependências de instituição \r\nde ensino e:    \r\na) a vítima for pessoa com deficiência ou com doença que acarrete condição limitante ou de \r\nvulnerabilidade física ou mental; ou     \r\nb) o autor for ascendente, padrasto ou madrasta, tio, irmão, cônjuge, companheiro, tutor, \r\ncurador, preceptor ou empregador da vítima ou por qualquer outro título tiver autoridade sobre ela ou, \r\nainda, for professor ou funcionário da instituição de ensino.    \r\n§ 13. Se a lesão é praticada contra a mulher, por razões da condição do sexo feminino, nos \r\ntermos do § 1º do art. 121-A deste Código:      \r\nPena – reclusão, de 2 (dois) a 5 (cinco) anos.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DA PERICLITAÇÃO DA VIDA E DA SAÚDE",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Perigo de contágio venéreo",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 130 - Expor alguém, por meio de relações sexuais ou qualquer ato libidinoso, a contágio \r\nde moléstia venérea, de que sabe ou deve saber que está contaminado: \r\n     Pena - detenção, de três meses a um ano, ou multa. \r\n     § 1º - Se é intenção do agente transmitir a moléstia: \r\n     Pena - reclusão, de um a quatro anos, e multa. \r\n     § 2º - Somente se procede mediante representação.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Perigo de contágio de moléstia grave",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 131 - Praticar, com o fim de transmitir a outrem moléstia grave de que está contaminado, \r\nato capaz de produzir o contágio: \r\n     Pena - reclusão, de um a quatro anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Perigo para a vida ou saúde de outrem",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 132 - Expor a vida ou a saúde de outrem a perigo direto e iminente: \r\n     Pena - detenção, de três meses a um ano, se o fato não constitui crime mais grave. \r\n        Parágrafo único. A pena é aumentada de um sexto a um terço se a exposição da vida ou da \r\nsaúde de outrem a perigo decorre do transporte de pessoas para a prestação de serviços em \r\nestabelecimentos de qualquer natureza, em desacordo com as normas legais.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Abandono de incapaz",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 133 - Abandonar pessoa que está sob seu cuidado, guarda, vigilância ou autoridade, e, \r\npor qualquer motivo, incapaz de defender-se dos riscos resultantes do abandono: \r\n        Pena - reclusão, de 2 (dois) a 5 (cinco) anos.   \r\n     § 1º - Se do abandono resulta lesão corporal de natureza grave: \r\n        Pena - reclusão, de 3 (três) a 7 (sete) anos.   \r\n     § 2º - Se resulta a morte: \r\n        Pena - reclusão, de 8 (oito) a 14 (quatorze) anos.   \r\n     Aumento de pena \r\n     § 3º - As penas cominadas neste artigo aumentam-se de um terço: \r\n     I - se o abandono ocorre em lugar ermo; \r\n     II - se o agente é ascendente ou descendente, cônjuge, irmão, tutor ou curador da vítima. \r\n        III – se a vítima é maior de 60 (sessenta) anos",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Exposição ou abandono de recém-nascido",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 134 - Expor ou abandonar recém-nascido, para ocultar desonra própria: \r\n     Pena - detenção, de seis meses a dois anos. \r\n     § 1º - Se do fato resulta lesão corporal de natureza grave: \r\n     Pena - detenção, de um a três anos. \r\n     § 2º - Se resulta a morte: \r\n     Pena - detenção, de dois a seis anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Omissão de socorro",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 135 - Deixar de prestar assistência, quando possível fazê-lo sem risco pessoal, à criança \r\nabandonada ou extraviada, ou à pessoa inválida ou ferida, ao desamparo ou em grave e iminente \r\nperigo; ou não pedir, nesses casos, o socorro da autoridade pública: \r\n     Pena - detenção, de um a seis meses, ou multa. \r\n     Parágrafo único - A pena é aumentada de metade, se da omissão resulta lesão corporal de \r\nnatureza grave, e triplicada, se resulta a morte.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Condicionamento de atendimento médico-hospitalar emergencial",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 135-A.  Exigir cheque-caução, nota promissória ou qualquer garantia, bem como o \r\npreenchimento prévio de formulários administrativos, como condição para o atendimento \r\nmédico-hospitalar emergencial:   \r\n     Pena - detenção, de 3 (três) meses a 1 (um) ano, e multa.  \r\n     Parágrafo único.  A pena é aumentada até o dobro se da negativa de atendimento resulta \r\nlesão corporal de natureza grave, e até o triplo se resulta a morte.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Maus-tratos",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 136 - Expor a perigo a vida ou a saúde de pessoa sob sua autoridade, guarda ou \r\nvigilância, para fim de educação, ensino, tratamento ou custódia, quer privando-a de alimentação ou \r\ncuidados indispensáveis, quer sujeitando-a a trabalho excessivo ou inadequado, quer abusando de \r\nmeios de correção ou disciplina: \r\n        Pena - reclusão, de 2 (dois) a 5 (cinco) anos.   \r\n     § 1º - Se do fato resulta lesão corporal de natureza grave: \r\n        Pena - reclusão, de 3 (três) a 7 (sete) anos.   \r\n     § 2º - Se resulta a morte: \r\n        Pena - reclusão, de 8 (oito) a 14 (quatorze) anos.   \r\n        § 3º - Aumenta-se a pena de um terço, se o crime é praticado contra pessoa menor de 14 \r\n(catorze) anos.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DA RIXA",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Rixa",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 137 - Participar de rixa, salvo para separar os contendores: \r\n     Pena - detenção, de quinze dias a dois meses, ou multa. \r\n     Parágrafo único - Se ocorre morte ou lesão corporal de natureza grave, aplica-se, pelo fato \r\nda participação na rixa, a pena de detenção, de seis meses a dois anos.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DOS CRIMES CONTRA A HONRA",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Calúnia",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 138 - Caluniar alguém, imputando-lhe falsamente fato definido como crime: \r\n     Pena - detenção, de seis meses a dois anos, e multa. \r\n     § 1º - Na mesma pena incorre quem, sabendo falsa a imputação, a propala ou divulga. \r\n     § 2º - É punível a calúnia contra os mortos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Exceção da verdade Calúnia",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 138 - § 3º - Admite-se a prova da verdade, salvo: \r\n     I - se, constituindo o fato imputado crime de ação privada, o ofendido não foi condenado por \r\nsentença irrecorrível; \r\n     II - se o fato é imputado a qualquer das pessoas indicadas no nº I do art. 141; \r\n     III - se do crime imputado, embora de ação pública, o ofendido foi absolvido por sentença \r\nirrecorrível.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Difamação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 139 - Difamar alguém, imputando-lhe fato ofensivo à sua reputação: \r\n     Pena - detenção, de três meses a um ano, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Exceção da verdade Difamação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Parágrafo único - A exceção da verdade somente se admite se o ofendido é funcionário \r\npúblico e a ofensa é relativa ao exercício de suas funções.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Injúria",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 140 - Injuriar alguém, ofendendo-lhe a dignidade ou o decoro: \r\n     Pena - detenção, de um a seis meses, ou multa. \r\n     § 1º - O juiz pode deixar de aplicar a pena: \r\n     I - quando o ofendido, de forma reprovável, provocou diretamente a injúria; \r\n     II - no caso de retorsão imediata, que consista em outra injúria. \r\n     § 2º - Se a injúria consiste em violência ou vias de fato, que, por sua natureza ou pelo meio \r\nempregado, se considerem aviltantes: \r\n     Pena - detenção, de três meses a um ano, e multa, além da pena correspondente à \r\nviolência. \r\n§ 3º Se a injúria consiste na utilização de elementos referentes a religião ou à condição de \r\npessoa idosa ou com deficiência:        \r\nPena - reclusão, de 1 (um) a 3 (três) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Disposições comuns",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 141 - As penas cominadas neste Capítulo aumentam-se de um terço, se qualquer dos \r\ncrimes é cometido: \r\n     I - contra o Presidente da República, ou contra chefe de governo estrangeiro; \r\n        II - contra funcionário público, em razão de suas funções, ou contra os Presidentes do Senado \r\nFederal, da Câmara dos Deputados ou do Supremo Tribunal Federal;                \r\n     III - na presença de várias pessoas, ou por meio que facilite a divulgação da calúnia, da \r\ndifamação ou da injúria. \r\n        IV - contra criança, adolescente, pessoa maior de 60 (sessenta) anos ou pessoa com \r\ndeficiência, exceto na hipótese prevista no § 3º do art. 140 deste Código.           \r\n     § 1º - Se o crime é cometido mediante paga ou promessa de recompensa, aplica-se a pena \r\nem dobro.              \r\n       § 2º Se o crime é cometido ou divulgado em quaisquer modalidades das redes sociais da rede \r\nmundial de computadores, aplica-se em triplo a pena.               \r\n     § 3º Se o crime é cometido contra a mulher por razões da condição do sexo feminino, nos \r\ntermos do § 1º do art. 121-A deste Código, aplica-se a pena em dobro.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Exclusão do crime",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 142 - Não constituem injúria ou difamação punível: \r\n     I - a ofensa irrogada em juízo, na discussão da causa, pela parte ou por seu procurador; \r\n     II - a opinião desfavorável da crítica literária, artística ou científica, salvo quando inequívoca a \r\nintenção de injuriar ou difamar; \r\n     III - o conceito desfavorável emitido por funcionário público, em apreciação ou informação \r\nque preste no cumprimento de dever do ofício. \r\n     Parágrafo único - Nos casos dos ns. I e III, responde pela injúria ou pela difamação quem lhe \r\ndá publicidade.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Retratação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 143 - O querelado que, antes da sentença, se retrata cabalmente da calúnia ou da \r\ndifamação, fica isento de pena. \r\n        Parágrafo único.  Nos casos em que o querelado tenha praticado a calúnia ou a difamação \r\nutilizando-se de meios de comunicação, a retratação dar-se-á, se assim desejar o ofendido, pelos \r\nmesmos meios em que se praticou a ofensa.      \r\n     Art. 144 - Se, de referências, alusões ou frases, se infere calúnia, difamação ou injúria, quem \r\nse julga ofendido pode pedir explicações em juízo. Aquele que se recusa a dá-las ou, a critério do \r\njuiz, não as dá satisfatórias, responde pela ofensa. \r\n     Art. 145 - Nos crimes previstos neste Capítulo somente se procede mediante queixa, salvo \r\nquando, no caso do art. 140, § 2º, da violência resulta lesão corporal. \r\n        Parágrafo único.  Procede-se mediante requisição do Ministro da Justiça, no caso do inciso I do \r\ncaput do art. 141 deste Código, e mediante representação do ofendido, no caso do inciso II do \r\nmesmo artigo, bem como no caso do § 3o do art. 140 deste Código.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DOS CRIMES CONTRA A LIBERDADE INDIVIDUAL",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Constrangimento ilegal",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 146 - Constranger alguém, mediante violência ou grave ameaça, ou depois de lhe haver \r\nreduzido, por qualquer outro meio, a capacidade de resistência, a não fazer o que a lei permite, ou a \r\nfazer o que ela não manda: \r\nPena - detenção, de três meses a um ano, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Aumento de pena",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "§ 1º - As penas aplicam-se cumulativamente e em dobro, quando, para a execução do crime, \r\nse reúnem mais de três pessoas, ou há emprego de armas. \r\n§ 2º - Além das penas cominadas, aplicam-se as correspondentes à violência. \r\n§ 3º - Não se compreendem na disposição deste artigo: \r\nI - a intervenção médica ou cirúrgica, sem o consentimento do paciente ou de seu \r\nrepresentante legal, se justificada por iminente perigo de vida; \r\nII - a coação exercida para impedir suicídio.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Intimidação sistemática (bullying)",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 146-A. Intimidar sistematicamente, individualmente ou em grupo, mediante violência física ou \r\npsicológica, uma ou mais pessoas, de modo intencional e repetitivo, sem motivação evidente, por \r\nmeio de atos de intimidação, de humilhação ou de discriminação ou de ações verbais, morais, \r\nsexuais, sociais, psicológicas, físicas, materiais ou virtuais:   \r\nPena - multa, se a conduta não constituir crime mais grave.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Intimidação sistemática virtual (cyberbullying)",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Parágrafo único. Se a conduta é realizada por meio da rede de computadores, de rede social, de \r\naplicativos, de jogos on-line ou por qualquer outro meio ou ambiente digital, ou transmitida em tempo \r\nreal:   \r\nPena - reclusão, de 2 (dois) anos a 4 (quatro) anos, e multa, se a conduta não constituir crime mais \r\ngrave.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Ameaça",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 147 - Ameaçar alguém, por palavra, escrito ou gesto, ou qualquer outro meio simbólico, \r\nde causar-lhe mal injusto e grave: \r\nPena - detenção, de um a seis meses, ou multa. \r\n§ 1º Se o crime é cometido contra a mulher por razões da condição do sexo feminino, nos \r\ntermos do § 1º do art. 121-A deste Código, aplica-se a pena em dobro.     \r\n§ 2º Somente se procede mediante representação, exceto na hipótese prevista no § 1º deste \r\nartigo.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Perseguição",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 147-A.  Perseguir alguém, reiteradamente e por qualquer meio, ameaçando-lhe a \r\nintegridade física ou psicológica, restringindo-lhe a capacidade de locomoção ou, de qualquer forma, \r\ninvadindo ou perturbando sua esfera de liberdade ou privacidade.       \r\nPena – reclusão, de 6 (seis) meses a 2 (dois) anos, e multa.       \r\n§ 1º A pena é aumentada de metade se o crime é cometido:        \r\nI – contra criança, adolescente ou idoso;      \r\nII – contra mulher por razões da condição de sexo feminino, nos termos do § 2º-A do art. 121 \r\ndeste Código;       \r\nIII – mediante concurso de 2 (duas) ou mais pessoas ou com o emprego de arma.        \r\n§ 2º  As penas deste artigo são aplicáveis sem prejuízo das correspondentes à violência.       \r\n§ 3º  Somente se procede mediante representação.      \r\nViolência psicológica contra a mulher   \r\nArt. 147-B.  Causar dano emocional à mulher que a prejudique e perturbe seu pleno \r\ndesenvolvimento ou que vise a degradar ou a controlar suas ações, comportamentos, crenças \r\ne decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, \r\nchantagem, ridicularização, limitação do direito de ir e vir ou qualquer outro meio que cause \r\nprejuízo à sua saúde psicológica e autodeterminação:     \r\nPena - reclusão, de 6 (seis) meses a 2 (dois) anos, e multa, se a conduta não constitui \r\ncrime mais grave.    \r\nParágrafo único. A pena é aumentada de metade se o crime é cometido mediante uso de \r\ninteligência artificial ou de qualquer outro recurso tecnológico que altere imagem ou som da \r\nvítima.    \r\nArt. 147-C. Ameaçar alguém, por palavra, escrito ou gesto, ou qualquer outro meio simbólico, \r\nde causar-lhe mal injusto e grave, no contexto da atuação ou para a consecução das condutas \r\nprevistas no art. 2º da lei que institui o marco legal do combate ao crime organizado no Brasil:     \r\nPena - reclusão, de 1 (um) a 3 (três) anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Seqüestro e cárcere privado",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 148 - Privar alguém de sua liberdade, mediante seqüestro ou cárcere privado:         \r\n     Pena - reclusão, de um a três anos. \r\n     § 1º - A pena é de reclusão, de dois a cinco anos: \r\n     I – se a vítima é ascendente, descendente, cônjuge ou companheiro do agente ou maior de \r\n60 (sessenta) anos;         \r\n     II - se o crime é praticado mediante internação da vítima em casa de saúde ou hospital; \r\n     III - se a privação da liberdade dura mais de quinze dias. \r\n     IV – se o crime é praticado contra menor de 18 (dezoito) anos;          \r\n     V – se o crime é praticado com fins libidinosos.          \r\n     § 2º - Se resulta à vítima, em razão de maus-tratos ou da natureza da detenção, grave \r\nsofrimento físico ou moral: \r\n     Pena - reclusão, de dois a oito anos. \r\n§ 3º Se cometido por integrante de organização criminosa ultraviolenta, grupo paramilitar ou \r\nmilícia privada, no contexto da atuação ou para a consecução das condutas previstas no art. 2º da lei \r\nque institui o marco legal do combate ao crime organizado no Brasil:    \r\nPena - reclusão, de 12 (doze) a 20 (vinte) anos.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Redução a condição análoga à de escravo",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 149. Reduzir alguém a condição análoga à de escravo, quer submetendo-o a trabalhos \r\nforçados ou a jornada exaustiva, quer sujeitando-o a condições degradantes de trabalho, quer \r\nrestringindo, por qualquer meio, sua locomoção em razão de dívida contraída com o empregador ou \r\npreposto:        \r\n     Pena - reclusão, de dois a oito anos, e multa, além da pena correspondente à violência.        \r\n     § 1o Nas mesmas penas incorre quem:          \r\n     I – cerceia o uso de qualquer meio de transporte por parte do trabalhador, com o fim de \r\nretê-lo no local de trabalho;         \r\n     II – mantém vigilância ostensiva no local de trabalho ou se apodera de documentos ou \r\nobjetos pessoais do trabalhador, com o fim de retê-lo no local de trabalho.        \r\n     § 2o A pena é aumentada de metade, se o crime é cometido:        \r\n     I – contra criança ou adolescente;          \r\n     II – por motivo de preconceito de raça, cor, etnia, religião ou origem.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Tráfico de Pessoas",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 149-A.  Agenciar, aliciar, recrutar, transportar, transferir, comprar, alojar ou acolher pessoa, \r\nmediante grave ameaça, violência, coação, fraude ou abuso, com a finalidade de:                        \r\nI - remover-lhe órgãos, tecidos ou partes do corpo;                         \r\nII - submetê-la a trabalho em condições análogas à de escravo;                         \r\nIII - submetê-la a qualquer tipo de servidão;                         \r\nIV - adoção ilegal; ou                         \r\nV - exploração sexual.                         \r\nPena - reclusão, de 4 (quatro) a 8 (oito) anos, e multa.                         \r\n§ 1o A pena é aumentada de um terço até a metade se:                         \r\nI - o crime for cometido por funcionário público no exercício de suas funções ou a pretexto de \r\nexercê-las;                         \r\nII - o crime for cometido contra criança, adolescente ou pessoa idosa ou com deficiência;                         \r\nIII - o agente se prevalecer de relações de parentesco, domésticas, de coabitação, de \r\nhospitalidade, de dependência econômica, de autoridade ou de superioridade hierárquica inerente ao \r\nexercício de emprego, cargo ou função; ou                         \r\nIV - a vítima do tráfico de pessoas for retirada do território nacional.                         \r\n§ 2o A pena é reduzida de um a dois terços se o agente for primário e não integrar organização \r\ncriminosa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "DOS CRIMES CONTRA A INVIOLABILIDADE DO DOMICÍLIO",
+                "filhos": [
+                  {
+                    "tipo": "principio",
+                    "nome": "Violação de domicílio",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 150 - Entrar ou permanecer, clandestina ou astuciosamente, ou contra a vontade \r\nexpressa ou tácita de quem de direito, em casa alheia ou em suas dependências: \r\n     Pena - detenção, de um a três meses, ou multa. \r\n     § 1º - Se o crime é cometido durante a noite, ou em lugar ermo, ou com o emprego de \r\nviolência ou de arma, ou por duas ou mais pessoas: \r\n     Pena - detenção, de seis meses a dois anos, além da pena correspondente à violência. \r\n     § 2º -        \r\n     § 3º - Não constitui crime a entrada ou permanência em casa alheia ou em suas \r\ndependências: \r\n     I - durante o dia, com observância das formalidades legais, para efetuar prisão ou outra \r\ndiligência; \r\n     II - a qualquer hora do dia ou da noite, quando algum crime está sendo ali praticado ou na \r\niminência de o ser. \r\n     § 4º - A expressão \"casa\" compreende: \r\n     I - qualquer compartimento habitado; \r\n     II - aposento ocupado de habitação coletiva; \r\n     III - compartimento não aberto ao público, onde alguém exerce profissão ou atividade. \r\n     § 5º - Não se compreendem na expressão \"casa\": \r\n     I - hospedaria, estalagem ou qualquer outra habitação coletiva, enquanto aberta, salvo a \r\nrestrição do n.º II do parágrafo anterior; \r\n     II - taverna, casa de jogo e outras do mesmo gênero.",
+                        "filhos": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "INVIOLABILIDADE DE CORRESPONDÊNCIA",
+                "filhos": [
+                  {
+                    "tipo": "principio",
+                    "nome": "Violação de correspondência",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 151 - Devassar indevidamente o conteúdo de correspondência fechada, dirigida a \r\noutrem: \r\n     Pena - detenção, de um a seis meses, ou multa.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "principio",
+                    "nome": "Sonegação ou destruição de correspondência",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 151 - § 1º - Na mesma pena incorre: \r\n     I - quem se apossa indevidamente de correspondência alheia, embora não fechada e, no \r\ntodo ou em parte, a sonega ou destrói;",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "principio",
+                    "nome": "Violação de comunicação telegráfica, radioelétrica ou telefônica",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 151 - II - quem indevidamente divulga, transmite a outrem ou utiliza abusivamente comunicação \r\ntelegráfica ou radioelétrica dirigida a terceiro, ou conversação telefônica entre outras pessoas; \r\n     III - quem impede a comunicação ou a conversação referidas no número anterior; \r\n     IV - quem instala ou utiliza estação ou aparelho radioelétrico, sem observância de disposição \r\nlegal. \r\n     § 2º - As penas aumentam-se de metade, se há dano para outrem. \r\n     § 3º - Se o agente comete o crime, com abuso de função em serviço postal, telegráfico, \r\nradioelétrico ou telefônico: \r\n     Pena - detenção, de um a três anos. \r\n     § 4º - Somente se procede mediante representação, salvo nos casos do § 1º, IV, e do § 3º.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "principio",
+                    "nome": "Correspondência comercial",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 152 - Abusar da condição de sócio ou empregado de estabelecimento comercial ou \r\nindustrial para, no todo ou em parte, desviar, sonegar, subtrair ou suprimir correspondência, ou \r\nrevelar a estranho seu conteúdo: \r\n     Pena - detenção, de três meses a dois anos. \r\n     Parágrafo único - Somente se procede mediante representação.",
+                        "filhos": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "DOS CRIMES CONTRA A INVIOLABILIDADE DOS SEGREDOS",
+                "filhos": [
+                  {
+                    "tipo": "principio",
+                    "nome": "Divulgação de segredo",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 153 - Divulgar alguém, sem justa causa, conteúdo de documento particular ou de \r\ncorrespondência confidencial, de que é destinatário ou detentor, e cuja divulgação possa produzir \r\ndano a outrem: \r\n    Pena - detenção, de um a seis meses, ou multa, de trezentos mil réis a dois contos de réis.   \r\n     § 1º Somente se procede mediante representação. \r\n     § 1o-A. Divulgar, sem justa causa, informações sigilosas ou reservadas, assim definidas em \r\nlei, contidas ou não nos sistemas de informações ou banco de dados da Administração Pública: \r\n     Pena – detenção, de 1 (um) a 4 (quatro) anos, e multa. \r\n     § 2o Quando resultar prejuízo para a Administração Pública, a ação penal será \r\nincondicionada.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "principio",
+                    "nome": "Violação do segredo profissional",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 154 - Revelar alguém, sem justa causa, segredo, de que tem ciência em razão de \r\nfunção, ministério, ofício ou profissão, e cuja revelação possa produzir dano a outrem: \r\nPena - detenção, de três meses a um ano, ou multa de um conto a dez contos de réis.   \r\nParágrafo único - Somente se procede mediante representação.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "principio",
+                    "nome": "Invasão de dispositivo informático",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 154-A. Invadir dispositivo informático de uso alheio, conectado ou não à rede de \r\ncomputadores, com o fim de obter, adulterar ou destruir dados ou informações sem autorização \r\nexpressa ou tácita do usuário do dispositivo ou de instalar vulnerabilidades para obter vantagem \r\nilícita:      \r\nPena – reclusão, de 1 (um) a 4 (quatro) anos, e multa.     \r\n§ 1o  Na mesma pena incorre quem produz, oferece, distribui, vende ou difunde dispositivo ou \r\nprograma de computador com o intuito de permitir a prática da conduta definida no caput.             \r\n§ 2º Aumenta-se a pena de 1/3 (um terço) a 2/3 (dois terços) se da invasão resulta prejuízo \r\neconômico.       \r\n§ 3o  Se da invasão resultar a obtenção de conteúdo de comunicações eletrônicas privadas, \r\nsegredos comerciais ou industriais, informações sigilosas, assim definidas em lei, ou o controle \r\nremoto não autorizado do dispositivo invadido:             \r\nPena – reclusão, de 2 (dois) a 5 (cinco) anos, e multa.      \r\n§ 4o  Na hipótese do § 3o, aumenta-se a pena de um a dois terços se houver divulgação, \r\ncomercialização ou transmissão a terceiro, a qualquer título, dos dados ou informações obtidos.            \r\n§ 5o  Aumenta-se a pena de um terço à metade se o crime for praticado contra:             \r\nI - Presidente da República, governadores e prefeitos;              \r\nII - Presidente do Supremo Tribunal Federal;             \r\nIII - Presidente da Câmara dos Deputados, do Senado Federal, de Assembleia Legislativa de Estado, \r\nda Câmara Legislativa do Distrito Federal ou de Câmara Municipal; ou        \r\nIV - dirigente máximo da administração direta e indireta federal, estadual, municipal ou do Distrito \r\nFederal.          \r\nAção penal            \r\nArt. 154-B.  Nos crimes definidos no art. 154-A, somente se procede mediante representação, salvo \r\nse o crime é cometido contra a administração pública direta ou indireta de qualquer dos Poderes da \r\nUnião, Estados, Distrito Federal ou Municípios ou contra empresas concessionárias de serviços \r\npúblicos.",
+                        "filhos": []
+                      }
+                    ]
                   }
                 ]
               }
