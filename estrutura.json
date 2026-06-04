@@ -1473,6 +1473,7 @@
 
               {
                 "tipo": "principio",
+                "isList": true,
                 "nome": "DOS CRIMES CONTRA A LIBERDADE PESSOAL",
                 "filhos": [
                   {
@@ -1579,6 +1580,7 @@
               
               {
                 "tipo": "principio",
+                "isList": true,
                 "nome": "DOS CRIMES CONTRA A INVIOLABILIDADE DO DOMICÍLIO",
                 "filhos": [
                   {
@@ -1596,6 +1598,7 @@
               },
               {
                 "tipo": "principio",
+                "isList": true,
                 "nome": "INVIOLABILIDADE DE CORRESPONDÊNCIA",
                 "filhos": [
                   {
@@ -1646,6 +1649,7 @@
               },
               {
                 "tipo": "principio",
+                "isList": true,
                 "nome": "DOS CRIMES CONTRA A INVIOLABILIDADE DOS SEGREDOS",
                 "filhos": [
                   {
