@@ -154,7 +154,7 @@
       },
       {
         "tipo": "titulo",
-        "nome": "DO CRIME",
+        "nome": "✅ DO CRIME",
         "filhos": [
           {
             "tipo": "principio",
@@ -402,7 +402,7 @@
       },
       {
         "tipo": "titulo",
-        "nome": "DA IMPUTABILIDADE PENAL",
+        "nome": "✅ DA IMPUTABILIDADE PENAL",
         "filhos": [
           {
             "tipo": "principio",
@@ -684,7 +684,7 @@
       },
       {
         "tipo": "titulo",
-        "nome": "DAS MEDIDAS DE SEGURANÇA",
+        "nome": "✅ DAS MEDIDAS DE SEGURANÇA",
         "filhos": [
           {
             "tipo": "principio",
@@ -983,11 +983,11 @@
     "filhos": [
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA A PESSOA",
+        "nome": "✅DOS CRIMES CONTRA A PESSOA",
         "filhos": [
           {
             "tipo": "capitulo",
-            "nome": "DOS CRIMES CONTRA A VIDA",
+            "nome": "✅ DOS CRIMES CONTRA A VIDA",
             "filhos": [
               {
                 "tipo": "principio",
@@ -1175,7 +1175,7 @@
           },
           {
             "tipo": "capitulo",
-            "nome": "DAS LESÕES CORPORAIS",
+            "nome": "✅ DAS LESÕES CORPORAIS",
             "filhos": [
               {
                 "tipo": "principio",
@@ -1263,7 +1263,7 @@
           },
           {
             "tipo": "capitulo",
-            "nome": "DA PERICLITAÇÃO DA VIDA E DA SAÚDE",
+            "nome": "✅ DA PERICLITAÇÃO DA VIDA E DA SAÚDE",
             "filhos": [
               {
                 "tipo": "principio",
@@ -1374,7 +1374,7 @@
           },
           {
             "tipo": "capitulo",
-            "nome": "DOS CRIMES CONTRA A HONRA",
+            "nome": "✅ DOS CRIMES CONTRA A HONRA",
             "filhos": [
               {
                 "tipo": "principio",
@@ -1468,9 +1468,8 @@
           },
           {
             "tipo": "capitulo",
-            "nome": "DOS CRIMES CONTRA A LIBERDADE INDIVIDUAL",
+            "nome": "✅ DOS CRIMES CONTRA A LIBERDADE INDIVIDUAL",
             "filhos": [
-
               {
                 "tipo": "principio",
                 "isList": true,
@@ -1480,104 +1479,103 @@
                     "tipo": "principio",
                     "nome": "Constrangimento ilegal",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "Art. 146 - Constranger alguém, mediante violência ou grave ameaça, ou depois de lhe haver \r\nreduzido, por qualquer outro meio, a capacidade de resistência, a não fazer o que a lei permite, ou a \r\nfazer o que ela não manda: \r\nPena - detenção, de três meses a um ano, ou multa.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    },
-                    {
+                  },
+                  {
                     "tipo": "principio",
                     "nome": "Aumento de pena",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "§ 1º - As penas aplicam-se cumulativamente e em dobro, quando, para a execução do crime, \r\nse reúnem mais de três pessoas, ou há emprego de armas. \r\n§ 2º - Além das penas cominadas, aplicam-se as correspondentes à violência. \r\n§ 3º - Não se compreendem na disposição deste artigo: \r\nI - a intervenção médica ou cirúrgica, sem o consentimento do paciente ou de seu \r\nrepresentante legal, se justificada por iminente perigo de vida; \r\nII - a coação exercida para impedir suicídio.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    },
-                    {
+                  },
+                  {
                     "tipo": "principio",
                     "nome": "Intimidação sistemática (bullying)",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "Art. 146-A. Intimidar sistematicamente, individualmente ou em grupo, mediante violência física ou \r\npsicológica, uma ou mais pessoas, de modo intencional e repetitivo, sem motivação evidente, por \r\nmeio de atos de intimidação, de humilhação ou de discriminação ou de ações verbais, morais, \r\nsexuais, sociais, psicológicas, físicas, materiais ou virtuais:   \r\nPena - multa, se a conduta não constituir crime mais grave.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    },
-                    {
+                  },
+                  {
                     "tipo": "principio",
                     "nome": "Intimidação sistemática virtual (cyberbullying)",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "Parágrafo único. Se a conduta é realizada por meio da rede de computadores, de rede social, de \r\naplicativos, de jogos on-line ou por qualquer outro meio ou ambiente digital, ou transmitida em tempo \r\nreal:   \r\nPena - reclusão, de 2 (dois) anos a 4 (quatro) anos, e multa, se a conduta não constituir crime mais \r\ngrave.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    },
-                    {
+                  },
+                  {
                     "tipo": "principio",
                     "nome": "Ameaça",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "Art. 147 - Ameaçar alguém, por palavra, escrito ou gesto, ou qualquer outro meio simbólico, \r\nde causar-lhe mal injusto e grave: \r\nPena - detenção, de um a seis meses, ou multa. \r\n§ 1º Se o crime é cometido contra a mulher por razões da condição do sexo feminino, nos \r\ntermos do § 1º do art. 121-A deste Código, aplica-se a pena em dobro.     \r\n§ 2º Somente se procede mediante representação, exceto na hipótese prevista no § 1º deste \r\nartigo.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    },
-                    {
+                  },
+                  {
                     "tipo": "principio",
                     "nome": "Perseguição",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "Art. 147-A.  Perseguir alguém, reiteradamente e por qualquer meio, ameaçando-lhe a \r\nintegridade física ou psicológica, restringindo-lhe a capacidade de locomoção ou, de qualquer forma, \r\ninvadindo ou perturbando sua esfera de liberdade ou privacidade.       \r\nPena – reclusão, de 6 (seis) meses a 2 (dois) anos, e multa.       \r\n§ 1º A pena é aumentada de metade se o crime é cometido:        \r\nI – contra criança, adolescente ou idoso;      \r\nII – contra mulher por razões da condição de sexo feminino, nos termos do § 2º-A do art. 121 \r\ndeste Código;       \r\nIII – mediante concurso de 2 (duas) ou mais pessoas ou com o emprego de arma.        \r\n§ 2º  As penas deste artigo são aplicáveis sem prejuízo das correspondentes à violência.       \r\n§ 3º  Somente se procede mediante representação.      \r\nViolência psicológica contra a mulher   \r\nArt. 147-B.  Causar dano emocional à mulher que a prejudique e perturbe seu pleno \r\ndesenvolvimento ou que vise a degradar ou a controlar suas ações, comportamentos, crenças \r\ne decisões, mediante ameaça, constrangimento, humilhação, manipulação, isolamento, \r\nchantagem, ridicularização, limitação do direito de ir e vir ou qualquer outro meio que cause \r\nprejuízo à sua saúde psicológica e autodeterminação:     \r\nPena - reclusão, de 6 (seis) meses a 2 (dois) anos, e multa, se a conduta não constitui \r\ncrime mais grave.    \r\nParágrafo único. A pena é aumentada de metade se o crime é cometido mediante uso de \r\ninteligência artificial ou de qualquer outro recurso tecnológico que altere imagem ou som da \r\nvítima.    \r\nArt. 147-C. Ameaçar alguém, por palavra, escrito ou gesto, ou qualquer outro meio simbólico, \r\nde causar-lhe mal injusto e grave, no contexto da atuação ou para a consecução das condutas \r\nprevistas no art. 2º da lei que institui o marco legal do combate ao crime organizado no Brasil:     \r\nPena - reclusão, de 1 (um) a 3 (três) anos.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    },
-                    {
+                  },
+                  {
                     "tipo": "principio",
                     "nome": "Seqüestro e cárcere privado",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "Art. 148 - Privar alguém de sua liberdade, mediante seqüestro ou cárcere privado:         \r\n     Pena - reclusão, de um a três anos. \r\n     § 1º - A pena é de reclusão, de dois a cinco anos: \r\n     I – se a vítima é ascendente, descendente, cônjuge ou companheiro do agente ou maior de \r\n60 (sessenta) anos;         \r\n     II - se o crime é praticado mediante internação da vítima em casa de saúde ou hospital; \r\n     III - se a privação da liberdade dura mais de quinze dias. \r\n     IV – se o crime é praticado contra menor de 18 (dezoito) anos;          \r\n     V – se o crime é praticado com fins libidinosos.          \r\n     § 2º - Se resulta à vítima, em razão de maus-tratos ou da natureza da detenção, grave \r\nsofrimento físico ou moral: \r\n     Pena - reclusão, de dois a oito anos. \r\n§ 3º Se cometido por integrante de organização criminosa ultraviolenta, grupo paramilitar ou \r\nmilícia privada, no contexto da atuação ou para a consecução das condutas previstas no art. 2º da lei \r\nque institui o marco legal do combate ao crime organizado no Brasil:    \r\nPena - reclusão, de 12 (doze) a 20 (vinte) anos.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    },
-                    {
+                  },
+                  {
                     "tipo": "principio",
                     "nome": "Redução a condição análoga à de escravo",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "Art. 149. Reduzir alguém a condição análoga à de escravo, quer submetendo-o a trabalhos \r\nforçados ou a jornada exaustiva, quer sujeitando-o a condições degradantes de trabalho, quer \r\nrestringindo, por qualquer meio, sua locomoção em razão de dívida contraída com o empregador ou \r\npreposto:        \r\n     Pena - reclusão, de dois a oito anos, e multa, além da pena correspondente à violência.        \r\n     § 1o Nas mesmas penas incorre quem:          \r\n     I – cerceia o uso de qualquer meio de transporte por parte do trabalhador, com o fim de \r\nretê-lo no local de trabalho;         \r\n     II – mantém vigilância ostensiva no local de trabalho ou se apodera de documentos ou \r\nobjetos pessoais do trabalhador, com o fim de retê-lo no local de trabalho.        \r\n     § 2o A pena é aumentada de metade, se o crime é cometido:        \r\n     I – contra criança ou adolescente;          \r\n     II – por motivo de preconceito de raça, cor, etnia, religião ou origem.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    },
-                    {
+                  },
+                  {
                     "tipo": "principio",
                     "nome": "Tráfico de Pessoas",
                     "filhos": [
-                        {
+                      {
                         "tipo": "artigo",
                         "nome": "Art. 149-A.  Agenciar, aliciar, recrutar, transportar, transferir, comprar, alojar ou acolher pessoa, \r\nmediante grave ameaça, violência, coação, fraude ou abuso, com a finalidade de:                        \r\nI - remover-lhe órgãos, tecidos ou partes do corpo;                         \r\nII - submetê-la a trabalho em condições análogas à de escravo;                         \r\nIII - submetê-la a qualquer tipo de servidão;                         \r\nIV - adoção ilegal; ou                         \r\nV - exploração sexual.                         \r\nPena - reclusão, de 4 (quatro) a 8 (oito) anos, e multa.                         \r\n§ 1o A pena é aumentada de um terço até a metade se:                         \r\nI - o crime for cometido por funcionário público no exercício de suas funções ou a pretexto de \r\nexercê-las;                         \r\nII - o crime for cometido contra criança, adolescente ou pessoa idosa ou com deficiência;                         \r\nIII - o agente se prevalecer de relações de parentesco, domésticas, de coabitação, de \r\nhospitalidade, de dependência econômica, de autoridade ou de superioridade hierárquica inerente ao \r\nexercício de emprego, cargo ou função; ou                         \r\nIV - a vítima do tráfico de pessoas for retirada do território nacional.                         \r\n§ 2o A pena é reduzida de um a dois terços se o agente for primário e não integrar organização \r\ncriminosa.",
                         "filhos": []
-                        }
+                      }
                     ]
-                    }
+                  }
                 ]
               },
-              
               {
                 "tipo": "principio",
                 "isList": true,
@@ -1693,13 +1691,595 @@
       },
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA O PATRIMÔNIO",
-        "filhos": []
+        "nome": "✅ DOS CRIMES CONTRA O PATRIMÔNIO",
+        "filhos": [
+          {
+            "tipo": "capitulo",
+            "nome": "DO FURTO",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Furto",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 155 - Subtrair, para si ou para outrem, coisa alheia móvel: \r\n        Pena – reclusão, de 1 (um) a 6 (seis) anos, e multa.   \r\n        § 1º A pena aumenta-se de metade, se o crime é praticado durante o repouso noturno.   \r\n     § 2º - Se o criminoso é primário, e é de pequeno valor a coisa furtada, o juiz pode substituir a \r\npena de reclusão pela de detenção, diminuí-la de um a dois terços, ou aplicar somente a pena de \r\nmulta. \r\n     § 3º - Equipara-se à coisa móvel a energia elétrica ou qualquer outra que tenha valor \r\neconômico.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Furto qualificado",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 155 - § 4º A pena é de reclusão, de 2 (dois) a 8 (oito) anos, e multa, se o crime é cometido:   \r\n     I - com destruição ou rompimento de obstáculo à subtração da coisa; \r\n     II - com abuso de confiança, ou mediante fraude, escalada ou destreza; \r\n     III - com emprego de chave falsa; \r\n     IV - mediante concurso de duas ou mais pessoas. \r\n        V – contra quaisquer bens que comprometam o funcionamento de órgãos da União, de Estado, \r\ndo Distrito Federal ou de Município ou de estabelecimentos públicos ou privados que prestem \r\nserviços essenciais.   \r\n        § 4º-A A pena é de reclusão de 4 (quatro) a 10 (dez) anos e multa, se houver emprego de \r\nexplosivo ou de artefato análogo que cause perigo comum.                 \r\n§ 4º-B. A pena é de reclusão, de 4 (quatro) a 10 (dez) anos, e multa, se o furto mediante fraude \r\né cometido por meio de dispositivo eletrônico ou informático, conectado ou não à rede de \r\ncomputadores, com ou sem a violação de mecanismo de segurança ou a utilização de programa \r\nmalicioso, ou por qualquer outro meio fraudulento análogo.   \r\n§ 4º-C. A pena prevista no § 4º-B deste artigo, considerada a relevância do resultado gravoso:      \r\nI – aumenta-se de 1/3 (um terço) a 2/3 (dois terços), se o crime é praticado mediante a \r\nutilização de servidor mantido fora do território nacional;      \r\nII – aumenta-se de 1/3 (um terço) ao dobro, se o crime é praticado contra idoso ou vulnerável.   \r\n        § 5º A pena é de reclusão, de 4 (quatro) a 10 (dez) anos, e multa, se a subtração for de veículo \r\nautomotor que venha a ser transportado para outro Estado ou para o exterior.   \r\n§ 6º A pena é de reclusão, de 4 (quatro) a 10 (dez) anos, e multa, se a subtração for:   \r\nI – de semovente domesticável de produção, ainda que abatido ou dividido em partes no local da \r\nsubtração, ou de animal doméstico;   \r\nII – de aparelho de telefonia celular, de computador, inclusive portátil ou do tipo prancheta, ou de \r\nqualquer dispositivo eletrônico ou informático semelhante.    \r\n§ 7º A pena é de reclusão, de 4 (quatro) a 10 (dez) anos, e multa, se a subtração for:   \r\nI – de substâncias explosivas ou de acessórios que, conjunta ou isoladamente, possibilitem sua \r\nfabricação, montagem ou emprego;    \r\nII – de arma de fogo.     \r\n        § 8º A pena é de reclusão, de 2 (dois) a 8 (oito) anos, e multa, se a subtração for de fios, cabos \r\nou equipamentos utilizados para fornecimento ou transmissão de energia elétrica ou de telefonia ou \r\npara transferência de dados, bem como equipamentos ou materiais ferroviários ou metroviários, \r\naplicável, em qualquer caso, o disposto no § 2º deste artigo.     \r\n      § 9º A pena é de reclusão de 4 (quatro) a 10 (dez) anos e multa, se a subtração, para si ou \r\npara outrem, de coisa alheia móvel é cometida por integrante de organização criminosa ultraviolenta, \r\ngrupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das condutas \r\nprevistas no art. 2º da lei que institui o marco legal do combate ao crime organizado no Brasil.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Furto de coisa comum",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 156 - Subtrair o condômino, co-herdeiro ou sócio, para si ou para outrem, a quem \r\nlegitimamente a detém, a coisa comum: \r\n     Pena - detenção, de seis meses a dois anos, ou multa. \r\n     § 1º - Somente se procede mediante representação. \r\n     § 2º - Não é punível a subtração de coisa comum fungível, cujo valor não excede a quota a \r\nque tem direito o agente.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DO ROUBO E DA EXTORSÃO",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Roubo",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 157 - Subtrair coisa móvel alheia, para si ou para outrem, mediante grave ameaça ou \r\nviolência a pessoa, ou depois de havê-la, por qualquer meio, reduzido à impossibilidade de \r\nresistência: \r\n        Pena – reclusão, de 6 (seis) a 10 (dez) anos, e multa.   \r\n     § 1º - Na mesma pena incorre quem, logo depois de subtraída a coisa, \r\nemprega violência contra pessoa ou grave ameaça, a fim de assegurar a \r\nimpunidade do crime ou a detenção da coisa para si ou para terceiro. \r\n        § 1º-A. A pena é de reclusão, de 6 (seis) a 12 (doze) anos, e multa, se a subtração for cometida \r\ncontra quaisquer bens que comprometam o funcionamento de órgãos da União, de Estado, do \r\nDistrito Federal ou de Município ou de estabelecimentos públicos ou privados que prestem serviços \r\npúblicos essenciais.    \r\n        § 2º  A pena aumenta-se de 1/3 (um terço) até metade:                 \r\n        I – ;                \r\n     II - se há o concurso de duas ou mais pessoas; \r\n     III - se a vítima está em serviço de transporte de valores e o agente conhece tal \r\ncircunstância. \r\n        IV - se a subtração for de veículo automotor que venha a ser transportado para outro Estado ou \r\npara o exterior;                   \r\n     V - se o agente mantém a vítima em seu poder, restringindo sua liberdade.                   \r\n        VI – se a subtração for de substâncias explosivas ou de acessórios que, conjunta ou \r\nisoladamente, possibilitem sua fabricação, montagem ou emprego.                 \r\n          VII - se a violência ou grave ameaça é exercida com emprego de arma branca;            \r\n     VIII – se a subtração for de fios, cabos ou equipamentos utilizados para fornecimento ou \r\ntransmissão de energia elétrica ou de telefonia ou para transferência de dados, bem como \r\nequipamentos ou materiais ferroviários ou metroviários.   \r\nIX – se a subtração for de aparelho de telefonia celular, de computador, inclusive portátil ou do tipo \r\nprancheta, ou de qualquer dispositivo eletrônico ou informático semelhante;    \r\nX – se a subtração for de arma de fogo.    \r\n       § 2º-A  A pena aumenta-se de 2/3 (dois terços):                 \r\n     I – se a violência ou ameaça é exercida com emprego de arma de fogo;                 \r\n     II – se há destruição ou rompimento de obstáculo mediante o emprego de explosivo ou de \r\nartefato análogo que cause perigo comum.                 \r\n        § 2º-B.  Se a violência ou grave ameaça é exercida com emprego de arma de fogo de uso \r\nrestrito ou proibido, aplica-se em dobro a pena prevista no caput deste artigo.            \r\n        § 3º  Se da violência resulta:                 \r\n        I – lesão corporal grave, a pena é de reclusão de 7 (sete) a 18 (dezoito) anos, e multa;                  \r\n        II – morte, a pena é de reclusão, de 24 (vinte e quatro) a 30 (trinta) anos, e multa.    \r\n§ 4º Se a violência ou grave ameaça é cometida por integrante de organização criminosa \r\nultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das \r\ncondutas previstas no art. 2º da lei que institui o marco legal do combate ao crime organizado no \r\nBrasil, aplica-se em triplo a pena prevista no caput deste artigo, desprezadas as demais causas de \r\naumento.     \r\n§ 5º Se o crime previsto no inciso II do § 3º deste artigo é cometido por integrante de \r\norganização criminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou \r\npara a consecução das condutas previstas no art. 2º da lei que institui o marco legal do combate ao \r\ncrime organizado no Brasil, e da violência resulta morte:     \r\nPena - reclusão, de 20 (vinte) a 40 (quarenta) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Extorsão",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 158 - Constranger alguém, mediante violência ou grave ameaça, e com o intuito de obter \r\npara si ou para outrem indevida vantagem econômica, a fazer, tolerar que se faça ou deixar de fazer \r\nalguma coisa: \r\n     Pena - reclusão, de quatro a dez anos, e multa. \r\n     § 1º - Se o crime é cometido por duas ou mais pessoas, ou com emprego de arma, \r\naumenta-se a pena de um terço até metade. \r\n     § 2º - Aplica-se à extorsão praticada mediante violência o disposto no § 3º do artigo anterior.                     \r\n§ 3o  Se o crime é cometido mediante a restrição da liberdade da vítima, e essa condição é \r\nnecessária para a obtenção da vantagem econômica, a pena é de reclusão, de 6 (seis) a 12 (doze) \r\nanos, além da multa; se resulta lesão corporal grave ou morte, aplicam-se as penas previstas no art. \r\n159, §§ 2o e 3o, respectivamente.                  \r\n§ 4º Se os crimes previstos neste artigo são cometidos por integrante de organização \r\ncriminosa, grupo paramilitar ou milícia privada, no contexto da atuação ou para a consecução das \r\ncondutas previstas, aplica-se em triplo a respectiva pena.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Extorsão mediante seqüestro",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 159 - Seqüestrar pessoa com o fim de obter, para si ou para outrem, qualquer vantagem, \r\ncomo condição ou preço do resgate:                                  \r\n        Pena - reclusão, de oito a quinze anos..                 \r\n        § 1o Se o seqüestro dura mais de 24 (vinte e quatro) horas, se o seqüestrado é menor de 18 \r\n(dezoito) ou maior de 60 (sessenta) anos, ou se o crime é cometido por bando ou quadrilha.                          \r\n    \r\n        Pena - reclusão, de doze a vinte anos.              \r\n     § 2º - Se do fato resulta lesão corporal de natureza grave:               \r\n        Pena - reclusão, de dezesseis a vinte e quatro anos.                 \r\n     § 3º - Se resulta a morte:                \r\n        Pena - reclusão, de vinte e quatro a trinta anos.                  \r\n        § 4º - Se o crime é cometido em concurso, o concorrente que o denunciar à autoridade, \r\nfacilitando a libertação do seqüestrado, terá sua pena reduzida de um a dois terços.                   \r\n     § 5º Se os crimes previstos neste artigo são cometidos por integrante de organização \r\ncriminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a \r\nconsecução das condutas previstas no art. 2º da lei que institui o marco legal do combate ao crime \r\norganizado no Brasil, aumenta-se a respectiva pena em 2/3 (dois terços).",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Extorsão indireta",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 160 - Exigir ou receber, como garantia de dívida, abusando da situação de alguém, \r\ndocumento que pode dar causa a procedimento criminal contra a vítima ou contra terceiro: \r\n     Pena - reclusão, de um a três anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DA USURPAÇÃO",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Alteração de limites",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 161 - Suprimir ou deslocar tapume, marco, ou qualquer outro sinal indicativo de linha \r\ndivisória, para apropriar-se, no todo ou em parte, de coisa imóvel alheia: \r\n     Pena - detenção, de um a seis meses, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Usurpação de águas",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 161  - § 1º - Na mesma pena incorre quem: \r\n    I - desvia ou represa, em proveito próprio ou de outrem, águas alheias;",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Esbulho possessório",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 161  - § 1º - Na mesma pena incorre quem:  \r\n II - invade, com violência a pessoa ou grave ameaça, ou mediante concurso de mais de duas \r\npessoas, terreno ou edifício alheio, para o fim de esbulho possessório. \r\n     § 2º - Se o agente usa de violência, incorre também na pena a esta cominada. \r\n     § 3º - Se a propriedade é particular, e não há emprego de violência, somente se procede \r\nmediante queixa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Supressão ou alteração de marca em animais",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 162 - Suprimir ou alterar, indevidamente, em gado ou rebanho alheio, marca ou sinal \r\nindicativo de propriedade: \r\n     Pena - detenção, de seis meses a três anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DO DANO",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Dano",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 163 - Destruir, inutilizar ou deteriorar coisa alheia: \r\n     Pena - detenção, de um a seis meses, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Dano qualificado",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 163 - Parágrafo único - Se o crime é cometido: \r\n     I - com violência à pessoa ou grave ameaça; \r\n     II - com emprego de substância inflamável ou explosiva, se o fato não constitui crime mais \r\ngrave \r\n       III - contra o patrimônio da União, de Estado, do Distrito Federal, de Município ou de autarquia, \r\nfundação pública, empresa pública, sociedade de economia mista ou empresa concessionária de \r\nserviços públicos;                 \r\n     IV - por motivo egoístico ou com prejuízo considerável para a vítima: \r\n     Pena - detenção, de seis meses a três anos, e multa, além da pena correspondente à \r\nviolência.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Introdução ou abandono de animais em propriedade alheia",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 164 - Introduzir ou deixar animais em propriedade alheia, sem consentimento de quem \r\nde direito, desde que o fato resulte prejuízo: \r\n     Pena - detenção, de quinze dias a seis meses, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Dano em coisa de valor artístico, arqueológico ou histórico",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 165 - Destruir, inutilizar ou deteriorar coisa tombada pela autoridade competente em \r\nvirtude de valor artístico, arqueológico ou histórico: \r\n     Pena - detenção, de seis meses a dois anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Alteração de local especialmente protegido",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 166 - Alterar, sem licença da autoridade competente, o aspecto de local especialmente \r\nprotegido por lei: \r\n     Pena - detenção, de um mês a um ano, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Ação penal",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 167 - Nos casos do art. 163, do inciso IV do seu parágrafo e do art. 164, somente se \r\nprocede mediante queixa.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DA APROPRIAÇÃO INDÉBITA",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Apropriação indébita",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 168 - Apropriar-se de coisa alheia móvel, de que tem a posse ou a detenção: \r\n     Pena - reclusão, de um a quatro anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Aumento de pena",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 168 - § 1º - A pena é aumentada de um terço, quando o agente recebeu a coisa: \r\n     I - em depósito necessário; \r\n     II - na qualidade de tutor, curador, síndico, liquidatário, inventariante, testamenteiro ou \r\ndepositário judicial; \r\n     III - em razão de ofício, emprego ou profissão.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Apropriação indébita previdenciária",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 168-A. Deixar de repassar à previdência social as contribuições recolhidas dos \r\ncontribuintes, no prazo e forma legal ou convencional: \r\n     Pena – reclusão, de 2 (dois) a 5 (cinco) anos, e multa. \r\n     § 1o Nas mesmas penas incorre quem deixar de: \r\n     I – recolher, no prazo legal, contribuição ou outra importância destinada à previdência social \r\nque tenha sido descontada de pagamento efetuado a segurados, a terceiros ou arrecadada do \r\npúblico;  \r\n     II – recolher contribuições devidas à previdência social que tenham integrado despesas \r\ncontábeis ou custos relativos à venda de produtos ou à prestação de serviços;  \r\n     III - pagar benefício devido a segurado, quando as respectivas cotas ou valores já tiverem \r\nsido reembolsados à empresa pela previdência social.  \r\n     § 2o É extinta a punibilidade se o agente, espontaneamente, declara, confessa e efetua o \r\npagamento das contribuições, importâncias ou valores e presta as informações devidas à previdência \r\nsocial, na forma definida em lei ou regulamento, antes do início da ação fiscal.  \r\n     § 3o É facultado ao juiz deixar de aplicar a pena ou aplicar somente a de multa se o agente \r\nfor primário e de bons antecedentes, desde que:  \r\n     I – tenha promovido, após o início da ação fiscal e antes de oferecida a denúncia, o \r\npagamento da contribuição social previdenciária, inclusive acessórios; ou  \r\n     II – o valor das contribuições devidas, inclusive acessórios, seja igual ou inferior àquele \r\nestabelecido pela previdência social, administrativamente, como sendo o mínimo para o ajuizamento \r\nde suas execuções fiscais.  \r\n§ 4o  A faculdade prevista no § 3o deste artigo não se aplica aos casos de parcelamento de \r\ncontribuições cujo valor, inclusive dos acessórios, seja superior àquele estabelecido, \r\nadministrativamente, como sendo o mínimo para o ajuizamento de suas execuções fiscais.   \r\n§ 5º A extinção de punibilidade de que trata o § 2º deste artigo não se aplica ao agente declarado \r\ndevedor contumaz em decisão administrativa definitiva e inscrito no Cadastro Informativo dos \r\ncréditos não quitados do setor público federal (Cadin), previsto na      \r\n§ 6º O fato de o agente deixar de ser considerado devedor contumaz não afasta o disposto no § 5º \r\ndeste artigo em relação aos atos praticados no período em que era assim considerado.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Apropriação de coisa havida por erro, caso fortuito ou força da natureza",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 169 - Apropriar-se alguém de coisa alheia vinda ao seu poder por erro, caso fortuito ou \r\nforça da natureza: \r\n     Pena - detenção, de um mês a um ano, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Apropriação de tesouro",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 169 - I - quem acha tesouro em prédio alheio e se apropria, no todo ou em parte, da quota a que \r\ntem direito o proprietário do prédio;",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Apropriação de coisa achada",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "II - quem acha coisa alheia perdida e dela se apropria, total ou parcialmente, deixando de \r\nrestituí-la ao dono ou legítimo possuidor ou de entregá-la à autoridade competente, dentro no prazo \r\nde quinze dias. \r\n     Art. 170 - Nos crimes previstos neste Capítulo, aplica-se o disposto no art. 155, § 2º.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DO ESTELIONATO E OUTRAS FRAUDES",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Estelionato",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - Obter, para si ou para outrem, vantagem ilícita, em prejuízo alheio, induzindo ou \r\nmantendo alguém em erro, mediante artifício, ardil, ou qualquer outro meio fraudulento: \r\n       Pena – reclusão, de 1 (um) a 5 (cinco) anos, e multa.     \r\n     § 1º - Se o criminoso é primário, e é de pequeno valor o prejuízo, o juiz pode aplicar a pena \r\nconforme o disposto no art. 155, § 2º.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Disposição de coisa alheia como própria",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º - Nas mesmas penas incorre quem: \r\n   I - vende, permuta, dá em pagamento, em locação ou em garantia coisa alheia como própria;",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Alienação ou oneração fraudulenta de coisa própria",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º - Nas mesmas penas incorre quem:  \r\n II - vende, permuta, dá em pagamento ou em garantia coisa própria inalienável, gravada de \r\nônus ou litigiosa, ou imóvel que prometeu vender a terceiro, mediante pagamento em prestações, \r\nsilenciando sobre qualquer dessas circunstâncias;",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Defraudação de penhor",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º - Nas mesmas penas incorre quem:  \r\n III - defrauda, mediante alienação não consentida pelo credor ou por outro modo, a garantia \r\npignoratícia, quando tem a posse do objeto empenhado;",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Fraude na entrega de coisa",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º - Nas mesmas penas incorre quem:  \r\n IV - defrauda substância, qualidade ou quantidade de coisa que deve entregar a alguém;",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Fraude para recebimento de indenização ou valor de seguro",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º - Nas mesmas penas incorre quem:  \r\n V - destrói, total ou parcialmente, ou oculta coisa própria, ou lesa o próprio corpo ou a saúde, \r\nou agrava as conseqüências da lesão ou doença, com o intuito de haver indenização ou valor de \r\nseguro;",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Fraude no pagamento por meio de cheque",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º - Nas mesmas penas incorre quem:  \r\n VI - emite cheque, sem suficiente provisão de fundos em poder do sacado, ou lhe frustra o \r\npagamento.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Cessão de conta laranja",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º - Nas mesmas penas incorre quem:  \r\n VII – cede, gratuita ou onerosamente, conta bancária para que nela transitem recursos destinados ao \r\nfinanciamento de atividade criminosa ou que dela sejam fruto.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Fraude eletrônica",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º-A. A pena é de reclusão, de 4 (quatro) a 8 (oito) anos, e multa, se a fraude é cometida \r\ncom a utilização de informações fornecidas pela vítima ou por terceiro induzido a erro por meio de \r\nredes sociais, contatos telefônicos, envio de correio eletrônico fraudulento, duplicação de dispositivo \r\neletrônico ou aplicação de internet, ou por qualquer outro meio fraudulento análogo.    \r\n§ 2º-B. A pena prevista no § 2º-A deste artigo, considerada a relevância do resultado gravoso, \r\naumenta-se de 1/3 (um terço) a 2/3 (dois terços), se o crime é praticado mediante a utilização de \r\nservidor mantido fora do território nacional.     \r\n     § 3º - A pena aumenta-se de um terço, se o crime é cometido em detrimento de entidade de \r\ndireito público ou de instituto de economia popular, assistência social ou beneficência.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Estelionato contra idoso ou vulnerável",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 171 - § 2º-B. § 4º A pena aumenta-se de 1/3 (um terço) ao dobro, se o crime é cometido contra idoso ou \r\nvulnerável, considerada a relevância do resultado gravoso.      \r\nArt. 171-A. Organizar, gerir, ofertar ou distribuir carteiras ou intermediar operações que \r\nenvolvam ativos virtuais, valores mobiliários ou quaisquer ativos financeiros com o fim de obter \r\nvantagem ilícita, em prejuízo alheio, induzindo ou mantendo alguém em erro, mediante artifício, ardil \r\nou qualquer outro meio fraudulento.           \r\nPena - reclusão, de 4 (quatro) a 8 (oito) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Duplicata simulada",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 172 - Emitir fatura, duplicata ou nota de venda que não corresponda à mercadoria vendida, \r\nem quantidade ou qualidade, ou ao serviço prestado. \r\n     Pena - detenção, de 2 (dois) a 4 (quatro) anos, e multa.  \r\n     Parágrafo único. Nas mesmas penas incorrerá aquêle que falsificar ou adulterar a \r\nescrituração do Livro de Registro de Duplicatas.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Abuso de incapazes",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 173 - Abusar, em proveito próprio ou alheio, de necessidade, paixão ou inexperiência de \r\nmenor, ou da alienação ou debilidade mental de outrem, induzindo qualquer deles à prática de ato \r\nsuscetível de produzir efeito jurídico, em prejuízo próprio ou de terceiro: \r\n     Pena - reclusão, de dois a seis anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Induzimento à especulação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 174 - Abusar, em proveito próprio ou alheio, da inexperiência ou da simplicidade ou \r\ninferioridade mental de outrem, induzindo-o à prática de jogo ou aposta, ou à especulação com títulos \r\nou mercadorias, sabendo ou devendo saber que a operação é ruinosa: \r\n     Pena - reclusão, de um a três anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Fraude no comércio",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 175 - Enganar, no exercício de atividade comercial, o adquirente ou consumidor: \r\n     I - vendendo, como verdadeira ou perfeita, mercadoria falsificada ou deteriorada; \r\n     II - entregando uma mercadoria por outra: \r\n     Pena - detenção, de seis meses a dois anos, ou multa. \r\n     § 1º - Alterar em obra que lhe é encomendada a qualidade ou o peso de metal ou substituir, \r\nno mesmo caso, pedra verdadeira por falsa ou por outra de menor valor; vender pedra falsa por \r\nverdadeira; vender, como precioso, metal de ou outra qualidade: \r\n     Pena - reclusão, de um a cinco anos, e multa. \r\n     § 2º - É aplicável o disposto no art. 155, § 2º.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Outras fraudes",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 176 - Tomar refeição em restaurante, alojar-se em hotel ou utilizar-se de meio de \r\ntransporte sem dispor de recursos para efetuar o pagamento: \r\n     Pena - detenção, de quinze dias a dois meses, ou multa. \r\n     Parágrafo único - Somente se procede mediante representação, e o juiz pode, conforme as \r\ncircunstâncias, deixar de aplicar a pena.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Fraudes e abusos na fundação ou administração de sociedade por ações",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 177 - Promover a fundação de sociedade por ações, fazendo, em prospecto ou em \r\ncomunicação ao público ou à assembléia, afirmação falsa sobre a constituição da sociedade, ou \r\nocultando fraudulentamente fato a ela relativo: \r\n     Pena - reclusão, de um a quatro anos, e multa, se o fato não constitui crime contra a \r\neconomia popular. \r\n        § 1º - Incorrem na mesma pena, se o fato não constitui crime contra a economia popular: \r\n     I - o diretor, o gerente ou o fiscal de sociedade por ações, que, em prospecto, relatório, \r\nparecer, balanço ou comunicação ao público ou à assembléia, faz afirmação falsa sobre as \r\ncondições econômicas da sociedade, ou oculta fraudulentamente, no todo ou em parte, fato a elas \r\nrelativo; \r\n     II - o diretor, o gerente ou o fiscal que promove, por qualquer artifício, falsa cotação das \r\nações ou de outros títulos da sociedade; \r\n     III - o diretor ou o gerente que toma empréstimo à sociedade ou usa, em proveito próprio ou \r\nde terceiro, dos bens ou haveres sociais, sem prévia autorização da assembléia geral; \r\n     IV - o diretor ou o gerente que compra ou vende, por conta da sociedade, ações por ela \r\nemitidas, salvo quando a lei o permite; \r\n     V - o diretor ou o gerente que, como garantia de crédito social, aceita em penhor ou em \r\ncaução ações da própria sociedade; \r\n     VI - o diretor ou o gerente que, na falta de balanço, em desacordo com este, ou mediante \r\nbalanço falso, distribui lucros ou dividendos fictícios; \r\n     VII - o diretor, o gerente ou o fiscal que, por interposta pessoa, ou conluiado com acionista, \r\nconsegue a aprovação de conta ou parecer; \r\n     VIII - o liquidante, nos casos dos ns. I, II, III, IV, V e VII; \r\n     IX - o representante da sociedade anônima estrangeira, autorizada a funcionar no País, que \r\npratica os atos mencionados nos ns. I e II, ou dá falsa informação ao Governo. \r\n     § 2º - Incorre na pena de detenção, de seis meses a dois anos, e multa, o acionista que, a \r\nfim de obter vantagem para si ou para outrem, negocia o voto nas deliberações de assembléia geral.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Emissão irregular de conhecimento de depósito ou \"warrant\"",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 178 - Emitir conhecimento de depósito ou warrant, em desacordo com disposição legal: \r\n     Pena - reclusão, de um a quatro anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Fraude à execução",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 179 - Fraudar execução, alienando, desviando, destruindo ou danificando bens, ou \r\nsimulando dívidas: \r\n     Pena - detenção, de seis meses a dois anos, ou multa. \r\n     Parágrafo único - Somente se procede mediante queixa.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DA RECEPTAÇÃO",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Receptação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 180 - Adquirir, receber, transportar, conduzir ou ocultar, em proveito próprio ou alheio, \r\ncoisa que sabe ser produto de crime, ou influir para que terceiro, de boa-fé, a adquira, receba ou \r\noculte:            \r\n        Pena – reclusão, de 2 (dois) a 6 (seis) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Receptação qualificada",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 180 - § 1º - Adquirir, receber, transportar, conduzir, ocultar, ter em depósito, desmontar, montar, \r\nremontar, vender, expor à venda, ou de qualquer forma utilizar, em proveito próprio ou alheio, no \r\nexercício de atividade comercial ou industrial, coisa que deve saber ser produto de crime:           \r\n     Pena - reclusão, de três a oito anos, e multa.          \r\n     § 2º - Equipara-se à atividade comercial, para efeito do parágrafo anterior, qualquer forma de \r\ncomércio irregular ou clandestino, inclusive o exercício em residência.          \r\n     § 3º - Adquirir ou receber coisa que, por sua natureza ou pela desproporção entre o valor e o \r\npreço, ou pela condição de quem a oferece, deve presumir-se obtida por meio criminoso:         \r\n     Pena - detenção, de um mês a um ano, ou multa, ou ambas as penas.           \r\n     § 4º - A receptação é punível, ainda que desconhecido ou isento de pena o autor do crime de \r\nque proveio a coisa.            \r\n        § 5º (Revogado).      \r\n        § 6o  Tratando-se de bens do patrimônio da União, de Estado, do Distrito Federal, de Município \r\nou de autarquia, fundação pública, empresa pública, sociedade de economia mista ou empresa \r\nconcessionária de serviços públicos, aplica-se em dobro a pena prevista no caput deste artigo.                 \r\n     § 7º Se a receptação for de fios, cabos ou equipamentos utilizados para fornecimento ou \r\ntransmissão de energia elétrica ou de telefonia, transferência de dados, ou de cargas transportadas \r\nem modais logísticos ferroviários ou metroviários, aplica-se em dobro a pena prevista no caput ou no \r\n§ 1º deste artigo, conforme o caso.   \r\n     § 8º Se os crimes previstos neste artigo são cometidos por integrante de organização \r\ncriminosa ultraviolenta, grupo paramilitar ou milícia privada, no contexto da atuação ou para a \r\nconsecução das condutas previstas no art. 2º da lei que institui o marco legal do combate ao crime \r\norganizado no Brasil, aumenta-se a respectiva pena em 2/3 (dois terços).",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Receptação de animal",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 180-A. Adquirir, receber, transportar, conduzir, ocultar, ter em depósito ou vender, com a \r\nfinalidade de produção ou de comercialização, semovente domesticável de produção, ainda que \r\nabatido ou dividido em partes, ou animal doméstico, que sabe ou deve saber ser produto de crime:     \r\nPena – reclusão, de 3 (três) a 8 (oito) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DISPOSIÇÕES GERAIS",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 181 - É isento de pena quem comete qualquer dos crimes previstos neste título, em \r\nprejuízo:            \r\n     I - do cônjuge, na constância da sociedade conjugal; \r\n     II - de ascendente ou descendente, seja o parentesco legítimo ou ilegítimo, seja civil ou \r\nnatural. \r\n     Art. 182 - Somente se procede mediante representação, se o crime previsto neste título é \r\ncometido em prejuízo:          \r\n     I - do cônjuge desquitado ou judicialmente separado; \r\n     II - de irmão, legítimo ou ilegítimo; \r\n     III - de tio ou sobrinho, com quem o agente coabita. \r\n     Art. 183 - Não se aplica o disposto nos dois artigos anteriores: \r\n     I - se o crime é de roubo ou de extorsão, ou, em geral, quando haja emprego de grave \r\nameaça ou violência à pessoa; \r\n     II - ao estranho que participa do crime. \r\n        III – se o crime é praticado contra pessoa com idade igual ou superior a 60 (sessenta) anos.    \r\n     Art. 183-A. Nos crimes de que trata este Título, quando cometidos contra as instituições \r\nfinanceiras e os prestadores de serviço de segurança privada, de que trata o Estatuto da Segurança \r\nPrivada e da Segurança das Instituições Financeiras, as penas serão aumentadas de 1/3 (um terço) \r\naté o dobro.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA A PROPRIEDADE IMATERIAL",
-        "filhos": []
+        "nome": "✅ DOS CRIMES CONTRA A PROPRIEDADE IMATERIAL",
+        "filhos": [
+          {
+            "tipo": "capitulo",
+            "nome": "DOS CRIMES CONTRA A PROPRIEDADE INTELECTUAL",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Violação de direito autoral",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 184. Violar direitos de autor e os que lhe são conexos:             \r\n     Pena – detenção, de 3 (três) meses a 1 (um) ano, ou multa.            \r\n     § 1o Se a violação consistir em reprodução total ou parcial, com intuito de lucro direto ou \r\nindireto, por qualquer meio ou processo, de obra intelectual, interpretação, execução ou fonograma, \r\nsem autorização expressa do autor, do artista intérprete ou executante, do produtor, conforme o caso, \r\nou de quem os represente:            \r\n     Pena – reclusão, de 2 (dois) a 4 (quatro) anos, e multa.           \r\n     § 2o Na mesma pena do § 1o incorre quem, com o intuito de lucro direto ou indireto, distribui, \r\nvende, expõe à venda, aluga, introduz no País, adquire, oculta, tem em depósito, original ou cópia de \r\nobra intelectual ou fonograma reproduzido com violação do direito de autor, do direito de artista \r\nintérprete ou executante ou do direito do produtor de fonograma, ou, ainda, aluga original ou cópia de \r\nobra intelectual ou fonograma, sem a expressa autorização dos titulares dos direitos ou de quem os \r\nrepresente.          \r\n     § 3o Se a violação consistir no oferecimento ao público, mediante cabo, fibra ótica, satélite, \r\nondas ou qualquer outro sistema que permita ao usuário realizar a seleção da obra ou produção para \r\nrecebê-la em um tempo e lugar previamente determinados por quem formula a demanda, com intuito \r\nde lucro, direto ou indireto, sem autorização expressa, conforme o caso, do autor, do artista intérprete \r\nou executante, do produtor de fonograma, ou de quem os represente:          \r\n     Pena – reclusão, de 2 (dois) a 4 (quatro) anos, e multa.          \r\n     § 4o O disposto nos §§ 1o, 2o e 3o não se aplica quando se tratar de exceção ou limitação ao \r\ndireito de autor ou os que lhe são conexos, em conformidade com o previsto na Lei nº 9.610, de 19 \r\nde fevereiro de 1998, nem a cópia de obra intelectual ou fonograma, em um só exemplar, para uso \r\nprivado do copista, sem intuito de lucro direto ou indireto.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Usurpação de nome ou pseudônimo alheio",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 185 -          \r\n        Art. 186. Procede-se mediante:          \r\n     I – queixa, nos crimes previstos no caput do art. 184;         \r\n     II – ação penal pública incondicionada, nos crimes previstos nos §§ 1o e 2o do art. 184;          \r\n     III – ação penal pública incondicionada, nos crimes cometidos em desfavor de entidades de \r\ndireito público, autarquia, empresa pública, sociedade de economia mista ou fundação instituída pelo \r\nPoder Público;            \r\n     IV – ação penal pública condicionada à representação, nos crimes previstos no § 3o do art. \r\n184.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DOS CRIMES CONTRA O PRIVILÉGIO DE INVENÇÃO",
+            "filhos": []
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DOS CRIMES CONTRA AS MARCAS DE INDÚSTRIA E COMÉRCIO",
+            "filhos": []
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DOS CRIMES DE CONCORRÊNCIA DESLEAL",
+            "filhos": []
+          }
+        ]
       },
       {
         "tipo": "titulo",
@@ -1708,12 +2288,12 @@
       },
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA O SENTIMENTO \r\nRELIGIOSO E CONTRA O RESPEITO AOS MORTOS",
+        "nome": "✅ DOS CRIMES CONTRA O SENTIMENTO \r\nRELIGIOSO E CONTRA O RESPEITO AOS MORTOS",
         "filhos": []
       },
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA A DIGNIDADE SEXUAL",
+        "nome": "✅ DOS CRIMES CONTRA A DIGNIDADE SEXUAL",
         "filhos": []
       },
       {
@@ -1728,22 +2308,22 @@
       },
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA A PAZ PÚBLICA",
+        "nome": "✅ DOS CRIMES CONTRA A PAZ PÚBLICA",
         "filhos": []
       },
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA A FÉ PÚBLICA",
+        "nome": "✅ DOS CRIMES CONTRA A FÉ PÚBLICA",
         "filhos": []
       },
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA A ADMINISTRAÇÃO PÚBLICA",
+        "nome": "✅ DOS CRIMES CONTRA A ADMINISTRAÇÃO PÚBLICA",
         "filhos": []
       },
       {
         "tipo": "titulo",
-        "nome": "DOS CRIMES CONTRA O ESTADO DEMOCRÁTICO DE DIREITO",
+        "nome": "✅ DOS CRIMES CONTRA O ESTADO DEMOCRÁTICO DE DIREITO",
         "filhos": []
       }
     ]
