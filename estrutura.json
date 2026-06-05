@@ -2309,17 +2309,634 @@
       {
         "tipo": "titulo",
         "nome": "✅ DOS CRIMES CONTRA A PAZ PÚBLICA",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "principio",
+            "nome": "Incitação ao crime",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 286 - Incitar, publicamente, a prática de crime: \r\n     Pena - detenção, de três a seis meses, ou multa. \r\n        Parágrafo único. Incorre na mesma pena quem incita, publicamente, animosidade entre as \r\nForças Armadas, ou delas contra os poderes constitucionais, as instituições civis ou a sociedade.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Apologia de crime ou criminoso",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 287 - Fazer, publicamente, apologia de fato criminoso ou de autor de crime: \r\n     Pena - detenção, de três a seis meses, ou multa.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Associação Criminosa",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 288.  Associarem-se 3 (três) ou mais pessoas, para o fim específico de cometer crimes:          \r\n     Pena - reclusão, de 1 (um) a 3 (três) anos.          \r\n     § 1º A pena aumenta-se até a metade se a associação é armada ou se houver a participação \r\nde criança ou adolescente.    \r\n     § 2º Incorre na pena prevista no caput deste artigo quem, de qualquer modo, solicitar ou \r\ncontratar o cometimento de crime a integrante de associação criminosa, independentemente da \r\naplicação da pena correspondente ao crime solicitado ou contratado.",
+                "filhos": []
+              }
+            ]
+          },
+          {
+            "tipo": "principio",
+            "nome": "Constituição de milícia privada",
+            "filhos": [
+              {
+                "tipo": "artigo",
+                "nome": "Art. 288-A.  Constituir, organizar, integrar, manter ou custear organização paramilitar, milícia \r\nparticular, grupo ou esquadrão com a finalidade de praticar qualquer dos crimes previstos neste \r\nCódigo:         \r\nPena - reclusão, de 4 (quatro) a 8 (oito) anos.",
+                "filhos": []
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
         "nome": "✅ DOS CRIMES CONTRA A FÉ PÚBLICA",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "capitulo",
+            "nome": "DA MOEDA FALSA",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Moeda Falsa",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 289 - Falsificar, fabricando-a ou alterando-a, moeda metálica ou papel-moeda de curso \r\nlegal no país ou no estrangeiro: \r\n     Pena - reclusão, de três a doze anos, e multa. \r\n     § 1º - Nas mesmas penas incorre quem, por conta própria ou alheia, importa ou exporta, \r\nadquire, vende, troca, cede, empresta, guarda ou introduz na circulação moeda falsa. \r\n     § 2º - Quem, tendo recebido de boa-fé, como verdadeira, moeda falsa ou alterada, a restitui à \r\ncirculação, depois de conhecer a falsidade, é punido com detenção, de seis meses a dois anos, e \r\nmulta. \r\n     § 3º - É punido com reclusão, de três a quinze anos, e multa, o funcionário público ou diretor, \r\ngerente, ou fiscal de banco de emissão que fabrica, emite ou autoriza a fabricação ou emissão: \r\n     I - de moeda com título ou peso inferior ao determinado em lei; \r\n     II - de papel-moeda em quantidade superior à autorizada. \r\n     § 4º - Nas mesmas penas incorre quem desvia e faz circular moeda, cuja circulação não \r\nestava ainda autorizada.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Crimes assimilados ao de moeda falsa",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 290 - Formar cédula, nota ou bilhete representativo de moeda com fragmentos de \r\ncédulas, notas ou bilhetes verdadeiros; suprimir, em nota, cédula ou bilhete recolhidos, para o fim de \r\nrestituí-los à circulação, sinal indicativo de sua inutilização; restituir à circulação cédula, nota ou \r\nbilhete em tais condições, ou já recolhidos para o fim de inutilização: \r\n     Pena - reclusão, de dois a oito anos, e multa. \r\n     Parágrafo único - O máximo da reclusão é elevado a doze anos e multa, se o crime é \r\ncometido por funcionário que trabalha na repartição onde o dinheiro se achava recolhido, ou nela tem \r\nfácil ingresso, em razão do cargo.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Petrechos para falsificação de moeda",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 291 - Fabricar, adquirir, fornecer, a título oneroso ou gratuito, possuir ou guardar \r\nmaquinismo, aparelho, instrumento ou qualquer objeto especialmente destinado à falsificação de \r\nmoeda: \r\n     Pena - reclusão, de dois a seis anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Emissão de título ao portador sem permissão legal",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 292 - Emitir, sem permissão legal, nota, bilhete, ficha, vale ou título que contenha \r\npromessa de pagamento em dinheiro ao portador ou a que falte indicação do nome da pessoa a \r\nquem deva ser pago: \r\n     Pena - detenção, de um a seis meses, ou multa. \r\n     Parágrafo único - Quem recebe ou utiliza como dinheiro qualquer dos documentos referidos \r\nneste artigo incorre na pena de detenção, de quinze dias a três meses, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DA FALSIDADE DE TÍTULOS E OUTROS PAPÉIS PÚBLICOS",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Falsificação de papéis públicos",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Falsificação de papéis e documentos públicos",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 293 - Falsificar, fabricando-os ou alterando-os: \r\n     I – selo destinado a controle tributário, papel selado ou qualquer papel de emissão legal \r\ndestinado à arrecadação de tributo; \r\n     II - papel de crédito público que não seja moeda de curso legal; \r\n     III - vale postal; \r\n     IV - cautela de penhor, caderneta de depósito de caixa econômica ou de outro \r\nestabelecimento mantido por entidade de direito público; \r\n     V - talão, recibo, guia, alvará ou qualquer outro documento relativo a arrecadação de rendas \r\npúblicas ou a depósito ou caução por que o poder público seja responsável; \r\n     VI - bilhete, passe ou conhecimento de empresa de transporte administrada pela União, por \r\nEstado ou por Município: \r\n     Pena - reclusão, de dois a oito anos, e multa.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "artigo",
+                    "nome": "Posse, uso e comércio dos documentos ou selos falsos",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 293. - § 1o Incorre na mesma pena quem: \r\n     I – usa, guarda, possui ou detém qualquer dos papéis falsificados a que se refere este artigo; \r\n     II – importa, exporta, adquire, vende, troca, cede, empresta, guarda, fornece ou restitui à \r\ncirculação selo falsificado destinado a controle tributário; \r\n     III – importa, exporta, adquire, vende, expõe à venda, mantém em depósito, guarda, troca, \r\ncede, empresta, fornece, porta ou, de qualquer forma, utiliza em proveito próprio ou alheio, no \r\nexercício de atividade comercial ou industrial, produto ou mercadoria: \r\n     a) em que tenha sido aplicado selo que se destine a controle tributário, falsificado; \r\n     b) sem selo oficial, nos casos em que a legislação tributária determina a obrigatoriedade de \r\nsua aplicação.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "artigo",
+                    "nome": "Retirar carimbo de inutilização",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 293. - § 2º - Suprimir, em qualquer desses papéis, quando legítimos, com o fim de torná-los \r\nnovamente utilizáveis, carimbo ou sinal indicativo de sua inutilização: \r\n     Pena - reclusão, de um a quatro anos, e multa.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "artigo",
+                    "nome": "Usar documento revalidado ilegalmente",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 293. - § 3º - Incorre na mesma pena quem usa, depois de alterado, qualquer dos papéis a que se \r\nrefere o parágrafo anterior.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "artigo",
+                    "nome": "Continuar usando após descobrir a falsidade",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 293. - § 4º - Quem usa ou restitui à circulação, embora recebido de boa-fé, qualquer dos papéis \r\nfalsificados ou alterados, a que se referem este artigo e o seu § 2º, depois de conhecer a falsidade \r\nou alteração, incorre na pena de detenção, de seis meses a dois anos, ou multa.",
+                        "filhos": []
+                      }
+                    ]
+                  },
+                  {
+                    "tipo": "artigo",
+                    "nome": "Conceito ampliado de atividade comercial",
+                    "filhos": [
+                      {
+                        "tipo": "artigo",
+                        "nome": "Art. 293. - § 5o Equipara-se a atividade comercial, para os fins do inciso III do § 1o, qualquer forma de \r\ncomércio irregular ou clandestino, inclusive o exercido em vias, praças ou outros logradouros \r\npúblicos e em residências.",
+                        "filhos": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Petrechos de falsificação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 294 - Fabricar, adquirir, fornecer, possuir ou guardar objeto especialmente destinado à \r\nfalsificação de qualquer dos papéis referidos no artigo anterior: \r\n     Pena - reclusão, de um a três anos, e multa. \r\n     Art. 295 - Se o agente é funcionário público, e comete o crime prevalecendo-se do cargo, \r\naumenta-se a pena de sexta parte.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DA FALSIDADE DOCUMENTAL",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Falsificação do selo ou sinal público",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 296 - Falsificar, fabricando-os ou alterando-os: \r\n     I - selo público destinado a autenticar atos oficiais da União, de Estado ou de Município; \r\n     II - selo ou sinal atribuído por lei a entidade de direito público, ou a autoridade, ou sinal \r\npúblico de tabelião: \r\n     Pena - reclusão, de dois a seis anos, e multa. \r\n     § 1º - Incorre nas mesmas penas: \r\n     I - quem faz uso do selo ou sinal falsificado; \r\n     II - quem utiliza indevidamente o selo ou sinal verdadeiro em prejuízo de outrem ou em \r\nproveito próprio ou alheio. \r\n     III - quem altera, falsifica ou faz uso indevido de marcas, logotipos, siglas ou quaisquer outros \r\nsímbolos utilizados ou identificadores de órgãos ou entidades da Administração Pública. \r\n     § 2º - Se o agente é funcionário público, e comete o crime prevalecendo-se do cargo, \r\naumenta-se a pena de sexta parte.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Falsificação de documento público",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 297 - Falsificar, no todo ou em parte, documento público, ou alterar documento público \r\nverdadeiro: \r\n     Pena - reclusão, de dois a seis anos, e multa. \r\n     § 1º - Se o agente é funcionário público, e comete o crime prevalecendo-se do cargo, \r\naumenta-se a pena de sexta parte. \r\n     § 2º - Para os efeitos penais, equiparam-se a documento público o emanado de entidade \r\nparaestatal, o título ao portador ou transmissível por endosso, as ações de sociedade comercial, os \r\nlivros mercantis e o testamento particular. \r\n     § 3o Nas mesmas penas incorre quem insere ou faz inserir: \r\n     I – na folha de pagamento ou em documento de informações que seja destinado a fazer \r\nprova perante a previdência social, pessoa que não possua a qualidade de segurado obrigatório; \r\n     II – na Carteira de Trabalho e Previdência Social do empregado ou em documento que deva \r\nproduzir efeito perante a previdência social, declaração falsa ou diversa da que deveria ter sido \r\nescrita; \r\n     III – em documento contábil ou em qualquer outro documento relacionado com as obrigações \r\nda empresa perante a previdência social, declaração falsa ou diversa da que deveria ter constado. \r\n     § 4o Nas mesmas penas incorre quem omite, nos documentos mencionados no § 3o, nome \r\ndo segurado e seus dados pessoais, a remuneração, a vigência do contrato de trabalho ou de \r\nprestação de serviços.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Falsificação de documento particular",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 298 - Falsificar, no todo ou em parte, documento particular ou alterar documento particular \r\nverdadeiro: \r\nPena - reclusão, de um a cinco anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Falsificação de cartão",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 298. - Parágrafo único.  Para fins do disposto no caput, equipara-se a documento particular o cartão \r\nde crédito ou débito.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Falsidade ideológica",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 299 - Omitir, em documento público ou particular, declaração que dele devia constar, ou \r\nnele inserir ou fazer inserir declaração falsa ou diversa da que devia ser escrita, com o fim de \r\nprejudicar direito, criar obrigação ou alterar a verdade sobre fato juridicamente relevante: \r\n     Pena - reclusão, de um a cinco anos, e multa, se o documento é público, e reclusão de um a \r\ntrês anos, e multa, de quinhentos mil réis a cinco contos de réis, se o documento é particular.     \r\n     Parágrafo único - Se o agente é funcionário público, e comete o crime prevalecendo-se do \r\ncargo, ou se a falsificação ou alteração é de assentamento de registro civil, aumenta-se a pena de \r\nsexta parte.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Falso reconhecimento de firma ou letra",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 300 - Reconhecer, como verdadeira, no exercício de função pública, firma ou letra que o \r\nnão seja: \r\n     Pena - reclusão, de um a cinco anos, e multa, se o documento é público; e de um a três \r\nanos, e multa, se o documento é particular.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Certidão ou atestado ideologicamente falso",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 301 - Atestar ou certificar falsamente, em razão de função pública, fato ou circunstância \r\nque habilite alguém a obter cargo público, isenção de ônus ou de serviço de caráter público, ou \r\nqualquer outra vantagem: \r\n     Pena - detenção, de dois meses a um ano.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Falsidade material de atestado ou certidão",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 301. - § 1º - Falsificar, no todo ou em parte, atestado ou certidão, ou alterar o teor de certidão ou de \r\natestado verdadeiro, para prova de fato ou circunstância que habilite alguém a obter cargo público, \r\nisenção de ônus ou de serviço de caráter público, ou qualquer outra vantagem: \r\n     Pena - detenção, de três meses a dois anos. \r\n     § 2º - Se o crime é praticado com o fim de lucro, aplica-se, além da pena privativa de \r\nliberdade, a de multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Falsidade de atestado médico",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 302 - Dar o médico, no exercício da sua profissão, atestado falso: \r\n     Pena - detenção, de um mês a um ano. \r\n     Parágrafo único - Se o crime é cometido com o fim de lucro, aplica-se também multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Reprodução ou adulteração de selo ou peça filatélica",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 303 - Reproduzir ou alterar selo ou peça filatélica que tenha valor para coleção, salvo \r\nquando a reprodução ou a alteração está visivelmente anotada na face ou no verso do selo ou peça: \r\n     Pena - detenção, de um a três anos, e multa. \r\n     Parágrafo único - Na mesma pena incorre quem, para fins de comércio, faz uso do selo ou \r\npeça filatélica.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Uso de documento falso",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 304 - Fazer uso de qualquer dos papéis falsificados ou alterados, a que se referem os \r\narts. 297 a 302: \r\n     Pena - a cominada à falsificação ou à alteração.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Supressão de documento",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 305 - Destruir, suprimir ou ocultar, em benefício próprio ou de outrem, ou em prejuízo \r\nalheio, documento público ou particular verdadeiro, de que não podia dispor: \r\n     Pena - reclusão, de dois a seis anos, e multa, se o documento é público, e reclusão, de um a \r\ncinco anos, e multa, se o documento é particular.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DE OUTRAS FALSIDADES",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Falsificação do sinal empregado no contraste de metal precioso ou na fiscalização \r\nalfandegária, ou para outros fins",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 306 - Falsificar, fabricando-o ou alterando-o, marca ou sinal empregado pelo poder \r\npúblico no contraste de metal precioso ou na fiscalização alfandegária, ou usar marca ou sinal dessa \r\nnatureza, falsificado por outrem: \r\n     Pena - reclusão, de dois a seis anos, e multa. \r\n     Parágrafo único - Se a marca ou sinal falsificado é o que usa a autoridade pública para o fim \r\nde fiscalização sanitária, ou para autenticar ou encerrar determinados objetos, ou comprovar o \r\ncumprimento de formalidade legal: \r\n     Pena - reclusão ou detenção, de um a três anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Falsa identidade",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 307 - Atribuir-se ou atribuir a terceiro falsa identidade para obter vantagem, em proveito \r\npróprio ou alheio, ou para causar dano a outrem: \r\n     Pena - detenção, de três meses a um ano, ou multa, se o fato não constitui elemento de \r\ncrime mais grave. \r\n     Art. 308 - Usar, como próprio, passaporte, título de eleitor, caderneta de reservista ou \r\nqualquer documento de identidade alheia ou ceder a outrem, para que dele se utilize, documento \r\ndessa natureza, próprio ou de terceiro: \r\n     Pena - detenção, de quatro meses a dois anos, e multa, se o fato não constitui elemento de \r\ncrime mais grave.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Fraude de lei sobre estrangeiro",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 309 - Usar o estrangeiro, para entrar ou permanecer no território nacional, nome que não \r\né o seu: \r\n     Pena - detenção, de um a três anos, e multa. \r\n     Parágrafo único - Atribuir a estrangeiro falsa qualidade para promover-lhe a entrada em \r\nterritório nacional: \r\n     Pena - reclusão, de um a quatro anos, e multa. \r\nArt. 310 - Prestar-se a figurar como proprietário ou possuidor de ação, título ou valor \r\npertencente a estrangeiro, nos casos em que a este é vedada por lei a propriedade ou a posse de \r\ntais bens: \r\nPena - detenção, de seis meses a três anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Adulteração de sinal identificador de veículo",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 311. Adulterar, remarcar ou suprimir número de chassi, monobloco, motor, placa de identificação, \r\nou qualquer sinal identificador de veículo automotor, elétrico, híbrido, de reboque, de semirreboque \r\nou de suas combinações, bem como de seus componentes ou equipamentos, sem autorização do \r\nórgão competente:   \r\nPena - reclusão, de três a seis anos, e multa.  \r\n§ 1º - Se o agente comete o crime no exercício da função pública ou em razão dela, a pena é \r\naumentada de um terço.  \r\n§ 2º Incorrem nas mesmas penas do caput deste artigo:   \r\nI – o funcionário público que contribui para o licenciamento ou registro do veículo remarcado ou \r\nadulterado, fornecendo indevidamente material ou informação oficial;   \r\nII – aquele que adquire, recebe, transporta, oculta, mantém em depósito, fabrica, fornece, a título \r\noneroso ou gratuito, possui ou guarda maquinismo, aparelho, instrumento ou objeto especialmente \r\ndestinado à falsificação e/ou adulteração de que trata o caput deste artigo; ou   \r\nIII – aquele que adquire, recebe, transporta, conduz, oculta, mantém em depósito, desmonta, monta, \r\nremonta, vende, expõe à venda, ou de qualquer forma utiliza, em proveito próprio ou alheio, veículo \r\nautomotor, elétrico, híbrido, de reboque, semirreboque ou suas combinações ou partes, com número \r\nde chassi ou monobloco, placa de identificação ou qualquer sinal identificador veicular que devesse \r\nsaber estar adulterado ou remarcado.   \r\n§ 3º Praticar as condutas de que tratam os incisos II ou III do § 2º deste artigo no exercício de \r\natividade comercial ou industrial:   \r\nPena - reclusão, de 4 (quatro) a 8 (oito) anos, e multa.   \r\n§ 4º Equipara-se a atividade comercial, para efeito do disposto no § 3º deste artigo, qualquer forma \r\nde comércio irregular ou clandestino, inclusive aquele exercido em residência.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tipo": "capitulo",
+            "nome": "DAS FRAUDES EM CERTAMES DE INTERESSE PÚBLICO",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Fraudes em certames de interesse público",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 311-A.  Utilizar ou divulgar, indevidamente, com o fim de beneficiar a si ou a outrem, ou de \r\ncomprometer a credibilidade do certame, conteúdo sigiloso de:    \r\nI - concurso público;    \r\nII - avaliação ou exame públicos;    \r\nIII - processo seletivo para ingresso no ensino superior; ou    \r\nIV - exame ou processo seletivo previstos em lei:    \r\nPena - reclusão, de 1 (um) a 4 (quatro) anos, e multa.    \r\n§ 1o  Nas mesmas penas incorre quem permite ou facilita, por qualquer meio, o acesso de pessoas \r\nnão autorizadas às informações mencionadas no caput.    \r\n§ 2o  Se da ação ou omissão resulta dano à administração pública:    \r\nPena - reclusão, de 2 (dois) a 6 (seis) anos, e multa.    \r\n§ 3o  Aumenta-se a pena de 1/3 (um terço) se o fato é cometido por funcionário público.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
         "nome": "✅ DOS CRIMES CONTRA A ADMINISTRAÇÃO PÚBLICA",
-        "filhos": []
+        "filhos": [
+          {
+            "tipo": "capitulo",
+            "nome": "DOS CRIMES PRATICADOS \r\nPOR FUNCIONÁRIO PÚBLICO \r\nCONTRA A ADMINISTRAÇÃO EM GERAL",
+            "filhos": [
+              {
+                "tipo": "principio",
+                "nome": "Peculato",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 312 - Apropriar-se o funcionário público de dinheiro, valor ou qualquer outro bem móvel, \r\npúblico ou particular, de que tem a posse em razão do cargo, ou desviá-lo, em proveito próprio ou \r\nalheio: \r\n     Pena - reclusão, de dois a doze anos, e multa. \r\n     § 1º - Aplica-se a mesma pena, se o funcionário público, embora não tendo a posse do \r\ndinheiro, valor ou bem, o subtrai, ou concorre para que seja subtraído, em proveito próprio ou alheio, \r\nvalendo-se de facilidade que lhe proporciona a qualidade de funcionário.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Peculato culposo",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 312. - § 2º - Se o funcionário concorre culposamente para o crime de outrem: \r\n     Pena - detenção, de três meses a um ano. \r\n     § 3º - No caso do parágrafo anterior, a reparação do dano, se precede à sentença \r\nirrecorrível, extingue a punibilidade; se lhe é posterior, reduz de metade a pena imposta.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Peculato mediante erro de outrem",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 313 - Apropriar-se de dinheiro ou qualquer utilidade que, no exercício do cargo, recebeu \r\npor erro de outrem: \r\n     Pena - reclusão, de um a quatro anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Inserção de dados falsos em sistema de informações",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 313-A. Inserir ou facilitar, o funcionário autorizado, a inserção de dados falsos, alterar ou \r\nexcluir indevidamente dados corretos nos sistemas informatizados ou bancos de dados da \r\nAdministração Pública com o fim de obter vantagem indevida para si ou para outrem ou para causar \r\ndano: ) \r\n     Pena – reclusão, de 2 (dois) a 12 (doze) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Modificação ou alteração não autorizada de sistema de informações",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 313-B. Modificar ou alterar, o funcionário, sistema de informações ou programa de \r\ninformática sem autorização ou solicitação de autoridade competente: \r\n     Pena – detenção, de 3 (três) meses a 2 (dois) anos, e multa. \r\n     Parágrafo único. As penas são aumentadas de um terço até a metade se da modificação ou \r\nalteração resulta dano para a Administração Pública ou para o administrado.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Extravio, sonegação ou inutilização de livro ou documento",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 314 - Extraviar livro oficial ou qualquer documento, de que tem a guarda em razão do \r\ncargo; sonegá-lo ou inutilizá-lo, total ou parcialmente: \r\n     Pena - reclusão, de um a quatro anos, se o fato não constitui crime mais grave.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Emprego irregular de verbas ou rendas públicas",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 315 - Dar às verbas ou rendas públicas aplicação diversa da estabelecida em lei: \r\n     Pena - detenção, de um a três meses, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Concussão",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 316 - Exigir, para si ou para outrem, direta ou indiretamente, ainda que fora da função ou \r\nantes de assumi-la, mas em razão dela, vantagem indevida: \r\n        Pena - reclusão, de 2 (dois) a 12 (doze) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Excesso de exação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 316. - § 1º - Se o funcionário exige tributo ou contribuição social que sabe ou deveria saber \r\nindevido, ou, quando devido, emprega na cobrança meio vexatório ou gravoso, que a lei não \r\nautoriza:          \r\n     Pena - reclusão, de 3 (três) a 8 (oito) anos, e multa.         \r\n     § 2º - Se o funcionário desvia, em proveito próprio ou de outrem, o que recebeu \r\nindevidamente para recolher aos cofres públicos: \r\n     Pena - reclusão, de dois a doze anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Corrupção passiva",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 317 - Solicitar ou receber, para si ou para outrem, direta ou indiretamente, ainda que fora \r\nda função ou antes de assumi-la, mas em razão dela, vantagem indevida, ou aceitar promessa de tal \r\nvantagem: \r\n     Pena – reclusão, de 2 (dois) a 12 (doze) anos, e multa.         \r\n     § 1º - A pena é aumentada de um terço, se, em conseqüência da vantagem ou promessa, o \r\nfuncionário retarda ou deixa de praticar qualquer ato de ofício ou o pratica infringindo dever funcional. \r\n     § 2º - Se o funcionário pratica, deixa de praticar ou retarda ato de ofício, com infração de \r\ndever funcional, cedendo a pedido ou influência de outrem: \r\n     Pena - detenção, de três meses a um ano, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Facilitação de contrabando ou descaminho",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 318 - Facilitar, com infração de dever funcional, a prática de contrabando ou descaminho \r\n(art. 334): \r\n     Pena - reclusão, de 3 (três) a 8 (oito) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Prevaricação",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 319 - Retardar ou deixar de praticar, indevidamente, ato de ofício, ou praticá-lo contra \r\ndisposição expressa de lei, para satisfazer interesse ou sentimento pessoal:      \r\n     Pena - detenção, de três meses a um ano, e multa. \r\n     Art. 319-A.  Deixar o Diretor de Penitenciária e/ou agente público, de cumprir seu dever de \r\nvedar ao preso o acesso a aparelho telefônico, de rádio ou similar, que permita a comunicação com \r\noutros presos ou com o ambiente externo:         \r\n     Pena: detenção, de 3 (três) meses a 1 (um) ano.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Condescendência criminosa",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 320 - Deixar o funcionário, por indulgência, de responsabilizar subordinado que cometeu \r\ninfração no exercício do cargo ou, quando lhe falte competência, não levar o fato ao conhecimento da \r\nautoridade competente: \r\n     Pena - detenção, de quinze dias a um mês, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Advocacia administrativa",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 321 - Patrocinar, direta ou indiretamente, interesse privado perante a administração \r\npública, valendo-se da qualidade de funcionário: \r\n     Pena - detenção, de um a três meses, ou multa. \r\n     Parágrafo único - Se o interesse é ilegítimo: \r\n     Pena - detenção, de três meses a um ano, além da multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Violência arbitrária",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 322 - Praticar violência, no exercício de função ou a pretexto de exercê-la: \r\n     Pena - detenção, de seis meses a três anos, além da pena correspondente à violência.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Abandono de função",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 323 - Abandonar cargo público, fora dos casos permitidos em lei: \r\n     Pena - detenção, de quinze dias a um mês, ou multa. \r\n     § 1º - Se do fato resulta prejuízo público: \r\n     Pena - detenção, de três meses a um ano, e multa. \r\n     § 2º - Se o fato ocorre em lugar compreendido na faixa de fronteira: \r\n     Pena - detenção, de um a três anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Exercício funcional ilegalmente antecipado ou prolongado",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 324 - Entrar no exercício de função pública antes de satisfeitas as exigências legais, ou \r\ncontinuar a exercê-la, sem autorização, depois de saber oficialmente que foi exonerado, removido, \r\nsubstituído ou suspenso: \r\n     Pena - detenção, de quinze dias a um mês, ou multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Violação de sigilo funcional",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 325 - Revelar fato de que tem ciência em razão do cargo e que deva permanecer em \r\nsegredo, ou facilitar-lhe a revelação: \r\n     Pena - detenção, de seis meses a dois anos, ou multa, se o fato não constitui crime mais \r\ngrave. \r\n     § 1o Nas mesmas penas deste artigo incorre quem: \r\n     I – permite ou facilita, mediante atribuição, fornecimento e empréstimo de senha ou qualquer \r\noutra forma, o acesso de pessoas não autorizadas a sistemas de informações ou banco de dados da \r\nAdministração Pública; \r\n     II – se utiliza, indevidamente, do acesso restrito. \r\n     § 2o Se da ação ou omissão resulta dano à Administração Pública ou a outrem: \r\n     Pena – reclusão, de 2 (dois) a 6 (seis) anos, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Violação do sigilo de proposta de concorrência",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 326 - Devassar o sigilo de proposta de concorrência pública, ou proporcionar a terceiro o \r\nensejo de devassá-lo: \r\n     Pena - Detenção, de três meses a um ano, e multa.",
+                    "filhos": []
+                  }
+                ]
+              },
+              {
+                "tipo": "principio",
+                "nome": "Funcionário público",
+                "filhos": [
+                  {
+                    "tipo": "artigo",
+                    "nome": "Art. 327 - Considera-se funcionário público, para os efeitos penais, quem, embora \r\ntransitoriamente ou sem remuneração, exerce cargo, emprego ou função pública. \r\n     § 1º - Equipara-se a funcionário público quem exerce cargo, emprego ou função em entidade \r\nparaestatal, e quem trabalha para empresa prestadora de serviço contratada ou conveniada para a \r\nexecução de atividade típica da Administração Pública.      \r\n        § 2º - A pena será aumentada da terça parte quando os autores dos crimes previstos neste \r\nCapítulo forem ocupantes de cargos em comissão ou de função de direção ou assessoramento de \r\nórgão da administração direta, sociedade de economia mista, empresa pública ou fundação instituída \r\npelo poder público.",
+                    "filhos": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
         "tipo": "titulo",
