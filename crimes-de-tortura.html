@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards Ultra - Lei de Tortura</title>
+    <style>
+        :root {
+            --primary: #4c1d95; /* Roxo profundo */
+            --secondary: #f8fafc;
+            --text-dark: #0f172a;
+            --text-light: #ffffff;
+            --accent: #b91c1c; /* Vermelho escuro para o verso */
+            --card-bg: #ffffff;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        p.subtitle {
+            color: #64748b;
+            font-size: 1rem;
+        }
+
+        .dashboard {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            max-width: 600px;
+            height: 6px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 1%;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .card-container {
+            width: 100%;
+            max-width: 600px;
+            height: 340px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 16px;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--card-bg);
+            overflow-y: auto;
+        }
+
+        .card-front {
+            border-top: 8px solid var(--primary);
+        }
+
+        .card-back {
+            background: #faf5ff;
+            transform: rotateY(180deg);
+            border-top: 8px solid var(--accent);
+        }
+
+        .badge {
+            position: absolute;
+            top: 20px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .card-front .badge {
+            background: #f3e8ff;
+            color: var(--primary);
+        }
+
+        .card-back .badge {
+            background: #fee2e2;
+            color: var(--accent);
+        }
+
+        .card-text {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .hint {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 20px;
+            margin-top: 35px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        button {
+            flex: 1;
+            padding: 14px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        button.btn-back {
+            background-color: #cbd5e1;
+            color: #334155;
+        }
+
+        button.btn-back:hover:not(:disabled) {
+            background-color: #94a3b8;
+        }
+
+        button.btn-next {
+            background-color: var(--primary);
+            color: var(--text-light);
+        }
+
+        button.btn-next:hover:not(:disabled) {
+            background-color: #3b0764;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        @media (max-width: 480px) {
+            .card-container { height: 380px; }
+            .card-text { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lei dos Crimes de Tortura</h1>
+        <p class="subtitle">Mapeamento Completo com 80 Flashcards Literários</p>
+    </header>
+
+    <div class="dashboard">
+        <span id="card-counter">Card: 1 / 80</span>
+        <span id="completion-percentage">0% Concluído</span>
+    </div>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <div class="card-container" onclick="flipCard()">
+        <div class="flashcard" id="flashcard">
+            <!-- Frente -->
+            <div class="card-face card-front">
+                <span class="badge">Pergunta</span>
+                <div class="card-text" id="question-text">Carregando...</div>
+                <div class="hint">Clique no cartão para ver a resposta</div>
+            </div>
+            <!-- Verso -->
+            <div class="card-face card-back">
+                <span class="badge">Resposta Legal</span>
+                <div class="card-text" id="answer-text">Carregando...</div>
+                <div class="hint">Clique no cartão para ver a pergunta</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="btn-back" id="btn-prev" onclick="prevCard(event)" disabled>
+            ← Voltar
+        </button>
+        <button class="btn-next" id="btn-next" onclick="nextCard(event)">
+            Avançar →
+        </button>
+    </div>
+
+    <script>
+        const flashcardsData = [
+          { "id": 1, "pergunta": "Qual o primeiro elemento do núcleo do tipo penal do Art. 1º, inciso I?", "resposta": "Constranger alguém. [Art. 1º, I]" },
+          { "id": 2, "pergunta": "Quais os dois modos de execução expressos no caput do Art. 1º, inciso I?", "resposta": "Com emprego de violência ou grave ameaça. [Art. 1º, I]" },
+          { "id": 3, "pergunta": "Qual é o resultado obrigatório do constrangimento para tipificar o Art. 1º, inciso I?", "resposta": "Causar sofrimento físico ou mental à vítima. [Art. 1º, I]" },
+          { "id": 4, "pergunta": "O sofrimento exigido no Art. 1º, inciso I pode ser exclusivamente de ordem psicológica?", "resposta": "Sim, a lei prevê explicitamente o sofrimento 'mental'. [Art. 1º, I]" },
+          { "id": 5, "pergunta": "Qual é a finalidade específica descrita na alínea 'a' do Art. 1º, inciso I?", "resposta": "Com o fim de obter informação, declaração ou confissão. [Art. 1º, I, 'a']" },
+          { "id": 6, "pergunta": "De quem pode ser a informação, declaração ou confissão visada na alínea 'a'?", "resposta": "Da vítima ou de terceira pessoa. [Art. 1º, I, 'a']" },
+          { "id": 7, "pergunta": "Qual o nome doutrinário dado ao crime previsto na alínea 'a' do Art. 1º, I?", "resposta": "Tortura-prova ou tortura-confissão. [Art. 1º, I, 'a']" },
+          { "id": 8, "pergunta": "O que define o dolo específico da alínea 'b' do Art. 1º, inciso I?", "resposta": "Provocar ação ou omissão de natureza criminosa. [Art. 1º, I, 'b']" },
+          { "id": 9, "pergunta": "Se o agente tortura alguém para forçá-lo a cometer uma mera contravenção penal, enquadra-se na alínea 'b'?", "resposta": "Não, o texto legal especifica ação ou omissão de natureza 'criminosa'. [Art. 1º, I, 'b']" },
+          { "id": 10, "pergunta": "Qual o nome doutrinário da infração prevista no Art. 1º, I, alínea 'b'?", "resposta": "Tortura-crime. [Art. 1º, I, 'b']" },
+          { "id": 11, "pergunta": "O que caracteriza a motivação especial descrita na alínea 'c' do Art. 1º, inciso I?", "resposta": "O crime ser praticado em razão de discriminação racial ou religiosa. [Art. 1º, I, 'c']" },
+          { "id": 12, "pergunta": "Qual o nome doutrinário dado à tortura tipificada no Art. 1º, I, alínea 'c'?", "resposta": "Tortura discriminatória. [Art. 1º, I, 'c']" },
+          { "id": 13, "pergunta": "A discriminação social, política ou por gênero está expressa na alínea 'c'?", "resposta": "Não. A lei restringe-se às discriminações 'racial ou religiosa'. [Art. 1º, I, 'c']" },
+          { "id": 14, "pergunta": "Qual conduta inicial é descrita no tipo penal do Art. 1º, inciso II?", "resposta": "Submeter alguém a sofrimento. [Art. 1º, II]" },
+          { "id": 15, "pergunta": "Qual a relação jurídica exigida entre o sujeito ativo e a vítima no Art. 1º, inciso II?", "resposta": "A vítima deve estar sob a 'guarda, poder ou autoridade' do agente. [Art. 1º, II]" },
+          { "id": 16, "pergunta": "Quais os meios necessários para a execução do crime do Art. 1º, inciso II?", "resposta": "Emprego de violência ou grave ameaça. [Art. 1º, II]" },
+          { "id": 17, "pergunta": "Qual o adjetivo e intensidade dada ao sofrimento causado no Art. 1º, inciso II?", "resposta": "A lei exige que seja um 'intenso' sofrimento físico ou mental. [Art. 1º, II]" },
+          { "id": 18, "pergunta": "Quais as duas finalidades específicas exigidas na Tortura-castigo (inciso II)?", "resposta": "Como forma de aplicar castigo pessoal ou medida de caráter preventivo. [Art. 1º, II]" },
+          { "id": 19, "pergunta": "Qual o nome doutrinário atribuído ao crime previsto no Art. 1º, inciso II?", "resposta": "Tortura-castigo. [Art. 1º, II]" },
+          { "id": 20, "pergunta": "Quem é o sujeito passivo específico delimitado no Art. 1º, inciso III?", "resposta": "A mulher. [Art. 1º, III]" },
+          { "id": 21, "pergunta": "Qual o requisito temporal ou de reiteração imposto pelo Art. 1º, inciso III?", "resposta": "A conduta de submissão deve ocorrer 'reiteradamente'. [Art. 1º, III]" },
+          { "id": 22, "pergunta": "Qual a intensidade do sofrimento que deve ser imposto à mulher no inciso III?", "resposta": "Intenso sofrimento físico ou mental. [Art. 1º, III]" },
+          { "id": 23, "pergunta": "Qual o contexto situacional obrigatório para a configuração do Art. 1º, inciso III?", "resposta": "Contexto de violência doméstica e familiar. [Art. 1º, III]" },
+          { "id": 24, "pergunta": "O crime do inciso III prejudica a aplicação de penas relativas a outras infrações?", "resposta": "Não, ocorre 'sem prejuízo da aplicação das penas correspondentes a outras infrações penais'. [Art. 1º, III]" },
+          { "id": 25, "pergunta": "Qual é a pena genérica (comum) fixada para os incisos I, II e III do Art. 1º?", "resposta": "Reclusão, de dois a oito anos. [Art. 1º]" },
+          { "id": 26, "pergunta": "Qual a pena mínima abstrata para as condutas principais do Art. 1º?", "resposta": "Dois anos de reclusão. [Art. 1º]" },
+          { "id": 27, "pergunta": "Qual a pena máxima abstrata para as condutas principais do Art. 1º?", "resposta": "Oito anos de reclusão. [Art. 1º]" },
+          { "id": 28, "pergunta": "Quem é o sujeito passivo previsto expressamente no Art. 1º, § 1º?", "resposta": "Pessoa presa ou sujeita a medida de segurança. [Art. 1º, § 1º]" },
+          { "id": 29, "pergunta": "O que causa o sofrimento físico ou mental na conduta do § 1º?", "resposta": "A prática de ato não previsto em lei ou não resultante de medida legal. [Art. 1º, § 1º]" },
+          { "id": 30, "pergunta": "Qual o nome atribuído ao crime do Art. 1º, § 1º?", "resposta": "Tortura por equiparação (ou da pessoa presa). [Art. 1º, § 1º]" },
+          { "id": 31, "pergunta": "Qual a pena prevista para quem pratica o ato descrito no § 1º?", "resposta": "A mesma pena do caput: reclusão, de dois a oito anos. [Art. 1º, § 1º]" },
+          { "id": 32, "pergunta": "Qual comportamento é criminalizado no parágrafo 2º do Art. 1º?", "resposta": "A omissão em face dessas condutas. [Art. 1º, § 2º]" },
+          { "id": 33, "pergunta": "Quem responde penalmente pela omissão descrita no § 2º?", "resposta": "Aquele que tinha o dever de evitá-las ou apurá-las. [Art. 1º, § 2º]" },
+          { "id": 34, "pergunta": "Quais os dois verbos que definem o dever do garantidor no § 2º?", "resposta": "Evitar (as condutas) ou apurar (as condutas). [Art. 1º, § 2º]" },
+          { "id": 35, "pergunta": "Qual a pena abstrata fixada para o crime de tortura por omissão?", "resposta": "Detenção de um a quatro anos. [Art. 1º, § 2º]" },
+          { "id": 36, "pergunta": "Qual a pena mínima estipulada para a tortura omissiva?", "resposta": "Um ano de detenção. [Art. 1º, § 2º]" },
+          { "id": 37, "pergunta": "Qual a pena máxima estipulada para a tortura omissiva?", "resposta": "Quatro anos de detenção. [Art. 1º, § 2º]" },
+          { "id": 38, "pergunta": "Qual a natureza da pena privativa de liberdade para o omisso no § 2º?", "resposta": "Detenção (todas as outras modalidades ativas são reclusão). [Art. 1º, § 2º]" },
+          { "id": 39, "pergunta": "Como é classificada a infração do § 2º pela doutrina?", "resposta": "Tortura imprópria, tortura por omissão ou omissão perante a tortura. [Art. 1º, § 2º]" },
+          { "id": 40, "pergunta": "Qual o primeiro resultado que qualifica o crime de tortura conforme o § 3º?", "resposta": "Resultado lesão corporal de natureza grave ou gravíssima. [Art. 1º, § 3º]" },
+          { "id": 41, "pergunta": "Qual a pena para a tortura qualificada por lesão grave ou gravíssima?", "resposta": "Reclusão, de quatro a dez anos. [Art. 1º, § 3º]" },
+          { "id": 42, "pergunta": "Qual a pena mínima para o crime qualificado por lesão grave/gravíssima?", "resposta": "Quatro anos de reclusão. [Art. 1º, § 3º]" },
+          { "id": 43, "pergunta": "Qual a pena máxima para o crime qualificado por lesão grave/gravíssima?", "resposta": "Dez anos de reclusão. [Art. 1º, § 3º]" },
+          { "id": 44, "pergunta": "Qual o segundo resultado letal que qualifica o crime de tortura no § 3º?", "source": 3, "resposta": "Resultado morte. [Art. 1º, § 3º]" },
+          { "id": 45, "pergunta": "Qual a pena privativa de liberdade se da tortura resulta morte?", "resposta": "Reclusão, de oito a dezesseis anos. [Art. 1º, § 3º]" },
+          { "id": 46, "pergunta": "Qual a pena mínima para a tortura qualificada por morte?", "resposta": "Oito anos de reclusão. [Art. 1º, § 3º]" },
+          { "id": 47, "pergunta": "Qual a pena máxima para a tortura qualificada por morte?", "resposta": "Dezesseis anos de reclusão. [Art. 1º, § 3º]" },
+          { "id": 48, "pergunta": "Qual a fração mínima de aumento de pena descrita nas majorantes do § 4º?", "resposta": "Aumento de um sexto (1/6). [Art. 1º, § 4º]" },
+          { "id": 49, "pergunta": "Qual a fração máxima de aumento de pena descrita nas majorantes do § 4º?", "resposta": "Aumento de um terço (1/3). [Art. 1º, § 4º]" },
+          { "id": 50, "pergunta": "Qual a condição especial do sujeito ativo que atrai o aumento do § 4º, inciso I?", "resposta": "Se o crime é cometido por agente público. [Art. 1º, § 4º, I]" },
+          { "id": 51, "pergunta": "Quais são as duas primeiras categorias etárias de vulneráveis protegidas no § 4º, II?", "resposta": "Criança ou adolescente. [Art. 1º, § 4º, II]" },
+          { "id": 52, "pergunta": "A gestante está incluída no rol de aumento de pena do § 4º, II?", "resposta": "Sim, a condição de gestante está expressa no dispositivo. [Art. 1º, § 4º, II]" },
+          { "id": 53, "pergunta": "Qual termo a lei utiliza no § 4º, II para referir-se a pessoas com deficiência?", "resposta": "Portador de deficiência. [Art. 1º, § 4º, II]" },
+          { "id": 54, "pergunta": "A partir de qual idade a vítima idosa gera o aumento de pena no § 4º, II?", "resposta": "Maior de 60 (sessenta) anos. [Art. 1º, § 4º, II]" },
+          { "id": 55, "pergunta": "Qual crime meio ou condição circunstancial atrai o aumento do § 4º, inciso III?", "resposta": "Se o crime é cometido mediante seqüestro. [Art. 1º, § 4º, III]" },
+          { "id": 56, "pergunta": "Quais os três vínculos laborais estatais extintos pela condenação no § 5º?", "resposta": "Perda do cargo, função ou emprego público. [Art. 1º, § 5º]" },
+          { "id": 57, "pergunta": "O que ocorre além da perda do cargo como efeito da condenação no § 5º?", "resposta": "A interdição para o seu exercício. [Art. 1º, § 5º]" },
+          { "id": 58, "pergunta": "Por qual período perdura a interdição imposta no parágrafo 5º?", "resposta": "Pelo dobro do prazo da pena aplicada. [Art. 1º, § 5º]" },
+          { "id": 59, "pergunta": "A perda do cargo e a interdição dependem de fundamentação específica ou ocorrem automaticamente?", "resposta": "A lei impõe que a condenação 'acarretará' esses efeitos, operando-se automaticamente. [Art. 1º, § 5º]" },
+          { "id": 60, "pergunta": "O crime de tortura admite estipulação de fiança sob qualquer condição?", "resposta": "Não. O crime de tortura é inafiançável. [Art. 1º, § 6º]" },
+          { "id": 61, "pergunta": "Quais são os dois institutos humanitários de extinção da punibilidade vedados pelo § 6º?", "resposta": "Graça ou anistia (o crime é insuscetível delas). [Art. 1º, § 6º]" },
+          { "id": 62, "pergunta": "Qual a determinação de regime prisional imposta pelo § 7º ao condenado por tortura?", "resposta": "Iniciará o cumprimento da pena em regime fechado. [Art. 1º, § 7º]" },
+          { "id": 63, "pergunta": "Qual dispositivo é expressamente ressalvado da obrigatoriedade do regime inicial fechado?", "resposta": "A hipótese do § 2º (tortura por omissão). [Art. 1º, § 7º]" },
+          { "id": 64, "pergunta": "O que estabelece o caput do Art. 2º sobre o âmbito espacial da lei?", "resposta": "O disposto na Lei aplica-se ainda quando o crime não tenha sido cometido em território nacional. [Art. 2º]" },
+          { "id": 65, "pergunta": "Qual a primeira condição do Art. 2º para aplicação extraterritorial baseada na pessoa?", "resposta": "Sendo a vítima brasileira. [Art. 2º]" },
+          { "id": 66, "pergunta": "Qual a segunda condição do Art. 2º para aplicação extraterritorial baseada no local do agente?", "resposta": "Encontrando-se o agente em local sob jurisdição brasileira. [Art. 2º]" },
+          { "id": 67, "pergunta": "O que prescreve o Art. 3º a respeito da vigência da norma?", "resposta": "Esta Lei entra em vigor na data de sua publicação. [Art. 3º]" },
+          { "id": 68, "pergunta": "Há prazo de vacatio legis estipulado nesta lei de tortura?", "resposta": "Não, ela vigora imediatamente na data da publicação. [Art. 3º]" },
+          { "id": 69, "pergunta": "Qual diploma legal foi expressamente revogado pelo Art. 4º?", "resposta": "O Estatuto da Criança e do Adolescente (em seus tipos de tortura). [Art. 4º]" },
+          { "id": 70, "pergunta": "Em qual cidade foi assinada a referida legislação?", "resposta": "Brasília. [Art. 4º / Encerramento]" },
+          { "id": 71, "pergunta": "Qual o dia, mês e ano exato da assinatura da Lei nº 9.455?", "resposta": "7 de abril de 1997. [Art. 4º / Encerramento]" },
+          { "id": 72, "pergunta": "Quantos anos da Independência constam declarados no encerramento da lei?", "resposta": "176º ano da Independência. [Art. 4º / Encerramento]" },
+          { "id": 73, "pergunta": "Quantos anos da República constam declarados no encerramento da lei?", "resposta": "109º ano da República. [Art. 4º / Encerramento]" },
+          { "id": 74, "pergunta": "O dolo do crime de tortura-castigo (Art. 1, II) pode visar uma finalidade puramente corretiva?", "resposta": "Sim, a lei prevê a finalidade de aplicar 'castigo pessoal'. [Art. 1º, II]" },
+          { "id": 75, "pergunta": "O constrangimento ilegal simples exige sofrimento mental intenso de caráter discriminatório?", "resposta": "Não, o dolo de discriminação só se exige especificamente na alínea 'c'. [Art. 1º, I, 'c']" },
+          { "id": 76, "pergunta": "A imposição de sofrimento por ato previsto em lei configura crime de tortura do § 1º?", "resposta": "Não, o tipo penal pune apenas o ato 'não previsto em lei ou não resultante de medida legal'. [Art. 1º, § 1º]" },
+          { "id": 77, "pergunta": "Se uma autoridade policial se omitir diante de tortura que tinha o dever de evitar, qual sua pena?", "resposta": "Detenção, de um a quatro anos. [Art. 1º, § 2º]" },
+          { "id": 78, "pergunta": "Se um agente público pratica tortura, qual o patamar máximo de majoração?", "resposta": "A pena pode ser aumentada em até um terço (1/3). [Art. 1º, § 4º]" },
+          { "id": 79, "pergunta": "Uma pessoa condenada a 4 anos de reclusão por tortura ficará impedida de reassumir cargo público por quanto tempo?", "resposta": "Por 8 anos (o dobro do prazo da pena aplicada). [Art. 1º, § 5º]" },
+          { "id": 80, "pergunta": "O crime de tortura admite concessão de anistia?", "resposta": "Não, a lei o declara expressamente insuscetível de anistia. [Art. 1º, § 6º]" }
+        ];
+
+        let currentIndex = 0;
+        const totalCards = flashcardsData.length;
+
+        const flashcardElement = document.getElementById('flashcard');
+        const questionTextElement = document.getElementById('question-text');
+        const answerTextElement = document.getElementById('answer-text');
+        const cardCounterElement = document.getElementById('card-counter');
+        const percentageElement = document.getElementById('completion-percentage');
+        const progressBarElement = document.getElementById('progress');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+
+        function updateCard() {
+            flashcardElement.classList.remove('flipped');
+            
+            setTimeout(() => {
+                questionTextElement.innerText = flashcardsData[currentIndex].pergunta;
+                answerTextElement.innerText = flashcardsData[currentIndex].resposta;
+            }, 150);
+
+            cardCounterElement.innerText = `Card: ${currentIndex + 1} / ${totalCards}`;
+            
+            const percentage = Math.round(((currentIndex + 1) / totalCards) * 100);
+            percentageElement.innerText = `${percentage}% Concluído`;
+            progressBarElement.style.width = `${percentage}%`;
+
+            btnPrev.disabled = currentIndex === 0;
+            btnNext.innerText = currentIndex === totalCards - 1 ? 'Reiniciar ↺' : 'Avançar →';
+        }
+
+        function flipCard() {
+            flashcardElement.classList.toggle('flipped');
+        }
+
+        function nextCard(event) {
+            event.stopPropagation();
+            if (currentIndex < totalCards - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateCard();
+        }
+
+        function prevCard(event) {
+            event.stopPropagation();
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCard();
+            }
+        }
+
+        updateCard();
+    </script>
+</body>
+</html>
