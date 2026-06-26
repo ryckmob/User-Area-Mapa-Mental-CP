@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards - Lei de Abuso de Autoridade</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #f1f5f9;
+            --text-dark: #0f172a;
+            --text-light: #ffffff;
+            --accent: #e11d48;
+            --card-bg: #ffffff;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--secondary);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        p.subtitle {
+            color: #64748b;
+            font-size: 1rem;
+        }
+
+        .dashboard {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            padding: 15px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            max-width: 600px;
+            height: 6px;
+            background: #e2e8f0;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 1%;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .card-container {
+            width: 100%;
+            max-width: 600px;
+            height: 340px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 16px;
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--card-bg);
+            overflow-y: auto;
+        }
+
+        .card-front {
+            border-top: 8px solid var(--primary);
+        }
+
+        .card-back {
+            background: #f8fafc;
+            transform: rotateY(180deg);
+            border-top: 8px solid var(--accent);
+        }
+
+        .badge {
+            position: absolute;
+            top: 20px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        .card-front .badge {
+            background: #dbeafe;
+            color: var(--primary);
+        }
+
+        .card-back .badge {
+            background: #ffe4e6;
+            color: var(--accent);
+        }
+
+        .card-text {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .hint {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 20px;
+            margin-top: 35px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        button {
+            flex: 1;
+            padding: 14px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        button.btn-back {
+            background-color: #cbd5e1;
+            color: #334155;
+        }
+
+        button.btn-back:hover:not(:disabled) {
+            background-color: #94a3b8;
+        }
+
+        button.btn-next {
+            background-color: var(--primary);
+            color: var(--text-light);
+        }
+
+        button.btn-next:hover:not(:disabled) {
+            background-color: #1d4ed8;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        @media (max-width: 480px) {
+            .card-container { height: 380px; }
+            .card-text { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lei de Abuso de Autoridade</h1>
+        <p class="subtitle">Estudo Ativo com 100 Flashcards</p>
+    </header>
+
+    <div class="dashboard">
+        <span id="card-counter">Card: 1 / 100</span>
+        <span id="completion-percentage">0% Concluído</span>
+    </div>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <div class="card-container" onclick="flipCard()">
+        <div class="flashcard" id="flashcard">
+            <div class="card-face card-front">
+                <span class="badge">Pergunta</span>
+                <div class="card-text" id="question-text">Carregando...</div>
+                <div class="hint">Clique no cartão para ver a resposta</div>
+            </div>
+            <div class="card-face card-back">
+                <span class="badge">Resposta Legal</span>
+                <div class="card-text" id="answer-text">Carregando...</div>
+                <div class="hint">Clique no cartão para ver a pergunta</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="btn-back" id="btn-prev" onclick="prevCard(event)" disabled>
+            ← Voltar
+        </button>
+        <button class="btn-next" id="btn-next" onclick="nextCard(event)">
+            Avançar →
+        </button>
+    </div>
+
+    <script>
+        // Array completo com os 100 flashcards extraídos do PDF
+        const flashcardsData = [
+          { "id": 1, "pergunta": "Quem pode cometer o crime de abuso de autoridade segundo o Art. 1º?", "resposta": "Qualquer agente público, servidor ou não, que no exercício de suas funções ou a pretexto de exercê-las, abuse do poder atribuído. [Art. 1º]" },
+          { "id": 2, "pergunta": "Quais são as finalidades específicas exigidas para configurar o crime de abuso de autoridade?", "resposta": "Prejudicar outrem, beneficiar a si mesmo ou a terceiro, ou por mero capricho ou satisfação pessoal. [Art. 1º, § 1º]" },
+          { "id": 3, "pergunta": "A divergência na interpretação de lei configura crime de abuso de autoridade?", "resposta": "Não. A divergência na interpretação de lei ou na avaliação de fatos e provas não configura abuso de autoridade. [Art. 1º, § 2º]" },
+          { "id": 4, "pergunta": "Quem é considerado sujeito ativo do crime de abuso de autoridade?", "resposta": "Qualquer agente público, servidor ou não, da administração direta, indireta ou fundacional de qualquer dos Poderes da União, Estados, DF, Municípios e Territórios. [Art. 2º]" },
+          { "id": 5, "pergunta": "Os membros do Poder Legislativo e do Poder Executivo podem ser sujeitos ativos desse crime?", "resposta": "Sim, o artigo expressamente inclui membros do Poder Legislativo e do Poder Executivo. [Art. 2º, II e III]" },
+          { "id": 6, "pergunta": "Os membros do Poder Judiciário e do Ministério Público estão sujeitos à Lei de Abuso de Autoridade?", "resposta": "Sim, ambos estão expressamente incluídos como potenciais sujeitos ativos. [Art. 2º, IV e V]" },
+          { "id": 7, "pergunta": "Membros de tribunais ou conselhos de contas podem responder por abuso de autoridade?", "resposta": "Sim, estão incluídos no rol do Art. 2º, inciso VI." },
+          { "id": 8, "pergunta": "Qual é a definição ampla de 'agente público' para os efeitos desta Lei?", "resposta": "Todo aquele que exerce, mesmo que transitoriamente ou sem remuneração, por eleição, nomeação, designação, contratação ou qualquer vínculo, mandato, cargo, emprego ou função. [Art. 2º, Parágrafo único]" },
+          { "id": 9, "pergunta": "Qual é a natureza da ação penal nos crimes previstos na Lei de Abuso de Autoridade?", "resposta": "Ação penal pública incondicionada. [Art. 3º]" },
+          { "id": 10, "pergunta": "Quando será admitida a ação penal privada subsidiária da pública?", "resposta": "Se a ação penal pública não for intentada no prazo legal. [Art. 3º, § 1º]" },
+          { "id": 11, "pergunta": "O que o Ministério Público pode fazer caso seja proposta uma ação privada subsidiária?", "resposta": "Pode aditar a queixa, repudiá-la e oferecer denúncia substitutiva, intervir no processo, fornecer provas, interpor recurso e retomar a ação em caso de negligência. [Art. 3º, § 1º]" },
+          { "id": 12, "pergunta": "Qual é o prazo para o exercício da ação privada subsidiária e a partir de quando começa a contar?", "resposta": "Prazo de 6 (seis) meses, contado da data em que se esgotar o prazo para o oferecimento da denúncia. [Art. 3º, § 2º]" },
+          { "id": 13, "pergunta": "Quais são os três efeitos da condenação previstos no Art. 4º?", "resposta": "I - Tornar certa a obrigação de indenizar o dano; II - Inabilitação para o exercício de cargo/função (1 a 5 anos); III - Perda do cargo, mandato ou função pública. [Art. 4º]" },
+          { "id": 14, "pergunta": "O efeito de indenizar o dano causado pelo crime é automático ou depende de requerimento?", "resposta": "O juiz deve fixar o valor mínimo para reparação dos danos especificamente a requerimento do ofendido. [Art. 4º, I]" },
+          { "id": 15, "pergunta": "Qual é o período de inabilitação para o exercício de cargo, mandato ou função pública como efeito da condenação?", "resposta": "Pelo período de 1 (um) a 5 (cinco) anos. [Art. 4º, II]" },
+          { "id": 16, "pergunta": "Os efeitos de inabilitação temporária e perda do cargo são automáticos?", "resposta": "Não. Eles são condicionados à ocorrência de reincidência em crime de abuso de autoridade e devem ser declarados motivadamente na sentença. [Art. 4º, Parágrafo único]" },
+          { "id": 17, "pergunta": "Quais são as penas restritivas de direitos substitutivas previstas na Lei?", "resposta": "I - Prestação de serviços à comunidade/entidades públicas; II - Suspensão do exercício do cargo, função ou mandato de 1 a 6 meses, com perda de vencimentos e vantagens. [Art. 5º]" },
+          { "id": 18, "pergunta": "Qual é o prazo máximo e a consequência financeira da pena restritiva de suspensão do cargo?", "resposta": "Prazo de 1 (um) a 6 (seis) meses, ocorrendo a perda total dos vencimentos e das vantagens nesse período. [Art. 5º, II]" },
+          { "id": 19, "pergunta": "As penas restritivas de direitos podem ser acumuladas?", "resposta": "Sim, elas podem ser aplicadas de forma autônoma ou cumulativamente. [Art. 5º, Parágrafo único]" },
+          { "id": 20, "pergunta": "As penas previstas nesta Lei afastam as sanções de natureza civil ou administrativa?", "resposta": "Não, as penas serão aplicadas independentemente das sanções civis ou administrativas cabíveis. [Art. 6º]" },
+          { "id": 21, "pergunta": "O que ocorre se a notícia do crime descrever também uma falta funcional?", "resposta": "A informação será enviada à autoridade competente para a devida apuração administrativa. [Art. 6º, Parágrafo único]" },
+          { "id": 22, "pergunta": "A sentença penal pode impedir o questionamento sobre o fato ou autoria no âmbito civil e administrativo?", "resposta": "Sim. Não se pode mais questionar a existência ou autoria do fato quando essas questões já tenham sido decididas no juízo criminal. [Art. 7º]" },
+          { "id": 23, "pergunta": "Quais excludentes de ilicitude reconhecidas na sentença penal fazem coisa julgada no âmbito cível e administrativo-disciplinar?", "resposta": "Estado de necessidade, legítima defesa, estrito cumprimento de dever legal ou exercício regular de direito. [Art. 8º]" },
+          { "id": 24, "pergunta": "Qual é a pena para quem decretar medida de privação da liberdade em manifesta desconformidade legal?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 9º]" },
+          { "id": 25, "pergunta": "Incorre na mesma pena do Art. 9º a autoridade judiciária que deixa de relaxar prisão manifestamente ilegal?", "resposta": "Sim, a omissão em relaxar a prisão ilegal no prazo razoável gera a mesma pena. [Art. 9º, Parágrafo único, I]" },
+          { "id": 26, "pergunta": "O magistrado comete crime se deixar de substituir prisão preventiva por cautelar diversa quando manifestamente cabível?", "resposta": "Sim, a omissão em prazo razoável configura o mesmo crime do Art. 9º. [Art. 9º, Parágrafo único, II]" },
+          { "id": 27, "pergunta": "Deixar de deferir liminar ou ordem de habeas corpus manifestamente cabível gera qual consequência?", "resposta": "Sujeita a autoridade judiciária à pena de detenção de 1 a 4 anos e multa. [Art. 9º, Parágrafo único, III]" },
+          { "id": 28, "pergunta": "Qual é a conduta criminosa descrita no Art. 10 relacionada à condução coercitiva?", "resposta": "Decretar condução coercitiva de testemunha ou investigado manifestamente descabida ou sem prévia intimação de comparecimento. [Art. 10]" },
+          { "id": 29, "pergunta": "Qual é a pena para a condução coercitiva ilegal (Art. 10)?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 10]" },
+          { "id": 30, "pergunta": "Qual o crime previsto no Art. 12 sobre a comunicação de prisões em flagrante?", "resposta": "Deixar injustificadamente de comunicar a prisão em flagrante à autoridade judiciária no prazo legal. [Art. 12]" },
+          { "id": 31, "pergunta": "Qual é a pena para quem deixa de comunicar o flagrante no prazo legal?", "resposta": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa. [Art. 12]" },
+          { "id": 32, "pergunta": "Quem deixa de comunicar imediatamente a execução de prisão temporária ou preventiva incorre em qual pena?", "resposta": "Na mesma pena de detenção de 6 meses a 2 anos e multa. [Art. 12, Parágrafo único, I]" },
+          { "id": 33, "pergunta": "A quem deve ser comunicada imediatamente a execução da prisão temporária ou preventiva?", "resposta": "À autoridade judiciária que a decretou. [Art. 12, Parágrafo único, I]" },
+          { "id": 34, "pergunta": "O que diz o Art. 12, parágrafo único, inciso II sobre avisar parentes do preso?", "resposta": "Incorre em crime quem deixa de comunicar, imediatamente, a prisão e o local onde o preso se encontra à sua família ou à pessoa indicada. [Art. 12]" },
+          { "id": 35, "pergunta": "Qual o prazo para a entrega da nota de culpa ao preso e qual a punição pelo descumprimento?", "resposta": "O prazo é de 24 (vinte e quatro) horas. O descumprimento gera pena de detenção de 6 meses a 2 anos e multa. [Art. 12, Parágrafo único, III]" },
+          { "id": 36, "pergunta": "O que deve constar assinado na nota de culpa entregue ao preso?", "resposta": "O motivo da prisão e os nomes do condutor e das testemunhas. [Art. 12, Parágrafo único, III]" },
+          { "id": 37, "pergunta": "Prolongar a execução de prisão sem motivo justo, deixando de executar o alvará de soltura imediatamente, é crime?", "resposta": "Sim. Incorre na pena de detenção de 6 meses a 2 anos e multa. [Art. 12, Parágrafo único, IV]" },
+          { "id": 38, "pergunta": "O crime de prolongar a prisão também se aplica a medidas de segurança ou internação?", "resposta": "Sim, aplica-se a pena privativa de liberdade, prisão temporária, preventiva, medida de segurança ou internação. [Art. 12, Parágrafo único, IV]" },
+          { "id": 39, "pergunta": "Quais são as coisas de constrangimento ao preso listadas no Art. 13?", "resposta": "Violência, grave ameaça ou redução de sua capacidade de resistência. [Art. 13]" },
+          { "id": 40, "pergunta": "Quais são as três condutas proibidas no constrangimento ao preso do Art. 13?", "resposta": "I - Exibir seu corpo à curiosidade pública; II - Submetê-lo a situação vexatória/constrangimento ilegal; III - Forçá-lo a produzir prova contra si ou terceiro. [Art. 13]" },
+          { "id": 41, "pergunta": "Qual é a pena para o crime de constrangimento ao preso (Art. 13)?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa, sem prejuízo da pena cominada à violência. [Art. 13]" },
+          { "id": 42, "pergunta": "Se houver violência física no constrangimento do preso, a pena do crime absorve a violência?", "resposta": "Não, a pena de detenção de 1 a 4 anos é aplicada 'sem prejuízo da pena cominada à violência'. [Art. 13]" },
+          { "id": 43, "pergunta": "Qual é a condição criminosa descrita no Art. 15 envolvendo pessoas que devem guardar segredo ou sigilo?", "resposta": "Constranger a depor, sob ameaça de prisão, pessoa que, em razão de função, ministério, ofício ou profissão, deva guardar segredo. [Art. 15]" },
+          { "id": 44, "pergunta": "Qual é a pena para quem constrange pessoa que deve resguardar sigilo a depor?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 15]" },
+          { "id": 45, "pergunta": "O que diz o Art. 15, parágrafo único, inciso I sobre o direito ao silêncio?", "resposta": "Incorre na mesma pena quem prossegue com o interrogatório de pessoa que tenha decidido exercer o direito ao silêncio. [Art. 15]" },
+          { "id": 46, "pergunta": "Prosseguir com interrogatório sem a presença de patrono, quando o preso optou por ser assistido por advogado, é crime?", "resposta": "Sim, gera a mesma pena de detenção de 1 a 4 anos e multa. [Art. 15, Parágrafo único, II]" },
+          { "id": 47, "pergunta": "Como a lei define o crime de Violência Institucional (Art. 15-A)?", "resposta": "Submeter vítima ou testemunha de crimes violentos a procedimentos desnecessários/repetitivos que a levem a reviver a situação de violência ou sofrimento. [Art. 15-A]" },
+          { "id": 48, "pergunta": "Qual é a pena base para o crime de Violência Institucional?", "resposta": "Detenção, de 3 (três) meses a 1 (um) ano, e multa. [Art. 15-A]" },
+          { "id": 49, "pergunta": "O que ocorre com a pena se o agente público permitir que terceiro intimide a vítima de crime violento?", "resposta": "Aplica-se a pena aumentada de 2/3 (dois terços) devido à indevida revitimização. [Art. 15-A, § 1º]" },
+          { "id": 50, "pergunta": "Qual é a causa de aumento se o próprio agente público intimidar a vítima, gerando revitimização?", "resposta": "Aplica-se a pena em dobro. [Art. 15-A, § 2º]" },
+          { "id": 51, "pergunta": "Qual é a conduta criminosa descrita no Art. 16 sobre identificação?", "resposta": "Deixar de identificar-se ou identificar-se falsamente ao preso por ocasião de sua captura ou durante sua manutenção/prisão. [Art. 16]" },
+          { "id": 52, "pergunta": "Qual é a pena para o crime de falta ou falsa identificação ao preso?", "resposta": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa. [Art. 16]" },
+          { "id": 53, "pergunta": "O responsável por interrogatório policial que deixa de se identificar comete crime?", "resposta": "Sim, incorre na mesma pena de detenção de 6 meses a 2 anos e multa. [Art. 16, Parágrafo único]" },
+          { "id": 54, "pergunta": "É permitido interrogar o preso durante o repouso noturno?", "resposta": "Em regra não. Constitui crime submetê-lo a interrogatório policial no repouso noturno, salvo flagrante ou consentimento assistido. [Art. 18]" },
+          { "id": 55, "pergunta": "Quais são as duas exceções que permitem o interrogatório no repouso noturno?", "resposta": "Se o preso foi capturado em flagrante delito ou se ele, devidamente assistido, consentir em prestar declarações. [Art. 18]" },
+          { "id": 56, "pergunta": "Qual é a pena para o interrogatório realizado ilegalmente no período noturno?", "resposta": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa. [Art. 18]" },
+          { "id": 57, "pergunta": "Qual o crime imputado a quem barra ou atrasa o envio de pleito do preso para a Justiça?", "resposta": "Impedir ou retardar, injustificadamente, o envio de pleito do preso à autoridade competente para avaliar a legalidade da prisão. [Art. 19]" },
+          { "id": 58, "pergunta": "Qual é a pena para o impedimento ou retardamento de pleito do preso (Art. 19)?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 19]" },
+          { "id": 59, "pergunta": "O magistrado pode cometer o crime do Art. 19? De qual forma?", "resposta": "Sim. Se, ciente da demora, deixar de tomar providências para saná-la ou deixar de enviar o pedido ao juiz competente. [Art. 19, Parágrafo único]" },
+          { "id": 60, "pergunta": "O que estabelece o Art. 20 sobre a entrevista do preso com seu defensor?", "resposta": "Crime de impedir, sem justa causa, a entrevista pessoal e reservada do preso com seu advogado. Pena: detenção de 6 meses a 2 anos e multa. [Art. 20]" },
+          { "id": 61, "pergunta": "É crime impedir o réu solto ou investigado de se entrevistar com o advogado antes da audiência?", "resposta": "Sim, é crime impedi-lo de se entrevistar por prazo razoável antes da audiência ou de sentar-se ao lado do defensor. [Art. 20, Parágrafo único]" },
+          { "id": 62, "pergunta": "Quais as exceções para o direito do preso se comunicar e sentar ao lado do advogado na audiência?", "resposta": "No curso do próprio interrogatório ou no caso de audiência realizada por videoconferência. [Art. 20, Parágrafo único]" },
+          { "id": 63, "pergunta": "O que dispõe o Art. 21 sobre a separação por sexo nas prisões?", "resposta": "Crime de manter presos de ambos os sexos na mesma cela ou espaço de confinamento. Pena: detenção de 1 a 4 anos e multa. [Art. 21]" },
+          { "id": 64, "pergunta": "Qual a punição para quem mantém criança ou adolescente na companhia de maior de idade na mesma cela?", "resposta": "Incorre na mesma pena de detenção de 1 a 4 anos e multa. [Art. 21, Parágrafo único]" },
+          { "id": 65, "pergunta": "Qual a conduta básica do crime de violação de domicílio previsto no Art. 22?", "resposta": "Invadir ou adentrar, clandestina/astuciosamente ou contra a vontade do ocupante, imóvel alheio sem ordem judicial ou fora da lei. [Art. 22]" },
+          { "id": 66, "pergunta": "Qual é a pena para a invasão ilegal de imóvel alheio (Art. 22)?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 22]" },
+          { "id": 67, "pergunta": "Coagir alguém a franquear o acesso a imóvel gera qual pena?", "resposta": "Incorre na mesma pena do caput: detenção de 1 a 4 anos e multa. [Art. 22, § 1º, I]" },
+          { "id": 68, "pergunta": "Entre quais horários o cumprimento de mandado de busca e apreensão domiciliar configura crime?", "resposta": "Após as 21h (vinte e uma horas) ou antes das 5h (cinco horas). [Art. 22, § 1º, III]" },
+          { "id": 69, "pergunta": "Em quais situações NÃO haverá crime no ingresso em imóvel alheio sem mandado?", "resposta": "Para prestar socorro, ou quando houver fundados indícios de flagrante delito ou desastre. [Art. 22, § 2º]" },
+          { "id": 70, "pergunta": "O que constitui o crime de inovação artificiosa do Art. 23?", "resposta": "Inovar o estado de lugar, coisa ou pessoa em diligência/processo para eximir-se de culpa ou culpar falsamente alguém. [Art. 23]" },
+          { "id": 71, "pergunta": "Qual é a pena para a inovação artificiosa em investigações?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 23]" },
+          { "id": 72, "pergunta": "Omitir dados ou divulgar dados incompletos para desviar o curso de investigação atrai qual pena?", "resposta": "Incorre na mesma pena de detenção de 1 a 4 anos e multa. [Art. 23, Parágrafo único, II]" },
+          { "id": 73, "pergunta": "Qual conduta criminosa envolve hospitais no Art. 24?", "resposta": "Constranger funcionário de hospital a admitir para tratamento pessoa já falecida, para alterar o local/momento do crime. [Art. 24]" },
+          { "id": 74, "pergunta": "Qual a pena para o constrangimento em ambiente hospitalar para alteração de cena de crime?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa, além da pena correspondente à violência. [Art. 24]" },
+          { "id": 75, "pergunta": "Qual crime envolve a captação de provas ilícitas segundo o Art. 25?", "resposta": "Proceder à obtenção de prova, em procedimento de investigação ou fiscalização, por meio manifestamente ilícito. [Art. 25]" },
+          { "id": 76, "pergunta": "Quem faz uso de prova sabendo previamente de sua ilicitude comete crime?", "resposta": "Sim, incorre na mesma pena de detenção de 1 a 4 anos e multa. [Art. 25, Parágrafo único]" },
+          { "id": 77, "pergunta": "O que diz o Art. 27 sobre instaurar investigação sem indícios?", "resposta": "É crime requisitar instauração ou instaurar investigação penal ou administrativa sem qualquer indício de crime ou ilícito. [Art. 27]" },
+          { "id": 78, "pergunta": "Qual a pena para quem instaura investigação temerária e sem indícios?", "resposta": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa. [Art. 27]" },
+          { "id": 79, "pergunta": "Existe crime si a investigação sem indícios iniciais for uma sindicância?", "resposta": "Não há crime quando se tratar de sindicância ou investigação preliminar sumária, desde que devidamente justificada. [Art. 27, Parágrafo único]" },
+          { "id": 80, "pergunta": "Qual crime é cometido ao vazar gravações íntimas do investigado (Art. 28)?", "resposta": "Divulgar gravação sem relação com a prova, expondo a intimidade, vida privada ou ferindo a honra do investigado. [Art. 28]" },
+          { "id": 81, "pergunta": "Qual é a pena para a divulgação de gravação prejudicial desnecessária?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 28]" },
+          { "id": 82, "pergunta": "Prestar informação falsa sobre procedimento judicial para prejudicar investigado gera qual pena?", "resposta": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa. [Art. 29]" },
+          { "id": 83, "pergunta": "O que pune o Art. 30 a respeito de persecução penal ou civil?", "resposta": "Dar início ou proceder à persecução penal, civil ou administrativa sem justa causa fundamentada ou contra quem sabe inocente. [Art. 30]" },
+          { "id": 84, "pergunta": "Qual é a pena para quem inicia persecução sabendo da inocência do alvo?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 30]" },
+          { "id": 85, "pergunta": "Procrastinar a investigação em prejuízo do investigado configura crime?", "resposta": "Sim. Estender injustificadamente a investigação gera pena de detenção de 6 meses a 2 anos e multa. [Art. 31]" },
+          { "id": 86, "pergunta": "Se não houver prazo fixado para o procedimento, o agente pode estendê-lo indefinidamente?", "resposta": "Não, se estender de forma imotivada procrastinando em prejuízo do investigado, comete crime. [Art. 31, Parágrafo único]" },
+          { "id": 87, "pergunta": "O que estabelece o Art. 32 sobre o acesso do advogado aos autos?", "resposta": "É crime negar ao interessado ou advogado acesso aos autos de investigação ou impedir a obtenção de cópias. [Art. 32]" },
+          { "id": 88, "pergunta": "Quais peças dos autos são ressalvadas do acesso do defensor no Art. 32?", "resposta": "Peças relativas a diligências em curso, ou que indiquem diligências futuras, cujo sigilo seja imprescindível. [Art. 32]" },
+          { "id": 89, "pergunta": "Qual a pena para quem nega acesso ilegal a inquérito ou termo circunstanciado?", "resposta": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa. [Art. 32]" },
+          { "id": 90, "pergunta": "Exigir obrigação (de fazer ou não fazer) sem expresso amparo legal acarreta qual sanção?", "resposta": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa. [Art. 33]" },
+          { "id": 91, "pergunta": "Invocar a condição de agente público para se eximir de obrigação legal gera qual punição?", "resposta": "Incorre na mesma pena do Art. 33: detenção de 6 meses a 2 anos e multa. [Art. 33, Parágrafo único]" },
+          { "id": 92, "pergunta": "Qual conduta do magistrado em relação a ativos financeiros é punida no Art. 36?", "resposta": "Decretar indisponibilidade de ativos que extrapole exacerbadamente a dívida e, provado o excesso, deixar de corrigi-la. [Art. 36]" },
+          { "id": 93, "pergunta": "Qual é a pena para o bloqueio de valores excessivo não corrigido pelo juiz?", "resposta": "Detenção, de 1 (um) a 4 (quatro) anos, e multa. [Art. 36]" },
+          { "id": 94, "pergunta": "Demorar demasiadamente no exame de processo com pedido de vista em órgão colegiado para procrastinar é crime?", "resposta": "Sim. Gera detenção de 6 meses a 2 anos e multa. [Art. 37]" },
+          { "id": 95, "pergunta": "Antecipar culpa de investigado em redes sociais antes da conclusão das apurações gera qual pena?", "resposta": "Detenção, de 6 (seis) meses a 2 (dois) anos, e multa. [Art. 38]" },
+          { "id": 96, "pergunta": "Segundo as disposições finais, o que deve constar necessariamente no mandado de prisão temporária?", "resposta": "O período de duração da prisão estabelecido e o dia em que o preso deverá ser libertado. [Art. 40 / Alteração legal]" },
+          { "id": 97, "pergunta": "Decorrido o prazo do mandado de prisão temporária, o custodiado deve ser solto imediatamente?", "resposta": "Sim, independentemente de nova ordem judicial, salvo se comunicada prorrogação ou prisão preventiva. [Art. 40 / Alteração legal]" },
+          { "id": 98, "pergunta": "Qual a pena para quem realiza interceptação telefônica ou escuta ambiental sem autorização judicial?", "resposta": "Reclusão, de 2 (dois) a 4 (quatro) anos, e multa. [Art. 41 / Art. 227-A]" },
+          { "id": 99, "pergunta": "Qual crime foi adicionado em relação aos direitos e prerrogativas do advogado (Art. 43)?", "resposta": "Violá-las conforme incisos II, III, IV e V do caput do art. 7º da lei correlata. Pena: detenção de 3 meses a 1 ano e multa. [Art. 43 / Art. 7º-B]" },
+          { "id": 100, "pergunta": "Qual é o prazo de vacatio legis estipulado para a entrada em vigor desta Lei?", "resposta": "A lei entra em vigor após decorridos 120 (cento e vinte) dias de sua publicação oficial. [Art. 45]" }
+        ];
+
+        let currentIndex = 0;
+        const totalCards = flashcardsData.length;
+
+        const flashcardElement = document.getElementById('flashcard');
+        const questionTextElement = document.getElementById('question-text');
+        const answerTextElement = document.getElementById('answer-text');
+        const cardCounterElement = document.getElementById('card-counter');
+        const percentageElement = document.getElementById('completion-percentage');
+        const progressBarElement = document.getElementById('progress');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+
+        function updateCard() {
+            // Remove a classe flipped para voltar o card para a frente antes de trocar o texto
+            flashcardElement.classList.remove('flipped');
+            
+            // Pequeno timeout para esperar o início do fechamento e trocar o conteúdo de forma limpa
+            setTimeout(() => {
+                questionTextElement.innerText = flashcardsData[currentIndex].pergunta;
+                answerTextElement.innerText = flashcardsData[currentIndex].resposta;
+            }, 150);
+
+            // Atualiza os indicadores
+            cardCounterElement.innerText = `Card: ${currentIndex + 1} / ${totalCards}`;
+            
+            const percentage = Math.round(((currentIndex + 1) / totalCards) * 100);
+            percentageElement.innerText = `${percentage}% Concluído`;
+            progressBarElement.style.width = `${percentage}%`;
+
+            // Controla o estado dos botões
+            btnPrev.disabled = currentIndex === 0;
+            btnNext.innerText = currentIndex === totalCards - 1 ? 'Reiniciar ↺' : 'Avançar →';
+        }
+
+        function flipCard() {
+            flashcardElement.classList.toggle('flipped');
+        }
+
+        function nextCard(event) {
+            event.stopPropagation(); // Impede que o clique acione a rotação do card
+            if (currentIndex < totalCards - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Reinicia o deck ao chegar no fim
+            }
+            updateCard();
+        }
+
+        function prevCard(event) {
+            event.stopPropagation(); // Impede que o clique acione a rotação do card
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateCard();
+            }
+        }
+
+        // Inicializa o primeiro card
+        updateCard();
+    </script>
+</body>
+</html>
